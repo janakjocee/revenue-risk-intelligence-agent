@@ -8,6 +8,7 @@ import pandas as pd
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
+from src.agent.briefing import render_account_brief, save_account_brief
 from src.agent.workflow import run_agent
 from src.model.scoring import score_customer
 from src.observability.logger import append_feedback, feedback_summary, read_agent_logs
@@ -44,6 +45,15 @@ class FeedbackRequest(BaseModel):
     feedback_reason: str = Field(default="", max_length=1200)
     question: str = Field(default="", max_length=1200)
     risk_band: str = Field(default="", max_length=20)
+
+
+class AccountBriefRequest(BaseModel):
+    customer_id: str
+    question: str = Field(
+        default="Prepare an account brief with renewal risk, evidence, recommendations, and email draft.",
+        min_length=3,
+        max_length=1200,
+    )
 
 
 def load_customers() -> pd.DataFrame:
@@ -106,6 +116,21 @@ def observability_logs() -> list[dict[str, Any]]:
 @app.post("/feedback")
 def feedback(request: FeedbackRequest) -> dict[str, Any]:
     return append_feedback(request.model_dump())
+
+
+@app.post("/account-brief")
+def account_brief(request: AccountBriefRequest) -> dict[str, Any]:
+    customer = get_customer(request.customer_id)
+    retriever = load_retriever(RETRIEVER_PATH)
+    result = run_agent(
+        customer,
+        question=request.question,
+        retriever=retriever,
+        model_path=str(MODEL_PATH),
+        include_email=True,
+    )
+    path = save_account_brief(customer, result)
+    return {"customer_id": request.customer_id, "brief_path": str(path), "markdown": render_account_brief(customer, result)}
 
 
 @app.get("/evaluation/summary")
