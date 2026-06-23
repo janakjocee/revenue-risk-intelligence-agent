@@ -61,6 +61,21 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+## Developer Commands
+
+```bash
+make setup      # create virtual environment and install dependencies
+make data       # regenerate synthetic customers and documents
+make train      # train churn model
+make score      # score customers
+make retriever  # build local retrieval artifact
+make evaluate   # run RAG evaluation
+make test       # run tests
+make api        # start FastAPI
+make app        # start Streamlit
+make docker     # run API and dashboard with Docker Compose
+```
+
 Regenerate all local demo artifacts:
 
 ```bash
