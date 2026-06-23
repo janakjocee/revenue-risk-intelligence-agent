@@ -39,6 +39,36 @@ class AskRequest(BaseModel):
     include_email: bool = False
 
 
+class HealthResponse(BaseModel):
+    status: str
+    service: str
+
+
+class RiskScoreResponse(BaseModel):
+    customer_id: str
+    churn_probability: float
+    risk_band: str
+    revenue_at_risk: float
+    top_risk_drivers: list[str]
+    recommended_action_category: str
+
+
+class AskResponse(BaseModel):
+    customer_id: str
+    run_id: str
+    question: str
+    answer: str
+    risk_score: dict[str, Any]
+    risk_explanation: str
+    recommended_actions: list[dict[str, str]]
+    cited_evidence: list[dict[str, Any]]
+    caveats: str
+    email_draft: Optional[str]
+    llm_provider_note: str
+    groundedness_evaluation: dict[str, Any]
+    latency_ms: float
+
+
 class FeedbackRequest(BaseModel):
     run_id: str
     customer_id: str
@@ -79,7 +109,7 @@ def get_customer(customer_id: str) -> dict[str, Any]:
     return match.iloc[0].to_dict()
 
 
-@app.get("/health")
+@app.get("/health", response_model=HealthResponse)
 def health() -> dict[str, str]:
     return {"status": "ok", "service": "revenue-risk-intelligence-agent"}
 
@@ -100,13 +130,13 @@ def customer_detail(customer_id: str) -> dict[str, Any]:
     return get_customer(customer_id)
 
 
-@app.post("/score")
+@app.post("/score", response_model=RiskScoreResponse)
 def score(request: ScoreRequest) -> dict[str, Any]:
     customer = get_customer(request.customer_id)
     return score_customer(customer, MODEL_PATH)
 
 
-@app.post("/ask")
+@app.post("/ask", response_model=AskResponse)
 def ask(request: AskRequest) -> dict[str, Any]:
     customer = get_customer(request.customer_id)
     retriever = load_retriever(RETRIEVER_PATH)
