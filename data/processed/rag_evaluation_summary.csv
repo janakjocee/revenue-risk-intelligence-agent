@@ -1,6 +1,7 @@
-query,customer_id,expected_theme,top_k,theme_hits,precision_at_k,latency_ms,top_document_ids
-unresolved support tickets renewal risk,CUST-0009,support_escalation,4,4,1.0,1.04,"DOC-CUST-0009-00036, DOC-CUST-0009-00033, DOC-CUST-0009-00034"
-usage decline last login adoption risk,CUST-0013,usage_decline,4,4,1.0,0.71,"DOC-CUST-0013-00049, DOC-CUST-0013-00052, DOC-CUST-0013-00050"
-payment delay pricing renewal discount,CUST-0077,commercial_risk,4,4,1.0,0.74,"DOC-CUST-0077-00305, DOC-CUST-0077-00306, DOC-CUST-0077-00307"
-onboarding incomplete time to value,CUST-0029,onboarding_gap,4,4,1.0,0.67,"DOC-CUST-0029-00115, DOC-CUST-0029-00114, DOC-CUST-0029-00113"
-low NPS customer sentiment,CUST-0006,relationship_health,4,4,1.0,0.66,"DOC-CUST-0006-00024, DOC-CUST-0006-00023, DOC-CUST-0006-00021"
+question_id,query,customer_id,expected_theme,expected_document_type,top_k,retrieved_k,theme_hits,document_type_hits,precision_at_k,recall_at_k,expected_theme_match,expected_document_type_match,latency_ms,groundedness_heuristic,evidence_coverage_score,top_document_ids
+Q001,Which support issues are putting this renewal at risk?,CUST-0009,support_escalation,support_ticket_summary,5,4,4,0,1.0,1.0,True,False,1.25,0.667,0.667,"DOC-CUST-0009-00036, DOC-CUST-0009-00033, DOC-CUST-0009-00034"
+Q002,Is product adoption declining and what evidence supports that?,CUST-0013,usage_decline,product_usage_summary,5,4,4,0,1.0,1.0,True,False,0.65,0.0,0.0,"DOC-CUST-0013-00049, DOC-CUST-0013-00050, DOC-CUST-0013-00051"
+Q003,Could payment behaviour affect this renewal?,CUST-0077,commercial_risk,contract_note,5,4,4,1,1.0,1.0,True,True,0.62,0.667,0.667,"DOC-CUST-0077-00305, DOC-CUST-0077-00306, DOC-CUST-0077-00307"
+Q004,Does onboarding create a risk for this account?,CUST-0029,onboarding_gap,onboarding_note,5,4,4,1,1.0,1.0,True,True,0.65,0.667,0.667,"DOC-CUST-0029-00115, DOC-CUST-0029-00113, DOC-CUST-0029-00114"
+Q005,What does customer sentiment suggest about renewal risk?,CUST-0006,relationship_health,customer_success_call_note,5,4,4,1,1.0,1.0,True,True,0.65,0.667,0.667,"DOC-CUST-0006-00021, DOC-CUST-0006-00024, DOC-CUST-0006-00023"
+Q006,Prepare a renewal risk summary with evidence.,CUST-0001,stable_growth,renewal_risk_note,5,4,4,1,1.0,1.0,True,True,0.62,1.0,1.0,"DOC-CUST-0001-00001, DOC-CUST-0001-00002, DOC-CUST-0001-00003"

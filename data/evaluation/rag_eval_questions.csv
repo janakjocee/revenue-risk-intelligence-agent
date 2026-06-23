@@ -1,0 +1,8 @@
+question_id,customer_id,question,expected_risk_theme,expected_document_type,expected_answer_points
+Q001,CUST-0009,Which support issues are putting this renewal at risk?,support_escalation,support_ticket_summary,unresolved tickets;renewal risk;support review
+Q002,CUST-0013,Is product adoption declining and what evidence supports that?,usage_decline,product_usage_summary,usage score;last login;adoption trend
+Q003,CUST-0077,Could payment behaviour affect this renewal?,commercial_risk,contract_note,payment delay;contract value;commercial support
+Q004,CUST-0029,Does onboarding create a risk for this account?,onboarding_gap,onboarding_note,onboarding completed;time-to-value;onboarding support
+Q005,CUST-0006,What does customer sentiment suggest about renewal risk?,relationship_health,customer_success_call_note,NPS;stakeholder feedback;relationship health
+Q006,CUST-0001,Prepare a renewal risk summary with evidence.,stable_growth,renewal_risk_note,account health;risk theme;validate evidence
+

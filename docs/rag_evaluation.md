@@ -4,12 +4,30 @@ All retrieval data is synthetic demo data. The current implementation uses a loc
 
 ## Evaluation Method
 
-The evaluation script runs theme-specific queries against customers known to have that risk theme and checks whether retrieved documents match the expected theme. This reflects the production workflow, where the agent retrieves evidence within a selected customer account.
+The evaluation script runs a small synthetic question set against account-specific evidence and checks whether retrieved documents match the expected risk theme and document type. This reflects the production workflow, where the agent retrieves evidence within a selected customer account.
+
+Evaluation dataset:
+
+`data/evaluation/rag_eval_questions.csv`
+
+Fields:
+
+- question ID
+- customer ID
+- question
+- expected risk theme
+- expected document type
+- expected answer points
 
 Metrics:
 
 - `precision_at_k`: share of retrieved documents matching the expected risk theme.
+- `recall_at_k`: whether at least one expected-theme document was retrieved.
+- `expected_theme_match`: whether retrieval found the expected risk theme.
+- `expected_document_type_match`: whether retrieval found the expected document type.
 - `latency_ms`: time to retrieve results for each query.
+- `groundedness_heuristic`: overlap between retrieved evidence and expected answer points.
+- `evidence_coverage_score`: share of expected answer points present in retrieved evidence.
 - `top_document_ids`: sample retrieved documents for manual inspection.
 
 Run:
