@@ -54,3 +54,14 @@ def test_api_feedback_endpoint(monkeypatch):
     )
     assert response.status_code == 200
     assert response.json()["rating"] == 5
+
+
+def test_api_what_if_endpoint():
+    client = TestClient(app)
+    response = client.post(
+        "/what-if",
+        json={"customer_id": "CUST-0001", "product_usage_score": 85, "unresolved_ticket_count": 0},
+    )
+    assert response.status_code == 200
+    assert "baseline" in response.json()
+    assert "scenario" in response.json()

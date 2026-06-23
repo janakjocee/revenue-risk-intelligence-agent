@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from typing import Any
+from typing import Any, Optional
 
 import pandas as pd
 from fastapi import FastAPI, HTTPException
@@ -11,6 +11,7 @@ from pydantic import BaseModel, Field
 from src.agent.briefing import render_account_brief, save_account_brief
 from src.agent.workflow import run_agent
 from src.model.scoring import score_customer
+from src.model.simulator import simulate_customer_scenario
 from src.observability.logger import append_feedback, feedback_summary, read_agent_logs
 from src.rag.retriever import load_retriever
 
@@ -54,6 +55,16 @@ class AccountBriefRequest(BaseModel):
         min_length=3,
         max_length=1200,
     )
+
+
+class WhatIfRequest(BaseModel):
+    customer_id: str
+    unresolved_ticket_count: Optional[int] = Field(default=None, ge=0, le=50)
+    product_usage_score: Optional[float] = Field(default=None, ge=0, le=100)
+    payment_delay_days: Optional[float] = Field(default=None, ge=0, le=120)
+    nps_score: Optional[float] = Field(default=None, ge=-100, le=100)
+    account_health_score: Optional[float] = Field(default=None, ge=0, le=100)
+    contract_type: Optional[str] = Field(default=None, pattern="^(monthly|annual|multi-year)$")
 
 
 def load_customers() -> pd.DataFrame:
@@ -131,6 +142,13 @@ def account_brief(request: AccountBriefRequest) -> dict[str, Any]:
     )
     path = save_account_brief(customer, result)
     return {"customer_id": request.customer_id, "brief_path": str(path), "markdown": render_account_brief(customer, result)}
+
+
+@app.post("/what-if")
+def what_if(request: WhatIfRequest) -> dict[str, Any]:
+    customer = get_customer(request.customer_id)
+    adjustments = {key: value for key, value in request.model_dump().items() if key != "customer_id" and value is not None}
+    return simulate_customer_scenario(customer, adjustments, model_path=MODEL_PATH)
 
 
 @app.get("/evaluation/summary")
