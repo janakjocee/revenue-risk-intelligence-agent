@@ -1,0 +1,6 @@
+query,expected_theme,top_k,theme_hits,precision_at_10,latency_ms,top_document_ids
+unresolved support tickets renewal risk,support_escalation,10,0,0.0,2.05,"DOC-CUST-0161-00644, DOC-CUST-0573-02292, DOC-CUST-0454-01815"
+usage decline last login adoption risk,usage_decline,10,0,0.0,1.45,"DOC-CUST-0453-01812, DOC-CUST-0055-00220, DOC-CUST-0373-01492"
+payment delay pricing renewal discount,commercial_risk,10,0,0.0,1.4,"DOC-CUST-0521-02084, DOC-CUST-0529-02115, DOC-CUST-0016-00064"
+onboarding incomplete time to value,onboarding_gap,10,0,0.0,1.31,"DOC-CUST-0573-02290, DOC-CUST-0539-02154, DOC-CUST-0509-02035"
+low NPS customer sentiment,relationship_health,10,0,0.0,1.64,"DOC-CUST-0161-00644, DOC-CUST-0573-02292, DOC-CUST-0454-01815"
