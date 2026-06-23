@@ -1,0 +1,24 @@
+feature,importance
+account_health_score,0.2053185385405471
+tenure_months,0.13805661320561613
+product_usage_score,0.10881446810748982
+nps_score,0.09431746470938414
+last_login_days,0.07028273675646328
+unresolved_ticket_count,0.06472578304384131
+contract_value,0.059375861885453705
+monthly_recurring_revenue,0.056069308222458356
+payment_delay_days,0.05103642646709139
+support_ticket_count,0.03830553484957842
+contract_type_monthly,0.029389517618950606
+contract_type_annual,0.01441157391408459
+contract_type_multi-year,0.01230314532144525
+onboarding_completed_True,0.010903921512594237
+onboarding_completed_False,0.010548458382501024
+industry_FinTech,0.008547845336780541
+industry_Professional Services,0.005408119693387762
+industry_Manufacturing,0.004956407706525323
+industry_Education,0.0048383563328430555
+industry_Retail,0.003639794153541872
+industry_Logistics,0.0034085700364790343
+industry_SaaS,0.0029992849692499603
+industry_HealthTech,0.002342269233693119
