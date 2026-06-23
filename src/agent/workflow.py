@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from time import perf_counter
 from typing import Any
+import uuid
 
 from src.agent.llm import BaseLLMProvider, get_llm_provider
 from src.agent.recommendations import recommend_actions
@@ -33,6 +34,7 @@ def run_agent(
     llm_provider: BaseLLMProvider | None = None,
 ) -> dict[str, Any]:
     started = perf_counter()
+    run_id = str(uuid.uuid4())
     score = score_customer(customer, model_path=model_path)
     retrieval_query = f"{question} {' '.join(score['top_risk_drivers'])} {score['recommended_action_category']}"
     evidence = [doc.as_dict() for doc in retriever.retrieve(retrieval_query, customer_id=customer["customer_id"], top_k=5)]
@@ -63,6 +65,7 @@ def run_agent(
 
     result = {
         "customer_id": customer["customer_id"],
+        "run_id": run_id,
         "question": question,
         "answer": answer,
         "risk_score": score,
@@ -79,6 +82,7 @@ def run_agent(
     log_agent_run(
         {
             "customer_id": customer["customer_id"],
+            "run_id": run_id,
             "user_question": question,
             "retrieved_document_ids": [item["document_id"] for item in evidence],
             "retrieved_document_types": [item["document_type"] for item in evidence],

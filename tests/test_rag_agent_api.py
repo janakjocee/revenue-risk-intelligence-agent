@@ -24,6 +24,7 @@ def test_agent_returns_answer_and_evidence(tmp_path):
         log_path=str(tmp_path / "agent_runs.jsonl"),
     )
     assert result["answer"]
+    assert result["run_id"]
     assert result["cited_evidence"]
     assert result["email_draft"]
 
@@ -33,3 +34,23 @@ def test_api_health_endpoint():
     response = client.get("/health")
     assert response.status_code == 200
     assert response.json()["status"] == "ok"
+
+
+def test_api_feedback_endpoint(monkeypatch):
+    from src.api import main as api_main
+
+    monkeypatch.setattr(api_main, "append_feedback", lambda payload: {"timestamp": "test", **payload})
+    client = TestClient(app)
+    response = client.post(
+        "/feedback",
+        json={
+            "run_id": "test-run",
+            "customer_id": "CUST-0001",
+            "rating": 5,
+            "feedback_reason": "Clear and useful",
+            "question": "Why is this customer at risk?",
+            "risk_band": "medium",
+        },
+    )
+    assert response.status_code == 200
+    assert response.json()["rating"] == 5

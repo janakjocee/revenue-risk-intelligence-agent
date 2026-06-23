@@ -6,11 +6,11 @@ from typing import Any
 
 import pandas as pd
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 from src.agent.workflow import run_agent
 from src.model.scoring import score_customer
-from src.observability.logger import read_agent_logs
+from src.observability.logger import append_feedback, feedback_summary, read_agent_logs
 from src.rag.retriever import load_retriever
 
 
@@ -33,8 +33,17 @@ class ScoreRequest(BaseModel):
 
 class AskRequest(BaseModel):
     customer_id: str
-    question: str
+    question: str = Field(min_length=3, max_length=1200)
     include_email: bool = False
+
+
+class FeedbackRequest(BaseModel):
+    run_id: str
+    customer_id: str
+    rating: int = Field(ge=1, le=5)
+    feedback_reason: str = Field(default="", max_length=1200)
+    question: str = Field(default="", max_length=1200)
+    risk_band: str = Field(default="", max_length=20)
 
 
 def load_customers() -> pd.DataFrame:
@@ -94,6 +103,11 @@ def observability_logs() -> list[dict[str, Any]]:
     return read_agent_logs()
 
 
+@app.post("/feedback")
+def feedback(request: FeedbackRequest) -> dict[str, Any]:
+    return append_feedback(request.model_dump())
+
+
 @app.get("/evaluation/summary")
 def evaluation_summary() -> dict[str, Any]:
     metrics = json.loads(METRICS_PATH.read_text(encoding="utf-8")) if METRICS_PATH.exists() else {}
@@ -105,5 +119,5 @@ def evaluation_summary() -> dict[str, Any]:
         "average_latency_ms": avg_latency,
         "retrieval_backend": "local_tfidf",
         "data_scope": "synthetic demo data",
+        "feedback": feedback_summary(),
     }
-
