@@ -29,6 +29,8 @@ The local pytest suite passes. GitHub Actions is configured to run tests on push
 
 The repository is prepared for Streamlit Community Cloud deployment. Deployment was not completed from this environment because Streamlit Community Cloud requires manual browser login and app creation.
 
+Docker Compose deployment files are included. Docker was not executed in the final release environment because the Docker CLI was unavailable.
+
 ## Limitations
 
 - Synthetic demo data only.
@@ -43,4 +45,3 @@ The repository is prepared for Streamlit Community Cloud deployment. Deployment 
 - Add labelled human relevance judgments.
 - Add richer time-series product telemetry.
 - Add production observability and authentication.
-

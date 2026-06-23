@@ -60,6 +60,8 @@ Ports:
 - FastAPI: `http://localhost:8000`
 - Streamlit: `http://localhost:8501`
 
+Verification note: Docker commands could not be executed in the final release environment because the `docker` CLI was not installed. The Dockerfile and Compose configuration were reviewed, and the expected command is shown above.
+
 ## Environment Variables
 
 ```bash
@@ -111,3 +113,4 @@ The dashboard needs these files:
 - The default retrieval backend is TF-IDF, not a paid embedding service.
 - The default LLM provider is deterministic mock mode.
 - Streamlit Community Cloud is best for the dashboard; production FastAPI hosting should use a separate API service with auth, logging, and persistence.
+- Docker was not runtime-tested in the Codex environment because Docker was unavailable there.
