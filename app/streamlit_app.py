@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import sys
+import os
 from pathlib import Path
 
 import pandas as pd
@@ -15,11 +16,19 @@ from src.observability.logger import append_feedback, feedback_summary, read_age
 from src.rag.retriever import load_retriever
 
 
-CUSTOMERS_PATH = Path("data/processed/customer_features.csv")
-SCORES_PATH = Path("data/processed/customer_risk_scores.csv")
-RETRIEVER_PATH = Path("data/processed/tfidf_retriever.joblib")
-RAG_EVAL_PATH = Path("data/processed/rag_evaluation_summary.csv")
-MODEL_PATH = "data/processed/churn_model.joblib"
+DATA_DIR = Path(os.getenv("DATA_DIR", "data"))
+CUSTOMERS_PATH = DATA_DIR / "processed" / "customer_features.csv"
+SCORES_PATH = DATA_DIR / "processed" / "customer_risk_scores.csv"
+RETRIEVER_PATH = Path(os.getenv("RETRIEVER_PATH", str(DATA_DIR / "processed" / "tfidf_retriever.joblib")))
+RAG_EVAL_PATH = DATA_DIR / "processed" / "rag_evaluation_summary.csv"
+MODEL_PATH = os.getenv("MODEL_PATH", str(DATA_DIR / "processed" / "churn_model.joblib"))
+
+REQUIRED_ARTIFACTS = {
+    "Customer feature table": CUSTOMERS_PATH,
+    "Risk score table": SCORES_PATH,
+    "Churn model": Path(MODEL_PATH),
+    "Retriever artifact": RETRIEVER_PATH,
+}
 
 
 st.set_page_config(page_title="Revenue Risk Intelligence", layout="wide")
@@ -35,6 +44,20 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
+
+def verify_required_artifacts() -> None:
+    missing = [f"{label}: `{path}`" for label, path in REQUIRED_ARTIFACTS.items() if not Path(path).exists()]
+    if not missing:
+        return
+    st.error("Required demo artifacts are missing.")
+    st.write("This app is designed to run without paid API keys, but it needs the committed or regenerated synthetic artifacts.")
+    st.markdown("\n".join(f"- {item}" for item in missing))
+    st.code(
+        "make data\nmake train\nmake score\nmake retriever\nmake evaluate\nmake app",
+        language="bash",
+    )
+    st.stop()
 
 
 @st.cache_data
@@ -75,6 +98,7 @@ def show_kpis(customers: pd.DataFrame) -> None:
     col4.metric("Revenue at Risk", f"GBP {total_revenue_at_risk:,.0f}", f"{avg_probability:.1%} avg churn")
 
 
+verify_required_artifacts()
 customers = load_customer_table()
 retriever = cached_retriever()
 
