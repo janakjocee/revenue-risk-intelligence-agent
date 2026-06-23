@@ -21,8 +21,12 @@ Customer-success teams often have account data in one place, support notes in an
 - scikit-learn churn model with saved model artifact
 - Risk scoring engine with revenue-at-risk estimates and top drivers
 - Local TF-IDF retriever that works without an API key
+- Hybrid retrieval interface with lexical fallback and optional semantic extension point
 - Agent workflow for explanations, cited evidence, recommendations, and email drafts
 - Optional OpenAI-compatible LLM provider with deterministic mock fallback
+- Human feedback logging for agent runs
+- Account brief Markdown export for customer-success handoff
+- What-if simulator for account intervention planning
 - FastAPI backend for scoring, Q&A, observability, and evaluation
 - Streamlit dashboard for customer-success workflows
 - JSONL observability logging
@@ -121,7 +125,10 @@ The dashboard includes:
 - Retrieved evidence panel
 - Recommended actions
 - Email draft
-- Evaluation and observability view
+- Human feedback capture
+- What-if simulator
+- Account brief export
+- Evaluation and observability views
 
 ## Screenshots
 
@@ -153,7 +160,9 @@ The goal is not to claim production-grade churn accuracy. The goal is to show a 
 
 ## RAG and Evaluation
 
-The retrieval layer uses local TF-IDF over synthetic documents. It supports customer metadata filtering, which keeps retrieved evidence account-specific. The evaluation script checks whether customer-scoped queries retrieve documents with the expected risk theme and records latency.
+The retrieval layer uses a hybrid retrieval interface. The current no-key backend uses local TF-IDF over synthetic documents, while the architecture includes an optional semantic retriever extension point. Retrieval supports customer and document-type metadata filtering, which keeps retrieved evidence account-specific.
+
+The evaluation script uses `data/evaluation/rag_eval_questions.csv` and checks expected risk themes, expected document types, precision@k, recall@k, latency, groundedness heuristic, and evidence coverage.
 
 Latest sample evaluation: all five scoped theme checks reached `precision_at_k = 1.0`, with sub-2 ms retrieval latency on the demo corpus.
 
@@ -170,6 +179,9 @@ Every agent run logs:
 - latency
 - response length
 - feedback placeholder
+- provider mode
+
+Human feedback is captured separately with run ID, customer ID, rating, reason, question, risk band, and timestamp.
 
 Logs are stored at `data/processed/agent_runs.jsonl`.
 
@@ -180,12 +192,13 @@ python3 -m pytest -q
 ```
 
 Current suite covers customer generation, document generation, risk-band logic, scoring output shape, retrieval, agent output, and API health.
+It also covers groundedness heuristics, account brief rendering, what-if simulation, feedback endpoint behaviour, and API workflow paths.
 
 ## Limitations
 
 - Data and documents are synthetic.
 - TF-IDF retrieval is transparent and local but less semantically rich than embeddings.
-- The agent is deterministic by default; this improves reproducibility but is less flexible than a production LLM workflow.
+- The agent uses a deterministic mock LLM provider by default; this improves reproducibility but is less flexible than a production LLM workflow.
 - Churn labels are generated from known rules, so real-world data validation would be required.
 - Business recommendations are decision-support outputs, not automated decisions.
 

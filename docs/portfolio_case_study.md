@@ -18,7 +18,7 @@ A scikit-learn pipeline trains a churn classifier with preprocessing for numeric
 
 ## RAG Approach
 
-The RAG layer uses a local TF-IDF retriever over synthetic account documents. Retrieval supports customer-level metadata filtering so evidence remains specific to the selected account.
+The RAG layer uses a hybrid retrieval interface with a local TF-IDF fallback and optional semantic retrieval extension point. Retrieval supports customer-level and document-type metadata filtering so evidence remains specific to the selected account.
 
 ## Agent Workflow
 
@@ -33,6 +33,8 @@ The agent combines:
 
 It returns a grounded answer, cited evidence, caveats, recommended actions, and an optional customer-success email draft.
 
+The workflow also includes an optional OpenAI-compatible provider layer. Without an API key, the app uses a deterministic mock provider so the project remains runnable for recruiters and reviewers.
+
 ## Evaluation
 
 The model is evaluated with ROC-AUC, precision, recall, F1, and confusion matrix. Retrieval is evaluated with customer-scoped risk-theme queries and latency checks.
@@ -40,6 +42,17 @@ The model is evaluated with ROC-AUC, precision, recall, F1, and confusion matrix
 ## Observability
 
 Every agent run is logged to JSONL with timestamp, question, customer ID, retrieved document IDs, risk band, latency, response length, and feedback placeholder.
+
+The upgraded version adds human feedback logging with run ID, customer ID, rating, feedback reason, question, and risk band. This creates a simple human-in-the-loop improvement loop.
+
+## Product Features
+
+- Executive dashboard for risk and revenue-at-risk monitoring
+- Customer workspace with agent answers and cited evidence
+- What-if simulator for intervention planning
+- Markdown account brief export
+- Evaluation and observability pages
+- Human feedback collection
 
 ## Business Impact
 
@@ -51,7 +64,7 @@ This project demonstrates the importance of linking ML outputs to evidence, user
 
 ## Limitations
 
-The data is synthetic, the retrieval layer is local TF-IDF, and the default agent is deterministic. A production version would need real CRM/product data, stronger evaluation, privacy controls, and human-in-the-loop governance.
+The data is synthetic, the semantic retrieval provider is an extension point, and the default agent is deterministic. A production version would need real CRM/product data, stronger evaluation, privacy controls, and human-in-the-loop governance.
 
 ## Next Steps
 
