@@ -13,10 +13,16 @@ def test_retrieval_returns_evidence_for_customer():
     assert all(item.customer_id == "CUST-0001" for item in results)
 
 
-def test_agent_returns_answer_and_evidence():
+def test_agent_returns_answer_and_evidence(tmp_path):
     customer = pd.read_csv("data/processed/customer_features.csv").iloc[0].to_dict()
     retriever = load_retriever()
-    result = run_agent(customer, "What is the renewal risk?", retriever, include_email=True)
+    result = run_agent(
+        customer,
+        "What is the renewal risk?",
+        retriever,
+        include_email=True,
+        log_path=str(tmp_path / "agent_runs.jsonl"),
+    )
     assert result["answer"]
     assert result["cited_evidence"]
     assert result["email_draft"]
@@ -27,4 +33,3 @@ def test_api_health_endpoint():
     response = client.get("/health")
     assert response.status_code == 200
     assert response.json()["status"] == "ok"
-
