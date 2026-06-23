@@ -5,6 +5,7 @@ from typing import Any
 
 from src.agent.llm import BaseLLMProvider, get_llm_provider
 from src.agent.recommendations import recommend_actions
+from src.evaluation.groundedness import evaluate_groundedness
 from src.model.scoring import score_customer
 from src.observability.logger import log_agent_run
 from src.rag.retriever import LocalTfidfRetriever
@@ -72,6 +73,7 @@ def run_agent(
         "email_draft": _email_draft(customer, actions) if include_email else None,
         "llm_provider_note": provider_note,
     }
+    result["groundedness_evaluation"] = evaluate_groundedness(result)
 
     latency_ms = round((perf_counter() - started) * 1000, 2)
     log_agent_run(
