@@ -4,11 +4,11 @@ All retrieval data is synthetic demo data. The current implementation uses a loc
 
 ## Evaluation Method
 
-The evaluation script runs theme-specific queries and checks whether the retrieved documents match the expected risk theme.
+The evaluation script runs theme-specific queries against customers known to have that risk theme and checks whether retrieved documents match the expected theme. This reflects the production workflow, where the agent retrieves evidence within a selected customer account.
 
 Metrics:
 
-- `precision_at_10`: share of top 10 documents matching the expected risk theme.
+- `precision_at_k`: share of retrieved documents matching the expected risk theme.
 - `latency_ms`: time to retrieve results for each query.
 - `top_document_ids`: sample retrieved documents for manual inspection.
 

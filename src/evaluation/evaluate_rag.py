@@ -25,18 +25,23 @@ def evaluate_retrieval(
     records: list[dict[str, object]] = []
 
     for expected_theme, query in EVAL_QUERIES:
+        theme_docs = documents.loc[documents["risk_theme"].eq(expected_theme)]
+        if theme_docs.empty:
+            continue
+        customer_id = str(theme_docs.iloc[0]["customer_id"])
         started = perf_counter()
-        results = retriever.retrieve(query, top_k=10)
+        results = retriever.retrieve(query, customer_id=customer_id, top_k=10)
         latency_ms = round((perf_counter() - started) * 1000, 2)
         retrieved_themes = [item.risk_theme for item in results]
         hits = sum(theme == expected_theme for theme in retrieved_themes)
         records.append(
             {
                 "query": query,
+                "customer_id": customer_id,
                 "expected_theme": expected_theme,
-                "top_k": 10,
+                "top_k": len(results),
                 "theme_hits": hits,
-                "precision_at_10": round(hits / 10, 3),
+                "precision_at_k": round(hits / len(results), 3) if results else 0,
                 "latency_ms": latency_ms,
                 "top_document_ids": ", ".join(item.document_id for item in results[:3]),
             }
@@ -47,4 +52,3 @@ def evaluate_retrieval(
     path.parent.mkdir(parents=True, exist_ok=True)
     summary.to_csv(path, index=False)
     return summary
-
