@@ -1,0 +1,601 @@
+customer_id,company_name,industry,contract_value,monthly_recurring_revenue,tenure_months,product_usage_score,support_ticket_count,unresolved_ticket_count,payment_delay_days,nps_score,contract_type,last_login_days,onboarding_completed,account_health_score,churn
+CUST-0001,Vertex Partners 1000,FinTech,13499.0,1124.92,6,48.1,3,2,15.0,24.0,annual,7.0,True,64.8,0
+CUST-0002,Summit Works 1001,Education,14727.0,1227.25,35,64.4,3,0,2.0,70.0,monthly,20.0,True,77.4,0
+CUST-0003,Bright Systems 1002,SaaS,150271.0,12522.58,34,45.1,4,2,7.0,48.0,annual,11.0,True,64.2,0
+CUST-0004,Summit Analytics 1003,Manufacturing,94961.0,7913.42,20,82.2,11,0,3.0,4.0,annual,8.0,True,84.1,0
+CUST-0005,Vertex Systems 1004,Manufacturing,20166.0,1680.5,11,50.5,5,1,2.0,52.0,multi-year,4.0,True,72.0,0
+CUST-0006,Summit Group 1005,Education,20858.0,1738.17,5,100.0,3,1,8.0,-48.0,annual,2.0,True,87.5,0
+CUST-0007,Bright Group 1006,FinTech,12035.0,1002.92,2,58.9,8,2,9.0,2.0,annual,4.0,True,69.1,0
+CUST-0008,Harbour Digital 1007,SaaS,7075.0,589.58,36,68.3,5,2,19.0,-0.0,annual,5.0,True,73.0,0
+CUST-0009,Bright Systems 1008,HealthTech,24790.0,2065.83,8,43.7,7,3,15.0,31.0,monthly,16.0,True,57.8,1
+CUST-0010,Atlas Group 1009,FinTech,13380.0,1115.0,70,97.7,4,2,2.0,21.0,monthly,10.0,True,87.3,0
+CUST-0011,Vertex Systems 1010,Professional Services,25352.0,2112.67,19,87.2,5,2,3.0,23.0,annual,9.0,True,82.8,0
+CUST-0012,Atlas Works 1011,Logistics,8777.0,731.42,48,72.3,6,3,4.0,22.0,annual,6.0,True,74.1,0
+CUST-0013,Atlas Works 1012,SaaS,15782.0,1315.17,49,42.8,6,0,2.0,29.0,monthly,13.0,True,65.7,0
+CUST-0014,Vertex Works 1013,Education,29853.0,2487.75,37,70.8,3,2,0.0,46.0,annual,24.0,True,71.9,0
+CUST-0015,Atlas Digital 1014,SaaS,34764.0,2897.0,64,46.8,7,0,17.0,33.0,annual,3.0,True,71.4,0
+CUST-0016,Pioneer Digital 1015,Education,36034.0,3002.83,9,93.3,4,4,9.0,18.0,annual,3.0,True,82.3,1
+CUST-0017,Northstar Partners 1016,Professional Services,10675.0,889.58,18,81.6,3,3,26.0,42.0,annual,15.0,False,61.3,0
+CUST-0018,Pioneer Partners 1017,HealthTech,48937.0,4078.08,19,68.7,4,0,4.0,56.0,annual,10.0,True,81.6,0
+CUST-0019,Harbour Group 1018,Education,15365.0,1280.42,11,23.1,10,1,7.0,9.0,annual,16.0,True,50.9,1
+CUST-0020,Harbour Works 1019,Manufacturing,41898.0,3491.5,22,49.3,4,0,5.0,26.0,multi-year,11.0,True,69.3,0
+CUST-0021,Vertex Group 1020,Professional Services,26704.0,2225.33,24,79.4,5,5,11.0,68.0,multi-year,4.0,True,77.3,0
+CUST-0022,Harbour Partners 1021,Retail,10265.0,855.42,56,88.8,4,1,4.0,-9.0,annual,5.0,True,84.6,0
+CUST-0023,Vertex Systems 1022,HealthTech,21561.0,1796.75,23,87.0,6,1,2.0,89.0,annual,18.0,True,88.1,0
+CUST-0024,Vertex Systems 1023,Logistics,34744.0,2895.33,64,38.3,2,0,4.0,-18.0,annual,46.0,True,48.1,0
+CUST-0025,Pioneer Analytics 1024,Education,41319.0,3443.25,56,72.4,6,0,2.0,16.0,multi-year,19.0,True,76.7,0
+CUST-0026,Bright Works 1025,SaaS,24375.0,2031.25,66,85.3,3,3,8.0,-4.0,annual,24.0,True,71.9,0
+CUST-0027,Civic Cloud 1026,Manufacturing,78609.0,6550.75,9,37.1,9,3,10.0,100.0,multi-year,12.0,True,62.2,1
+CUST-0028,Atlas Analytics 1027,Education,54462.0,4538.5,71,66.9,3,0,2.0,11.0,annual,7.0,True,77.7,0
+CUST-0029,Civic Works 1028,Professional Services,22479.0,1873.25,45,71.9,4,1,7.0,11.0,annual,13.0,False,59.6,0
+CUST-0030,Civic Labs 1029,Manufacturing,45483.0,3790.25,71,61.6,6,1,19.0,15.0,annual,11.0,True,71.7,0
+CUST-0031,Pioneer Partners 1030,Manufacturing,104157.0,8679.75,27,33.7,7,0,23.0,31.0,annual,32.0,True,55.1,0
+CUST-0032,Bright Analytics 1031,HealthTech,106121.0,8843.42,69,61.1,4,0,15.0,17.0,monthly,30.0,True,67.7,0
+CUST-0033,Bright Analytics 1032,FinTech,11389.0,949.08,43,61.1,7,4,1.0,23.0,annual,21.0,True,61.2,0
+CUST-0034,Harbour Works 1033,Professional Services,14065.0,1172.08,7,64.3,9,2,10.0,-92.0,multi-year,6.0,True,62.5,1
+CUST-0035,Atlas Works 1034,Logistics,76073.0,6339.42,31,56.9,2,2,20.0,30.0,monthly,13.0,True,67.6,0
+CUST-0036,Vertex Partners 1035,FinTech,12826.0,1068.83,11,59.0,6,1,6.0,29.0,annual,20.0,False,52.6,0
+CUST-0037,Atlas Works 1036,Education,10660.0,888.33,68,66.3,9,1,3.0,63.0,monthly,34.0,True,70.4,0
+CUST-0038,Civic Digital 1037,Education,19142.0,1595.17,23,75.0,10,3,19.0,73.0,annual,55.0,False,47.3,1
+CUST-0039,Vertex Group 1038,Retail,36104.0,3008.67,17,61.5,5,0,21.0,22.0,monthly,1.0,True,78.2,1
+CUST-0040,Pioneer Labs 1039,SaaS,25042.0,2086.83,41,59.6,6,0,9.0,56.0,multi-year,5.0,True,78.9,0
+CUST-0041,Vertex Digital 1040,HealthTech,17062.0,1421.83,32,68.7,7,0,3.0,-9.0,monthly,13.0,False,58.7,1
+CUST-0042,Vertex Analytics 1041,Education,16782.0,1398.5,8,32.4,6,4,2.0,54.0,multi-year,6.0,False,39.3,0
+CUST-0043,Bright Partners 1042,SaaS,16340.0,1361.67,59,75.6,8,0,11.0,9.0,multi-year,10.0,True,80.7,0
+CUST-0044,Northstar Analytics 1043,Retail,14535.0,1211.25,62,67.0,4,1,5.0,-12.0,annual,12.0,False,55.5,0
+CUST-0045,Summit Labs 1044,FinTech,132872.0,11072.67,54,67.7,7,2,8.0,22.0,annual,2.0,False,59.8,1
+CUST-0046,Bright Systems 1045,Logistics,33132.0,2761.0,45,84.3,4,1,8.0,76.0,annual,4.0,True,90.4,0
+CUST-0047,Summit Works 1046,Manufacturing,50048.0,4170.67,30,31.8,4,1,4.0,34.0,multi-year,20.0,True,56.0,0
+CUST-0048,Civic Partners 1047,Logistics,19104.0,1592.0,40,31.5,5,0,2.0,79.0,monthly,34.0,True,57.7,0
+CUST-0049,Pioneer Analytics 1048,SaaS,23620.0,1968.33,38,71.9,5,1,6.0,3.0,annual,13.0,True,74.8,0
+CUST-0050,Harbour Systems 1049,Education,16326.0,1360.5,13,66.9,5,2,10.0,64.0,monthly,23.0,True,72.0,1
+CUST-0051,Summit Group 1050,Education,4204.0,350.33,7,70.1,5,0,10.0,6.0,annual,7.0,True,78.8,0
+CUST-0052,Harbour Group 1051,HealthTech,10254.0,854.5,19,58.7,5,1,5.0,36.0,monthly,2.0,True,75.2,1
+CUST-0053,Pioneer Labs 1052,Retail,7575.0,631.25,34,79.0,2,0,21.0,35.0,annual,5.0,False,70.4,0
+CUST-0054,Vertex Digital 1053,Manufacturing,5570.0,464.17,13,83.8,8,1,3.0,50.0,annual,13.0,False,68.8,0
+CUST-0055,Civic Analytics 1054,Manufacturing,11652.0,971.0,9,75.7,3,0,18.0,37.0,annual,6.0,True,84.6,0
+CUST-0056,Harbour Labs 1055,FinTech,68014.0,5667.83,62,62.3,8,2,10.0,3.0,annual,12.0,True,68.1,1
+CUST-0057,Summit Labs 1056,Professional Services,26079.0,2173.25,28,29.1,5,2,6.0,58.0,annual,18.0,True,55.0,1
+CUST-0058,Summit Group 1057,HealthTech,66396.0,5533.0,43,80.8,3,0,13.0,87.0,annual,8.0,True,90.9,0
+CUST-0059,Pioneer Group 1058,SaaS,35871.0,2989.25,39,89.0,7,3,7.0,8.0,annual,12.0,True,78.8,0
+CUST-0060,Atlas Cloud 1059,SaaS,46527.0,3877.25,54,78.6,10,0,2.0,-34.0,annual,10.0,True,78.3,0
+CUST-0061,Bright Works 1060,Logistics,14319.0,1193.25,54,51.2,3,2,3.0,45.0,multi-year,14.0,False,49.8,0
+CUST-0062,Pioneer Partners 1061,SaaS,38823.0,3235.25,23,79.1,3,1,7.0,17.0,monthly,5.0,True,82.3,1
+CUST-0063,Northstar Labs 1062,Retail,44806.0,3733.83,62,82.5,3,3,6.0,24.0,monthly,22.0,True,73.7,0
+CUST-0064,Northstar Works 1063,Logistics,17968.0,1497.33,28,95.1,7,2,18.0,47.0,monthly,9.0,True,88.8,0
+CUST-0065,Summit Digital 1064,Manufacturing,39802.0,3316.83,61,51.2,8,1,5.0,12.0,annual,21.0,False,47.0,0
+CUST-0066,Bright Partners 1065,Retail,39988.0,3332.33,30,62.9,7,3,5.0,19.0,annual,23.0,True,63.5,0
+CUST-0067,Summit Digital 1066,Logistics,18312.0,1526.0,9,80.5,5,0,5.0,25.0,annual,3.0,True,86.9,0
+CUST-0068,Bright Group 1067,Retail,12260.0,1021.67,55,68.0,3,1,4.0,78.0,annual,22.0,True,76.7,0
+CUST-0069,Summit Digital 1068,FinTech,11744.0,978.67,4,46.9,8,0,4.0,29.0,annual,2.0,True,71.4,0
+CUST-0070,Harbour Partners 1069,Manufacturing,28583.0,2381.92,56,74.5,4,2,3.0,-14.0,multi-year,8.0,True,73.7,0
+CUST-0071,Civic Partners 1070,Education,33823.0,2818.58,5,77.4,5,0,10.0,-13.0,annual,15.0,True,77.9,0
+CUST-0072,Harbour Cloud 1071,HealthTech,15448.0,1287.33,16,68.6,2,1,8.0,33.0,monthly,24.0,True,72.2,0
+CUST-0073,Vertex Digital 1072,Manufacturing,27409.0,2284.08,44,71.0,2,0,8.0,-10.0,annual,14.0,True,75.4,0
+CUST-0074,Civic Labs 1073,HealthTech,40110.0,3342.5,68,62.3,3,1,2.0,-25.0,annual,10.0,True,68.7,0
+CUST-0075,Harbour Cloud 1074,SaaS,41470.0,3455.83,31,93.6,3,2,12.0,50.0,monthly,5.0,True,89.7,0
+CUST-0076,Pioneer Cloud 1075,Manufacturing,79723.0,6643.58,10,50.8,2,1,13.0,51.0,monthly,11.0,True,69.7,0
+CUST-0077,Pioneer Cloud 1076,Retail,65768.0,5480.67,18,56.4,3,2,25.0,15.0,multi-year,9.0,True,67.3,0
+CUST-0078,Pioneer Partners 1077,HealthTech,13348.0,1112.33,65,67.2,6,1,12.0,38.0,annual,7.0,True,77.8,0
+CUST-0079,Pioneer Systems 1078,Professional Services,87423.0,7285.25,53,82.8,6,1,28.0,34.0,annual,11.0,False,67.5,0
+CUST-0080,Pioneer Group 1079,SaaS,18552.0,1546.0,9,40.0,6,0,5.0,48.0,annual,37.0,False,41.9,0
+CUST-0081,Vertex Labs 1080,Logistics,55905.0,4658.75,29,43.4,4,4,26.0,49.0,annual,10.0,True,58.8,0
+CUST-0082,Atlas Cloud 1081,Manufacturing,28214.0,2351.17,20,30.3,4,4,13.0,-61.0,multi-year,5.0,True,44.3,1
+CUST-0083,Civic Cloud 1082,HealthTech,20161.0,1680.08,14,67.6,2,1,11.0,20.0,annual,10.0,True,75.3,1
+CUST-0084,Northstar Partners 1083,Education,7590.0,632.5,62,46.9,7,0,7.0,46.0,annual,18.0,False,51.5,1
+CUST-0085,Atlas Partners 1084,SaaS,23859.0,1988.25,45,60.1,5,1,6.0,14.0,annual,10.0,True,71.2,0
+CUST-0086,Summit Works 1085,SaaS,9031.0,752.58,14,78.9,2,0,5.0,29.0,multi-year,73.0,True,67.5,1
+CUST-0087,Civic Systems 1086,FinTech,52950.0,4412.5,48,55.5,4,3,26.0,54.0,annual,1.0,True,70.6,0
+CUST-0088,Atlas Cloud 1087,Retail,77789.0,6482.42,31,71.2,7,4,7.0,31.0,multi-year,23.0,False,50.1,0
+CUST-0089,Vertex Digital 1088,Education,15401.0,1283.42,6,61.6,2,2,13.0,79.0,monthly,7.0,True,76.3,0
+CUST-0090,Atlas Cloud 1089,Education,33236.0,2769.67,33,79.1,6,1,15.0,66.0,multi-year,23.0,True,80.6,0
+CUST-0091,Bright Digital 1090,Manufacturing,16191.0,1349.25,15,75.6,4,3,15.0,24.0,annual,11.0,True,74.1,0
+CUST-0092,Vertex Digital 1091,Education,17328.0,1444.0,19,54.5,8,1,10.0,21.0,monthly,25.0,True,64.0,0
+CUST-0093,Atlas Group 1092,Education,46265.0,3855.42,64,64.0,5,0,25.0,-69.0,annual,7.0,True,69.1,0
+CUST-0094,Vertex Cloud 1093,Manufacturing,26187.0,2182.25,52,85.8,3,3,12.0,17.0,annual,46.0,True,66.5,0
+CUST-0095,Bright Works 1094,Logistics,90922.0,7576.83,11,74.1,8,2,5.0,-18.0,monthly,4.0,False,58.5,0
+CUST-0096,Harbour Labs 1095,Retail,19196.0,1599.67,62,41.9,6,3,6.0,36.0,annual,20.0,True,56.0,0
+CUST-0097,Summit Systems 1096,HealthTech,54151.0,4512.58,42,78.8,3,1,2.0,33.0,multi-year,14.0,True,80.5,0
+CUST-0098,Atlas Systems 1097,SaaS,28802.0,2400.17,64,47.5,8,0,11.0,52.0,annual,22.0,True,67.0,0
+CUST-0099,Summit Systems 1098,SaaS,46960.0,3913.33,55,92.4,5,2,13.0,75.0,annual,7.0,True,90.7,0
+CUST-0100,Atlas Cloud 1099,HealthTech,19673.0,1639.42,26,85.4,4,3,14.0,27.0,annual,13.0,True,78.4,0
+CUST-0101,Atlas Systems 1100,Education,25986.0,2165.5,39,72.2,3,1,13.0,100.0,annual,65.0,True,68.1,0
+CUST-0102,Vertex Labs 1101,HealthTech,24814.0,2067.83,39,69.8,4,0,7.0,36.0,multi-year,26.0,False,58.9,0
+CUST-0103,Civic Works 1102,Education,14984.0,1248.67,53,63.2,8,2,9.0,-17.0,annual,15.0,True,65.7,0
+CUST-0104,Civic Labs 1103,FinTech,42764.0,3563.67,19,79.2,6,0,9.0,9.0,monthly,6.0,True,83.8,1
+CUST-0105,Vertex Partners 1104,Education,42411.0,3534.25,25,60.3,4,1,18.0,15.0,multi-year,13.0,True,70.4,0
+CUST-0106,Pioneer Labs 1105,Education,40761.0,3396.75,19,71.2,5,2,1.0,48.0,multi-year,25.0,True,72.0,0
+CUST-0107,Summit Analytics 1106,Education,78895.0,6574.58,23,82.7,5,1,6.0,-4.0,annual,21.0,True,76.7,0
+CUST-0108,Atlas Digital 1107,SaaS,74202.0,6183.5,13,56.9,9,2,3.0,18.0,multi-year,2.0,True,70.2,0
+CUST-0109,Summit Partners 1108,Manufacturing,20693.0,1724.42,4,55.9,5,2,32.0,23.0,monthly,3.0,True,69.8,1
+CUST-0110,Vertex Cloud 1109,SaaS,34931.0,2910.92,68,45.5,8,1,20.0,13.0,multi-year,3.0,True,66.5,0
+CUST-0111,Civic Partners 1110,Retail,17387.0,1448.92,7,47.8,3,1,6.0,56.0,annual,18.0,False,50.3,0
+CUST-0112,Northstar Systems 1111,Education,27347.0,2278.92,65,34.1,8,1,2.0,50.0,annual,3.0,True,64.3,1
+CUST-0113,Bright Partners 1112,Professional Services,17680.0,1473.33,2,80.1,7,2,3.0,68.0,monthly,5.0,False,68.8,0
+CUST-0114,Atlas Systems 1113,Manufacturing,83621.0,6968.42,57,99.6,4,2,17.0,17.0,multi-year,11.0,False,71.6,0
+CUST-0115,Northstar Labs 1114,Professional Services,34703.0,2891.92,25,92.7,3,1,2.0,69.0,monthly,28.0,True,85.7,0
+CUST-0116,Atlas Systems 1115,Professional Services,23095.0,1924.58,38,37.7,6,3,9.0,-18.0,monthly,19.0,True,49.5,1
+CUST-0117,Northstar Partners 1116,FinTech,62040.0,5170.0,22,80.0,4,1,15.0,-19.0,monthly,10.0,True,77.8,1
+CUST-0118,Vertex Systems 1117,HealthTech,5887.0,490.58,36,92.6,5,0,3.0,-13.0,annual,23.0,False,66.5,0
+CUST-0119,Atlas Group 1118,HealthTech,6569.0,547.42,34,58.8,6,1,9.0,28.0,monthly,47.0,True,59.2,0
+CUST-0120,Atlas Analytics 1119,FinTech,46962.0,3913.5,39,68.8,3,0,6.0,69.0,multi-year,13.0,True,81.8,0
+CUST-0121,Pioneer Cloud 1120,Manufacturing,28066.0,2338.83,29,30.9,2,2,6.0,8.0,annual,4.0,True,56.2,0
+CUST-0122,Pioneer Group 1121,SaaS,32058.0,2671.5,40,71.8,8,1,5.0,12.0,monthly,6.0,True,78.0,0
+CUST-0123,Vertex Works 1122,SaaS,10631.0,885.92,60,47.9,4,4,16.0,21.0,monthly,6.0,True,59.8,1
+CUST-0124,Bright Group 1123,Manufacturing,26469.0,2205.75,32,70.6,5,1,23.0,47.0,monthly,7.0,True,80.2,0
+CUST-0125,Vertex Partners 1124,Education,109366.0,9113.83,27,38.9,0,0,7.0,12.0,annual,10.0,True,63.4,0
+CUST-0126,Harbour Systems 1125,Professional Services,47903.0,3991.92,11,76.8,5,0,11.0,10.0,multi-year,16.0,True,79.3,0
+CUST-0127,Harbour Digital 1126,FinTech,30297.0,2524.75,27,85.4,4,3,9.0,-18.0,monthly,3.0,True,77.8,0
+CUST-0128,Northstar Group 1127,Education,19785.0,1648.75,10,52.9,1,1,1.0,9.0,multi-year,4.0,True,69.3,1
+CUST-0129,Northstar Analytics 1128,Professional Services,20410.0,1700.83,14,46.5,5,0,7.0,68.0,monthly,20.0,True,68.6,0
+CUST-0130,Pioneer Systems 1129,SaaS,6061.0,505.08,69,28.2,8,1,1.0,31.0,multi-year,8.0,True,58.1,0
+CUST-0131,Bright Analytics 1130,Professional Services,32220.0,2685.0,8,62.2,2,1,6.0,3.0,multi-year,6.0,False,56.6,1
+CUST-0132,Pioneer Labs 1131,Professional Services,48622.0,4051.83,36,56.5,6,0,8.0,70.0,annual,11.0,True,76.7,0
+CUST-0133,Vertex Group 1132,FinTech,8929.0,744.08,61,39.1,1,1,15.0,8.0,annual,31.0,True,53.4,0
+CUST-0134,Harbour Digital 1133,Professional Services,16933.0,1411.08,69,75.2,5,2,11.0,76.0,multi-year,22.0,True,77.4,0
+CUST-0135,Harbour Works 1134,Education,11965.0,997.08,12,58.9,6,2,17.0,76.0,monthly,21.0,True,69.9,0
+CUST-0136,Bright Systems 1135,Retail,13688.0,1140.67,13,47.6,3,0,4.0,30.0,monthly,38.0,True,59.6,0
+CUST-0137,Civic Labs 1136,Professional Services,27929.0,2327.42,28,57.0,7,4,21.0,-23.0,monthly,16.0,True,56.8,1
+CUST-0138,Northstar Systems 1137,FinTech,6254.0,521.17,41,86.3,7,5,23.0,100.0,annual,41.0,True,70.9,0
+CUST-0139,Atlas Systems 1138,Retail,41357.0,3446.42,70,77.9,2,2,1.0,41.0,annual,43.0,False,52.4,0
+CUST-0140,Civic Group 1139,Manufacturing,45602.0,3800.17,16,64.7,4,2,2.0,17.0,annual,3.0,False,57.5,0
+CUST-0141,Summit Analytics 1140,Logistics,22567.0,1880.58,13,78.1,2,1,8.0,61.0,multi-year,3.0,True,86.4,0
+CUST-0142,Civic Systems 1141,HealthTech,4739.0,394.92,19,46.1,4,1,5.0,52.0,monthly,5.0,True,69.6,0
+CUST-0143,Harbour Digital 1142,Retail,13393.0,1116.08,64,67.6,9,3,6.0,73.0,annual,29.0,True,68.6,0
+CUST-0144,Pioneer Cloud 1143,Manufacturing,63770.0,5314.17,4,69.7,3,0,11.0,5.0,monthly,11.0,True,77.2,0
+CUST-0145,Vertex Digital 1144,Logistics,3848.0,320.67,28,58.5,2,2,17.0,39.0,monthly,10.0,False,54.2,0
+CUST-0146,Harbour Group 1145,Education,21094.0,1757.83,10,74.8,4,3,4.0,-12.0,annual,23.0,True,66.4,0
+CUST-0147,Civic Partners 1146,FinTech,11778.0,981.5,13,53.0,8,2,19.0,51.0,multi-year,8.0,True,69.3,1
+CUST-0148,Harbour Group 1147,HealthTech,47250.0,3937.5,67,76.2,3,2,5.0,27.0,annual,15.0,False,59.9,0
+CUST-0149,Bright Systems 1148,Education,16771.0,1397.58,2,76.9,3,1,35.0,38.0,monthly,20.0,True,78.0,1
+CUST-0150,Atlas Partners 1149,FinTech,35695.0,2974.58,24,14.5,2,2,21.0,23.0,annual,6.0,True,49.0,0
+CUST-0151,Civic Analytics 1150,Education,39968.0,3330.67,66,88.4,5,3,5.0,19.0,monthly,5.0,True,81.9,0
+CUST-0152,Pioneer Labs 1151,Retail,97281.0,8106.75,45,12.1,2,2,2.0,-2.0,multi-year,13.0,True,43.2,0
+CUST-0153,Atlas Partners 1152,Logistics,23340.0,1945.0,7,55.9,1,1,5.0,55.0,annual,14.0,False,55.5,0
+CUST-0154,Atlas Works 1153,Retail,35004.0,2917.0,35,85.5,8,5,4.0,79.0,monthly,22.0,False,59.1,1
+CUST-0155,Pioneer Works 1154,Manufacturing,9513.0,792.75,70,61.3,3,3,13.0,9.0,monthly,5.0,True,68.0,1
+CUST-0156,Civic Group 1155,SaaS,61901.0,5158.42,30,40.6,6,4,1.0,47.0,monthly,7.0,True,58.3,1
+CUST-0157,Pioneer Analytics 1156,HealthTech,15798.0,1316.5,39,47.3,4,1,2.0,43.0,multi-year,42.0,True,56.8,0
+CUST-0158,Summit Digital 1157,Professional Services,18169.0,1514.08,39,85.5,4,3,13.0,28.0,annual,25.0,True,74.5,0
+CUST-0159,Atlas Systems 1158,Professional Services,26487.0,2207.25,48,32.4,1,1,4.0,-24.0,annual,12.0,True,53.8,0
+CUST-0160,Atlas Group 1159,Education,9009.0,750.75,15,87.3,7,2,6.0,-16.0,annual,28.0,True,72.9,0
+CUST-0161,Civic Systems 1160,Logistics,31576.0,2631.33,61,66.0,6,1,15.0,1.0,annual,5.0,True,74.6,0
+CUST-0162,Atlas Digital 1161,SaaS,52957.0,4413.08,72,45.5,3,2,18.0,-45.0,monthly,11.0,True,56.0,0
+CUST-0163,Northstar Partners 1162,Manufacturing,33026.0,2752.17,12,56.5,4,3,20.0,76.0,multi-year,14.0,True,68.6,0
+CUST-0164,Northstar Labs 1163,Manufacturing,8846.0,737.17,60,48.7,9,2,14.0,41.0,annual,10.0,False,49.6,0
+CUST-0165,Harbour Digital 1164,Manufacturing,24670.0,2055.83,60,82.6,6,4,7.0,27.0,annual,10.0,True,75.6,0
+CUST-0166,Summit Analytics 1165,Education,45226.0,3768.83,54,80.2,3,0,7.0,-46.0,annual,21.0,True,74.2,0
+CUST-0167,Vertex Digital 1166,Retail,7226.0,602.17,28,36.1,8,2,6.0,-34.0,annual,26.0,True,47.4,0
+CUST-0168,Civic Analytics 1167,HealthTech,12679.0,1056.58,35,59.7,4,2,3.0,28.0,multi-year,9.0,True,70.1,0
+CUST-0169,Civic Labs 1168,Retail,49691.0,4140.92,61,51.5,3,2,4.0,95.0,monthly,4.0,True,73.9,1
+CUST-0170,Atlas Analytics 1169,FinTech,32502.0,2708.5,12,90.3,6,3,19.0,4.0,annual,3.0,True,82.1,0
+CUST-0171,Summit Digital 1170,FinTech,35896.0,2991.33,60,42.7,3,2,5.0,57.0,annual,1.0,True,67.2,0
+CUST-0172,Northstar Digital 1171,FinTech,98878.0,8239.83,67,95.9,7,1,3.0,12.0,annual,38.0,True,78.7,0
+CUST-0173,Civic Works 1172,Education,37346.0,3112.17,50,66.4,3,1,20.0,30.0,monthly,21.0,True,71.9,1
+CUST-0174,Pioneer Systems 1173,SaaS,42639.0,3553.25,26,46.1,3,2,10.0,69.0,monthly,18.0,True,64.2,1
+CUST-0175,Pioneer Group 1174,SaaS,179427.0,14952.25,41,54.8,8,1,27.0,16.0,monthly,8.0,False,53.5,0
+CUST-0176,Summit Labs 1175,Manufacturing,23164.0,1930.33,5,52.6,0,0,25.0,5.0,annual,8.0,True,70.0,0
+CUST-0177,Civic Group 1176,SaaS,15390.0,1282.5,68,44.1,5,3,3.0,76.0,annual,26.0,True,58.6,0
+CUST-0178,Vertex Analytics 1177,HealthTech,36296.0,3024.67,26,68.7,3,0,8.0,30.0,annual,3.0,True,81.7,0
+CUST-0179,Harbour Cloud 1178,Logistics,36581.0,3048.42,6,44.9,7,1,3.0,65.0,annual,9.0,True,68.8,0
+CUST-0180,Civic Works 1179,Professional Services,18607.0,1550.58,58,27.8,9,3,3.0,5.0,annual,29.0,True,43.4,0
+CUST-0181,Harbour Digital 1180,Logistics,13060.0,1088.33,48,60.2,9,2,6.0,76.0,annual,9.0,True,74.6,0
+CUST-0182,Bright Labs 1181,HealthTech,135522.0,11293.5,46,34.5,0,0,14.0,37.0,monthly,20.0,True,60.1,0
+CUST-0183,Civic Group 1182,Manufacturing,33819.0,2818.25,5,53.5,8,0,14.0,43.0,annual,12.0,True,72.5,0
+CUST-0184,Pioneer Works 1183,SaaS,16113.0,1342.75,55,50.6,1,1,12.0,32.0,annual,0.0,True,71.6,1
+CUST-0185,Civic Systems 1184,Manufacturing,51080.0,4256.67,47,51.3,13,1,7.0,11.0,monthly,12.0,True,66.0,0
+CUST-0186,Atlas Cloud 1185,Manufacturing,24924.0,2077.0,58,100.0,5,0,14.0,28.0,annual,13.0,True,93.1,0
+CUST-0187,Atlas Partners 1186,HealthTech,22539.0,1878.25,60,68.0,4,3,3.0,13.0,annual,11.0,True,69.5,0
+CUST-0188,Bright Systems 1187,Manufacturing,39878.0,3323.17,17,71.4,3,2,10.0,61.0,monthly,4.0,True,80.4,1
+CUST-0189,Summit Group 1188,HealthTech,10891.0,907.58,16,35.0,5,4,9.0,21.0,annual,11.0,True,51.9,1
+CUST-0190,Vertex Partners 1189,Retail,34435.0,2869.58,67,55.2,5,0,7.0,-23.0,annual,2.0,True,70.7,0
+CUST-0191,Atlas Works 1190,SaaS,102649.0,8554.08,39,70.9,6,3,11.0,-29.0,annual,9.0,True,67.8,0
+CUST-0192,Summit Works 1191,SaaS,37284.0,3107.0,33,48.6,7,1,4.0,-31.0,annual,22.0,True,57.5,0
+CUST-0193,Harbour Cloud 1192,Professional Services,20674.0,1722.83,22,83.3,10,1,13.0,49.0,annual,36.0,True,76.6,0
+CUST-0194,Pioneer Works 1193,Retail,18864.0,1572.0,47,45.4,4,3,9.0,-11.0,annual,32.0,True,49.4,0
+CUST-0195,Summit Analytics 1194,Logistics,20186.0,1682.17,55,61.8,4,2,2.0,38.0,annual,5.0,True,73.3,0
+CUST-0196,Harbour Partners 1195,FinTech,22522.0,1876.83,2,56.5,9,2,8.0,33.0,annual,3.0,True,71.0,0
+CUST-0197,Civic Digital 1196,Retail,20651.0,1720.92,41,70.0,4,2,5.0,26.0,annual,14.0,True,73.1,0
+CUST-0198,Summit Analytics 1197,FinTech,51094.0,4257.83,72,55.5,7,4,19.0,43.0,annual,13.0,True,63.0,0
+CUST-0199,Harbour Analytics 1198,Retail,7996.0,666.33,21,62.1,2,2,3.0,33.0,annual,19.0,True,68.3,0
+CUST-0200,Northstar Cloud 1199,Logistics,49188.0,4099.0,21,62.7,3,0,3.0,-64.0,annual,7.0,False,53.0,0
+CUST-0201,Atlas Works 1200,Retail,20624.0,1718.67,64,53.8,7,2,12.0,17.0,annual,13.0,True,64.9,0
+CUST-0202,Harbour Labs 1201,Logistics,35027.0,2918.92,6,75.7,8,2,7.0,42.0,multi-year,12.0,True,78.0,0
+CUST-0203,Civic Works 1202,Manufacturing,12223.0,1018.58,30,71.3,5,4,7.0,84.0,multi-year,9.0,True,75.6,0
+CUST-0204,Civic Cloud 1203,SaaS,68189.0,5682.42,34,65.4,4,1,35.0,85.0,annual,2.0,True,82.8,0
+CUST-0205,Atlas Works 1204,Manufacturing,64340.0,5361.67,58,59.3,3,2,14.0,-18.0,annual,21.0,True,61.7,1
+CUST-0206,Civic Systems 1205,Retail,52665.0,4388.75,11,81.3,3,1,6.0,16.0,annual,14.0,True,80.2,1
+CUST-0207,Bright Analytics 1206,Education,9318.0,776.5,32,62.8,5,1,2.0,-25.0,annual,22.0,True,64.9,0
+CUST-0208,Bright Labs 1207,Logistics,48069.0,4005.75,12,61.5,3,2,6.0,80.0,multi-year,26.0,True,69.8,0
+CUST-0209,Pioneer Digital 1208,Retail,35718.0,2976.5,57,68.9,3,2,3.0,62.0,annual,12.0,False,60.5,0
+CUST-0210,Vertex Works 1209,Education,8746.0,728.83,46,97.5,6,3,4.0,40.0,monthly,21.0,True,82.7,0
+CUST-0211,Bright Group 1210,Retail,26449.0,2204.08,37,42.9,4,1,4.0,34.0,monthly,37.0,True,55.6,0
+CUST-0212,Vertex Digital 1211,SaaS,34724.0,2893.67,29,80.9,6,3,18.0,75.0,multi-year,45.0,True,69.7,0
+CUST-0213,Pioneer Labs 1212,Education,39706.0,3308.83,12,32.9,2,0,2.0,69.0,monthly,16.0,True,63.6,1
+CUST-0214,Atlas Works 1213,Manufacturing,30457.0,2538.08,67,70.9,3,1,17.0,67.0,annual,17.0,True,78.8,0
+CUST-0215,Northstar Analytics 1214,SaaS,32987.0,2748.92,47,95.4,4,3,12.0,44.0,annual,16.0,True,83.8,0
+CUST-0216,Northstar Cloud 1215,Retail,75473.0,6289.42,24,75.8,5,2,12.0,16.0,monthly,19.0,True,73.3,0
+CUST-0217,Bright Cloud 1216,FinTech,63464.0,5288.67,31,70.1,1,0,4.0,54.0,annual,26.0,True,76.7,0
+CUST-0218,Atlas Partners 1217,FinTech,3616.0,301.33,53,56.9,5,1,15.0,56.0,annual,15.0,True,71.7,0
+CUST-0219,Northstar Group 1218,Manufacturing,21543.0,1795.25,53,67.6,8,2,3.0,22.0,monthly,43.0,True,61.8,1
+CUST-0220,Bright Labs 1219,Logistics,23974.0,1997.83,34,62.5,13,1,23.0,16.0,multi-year,39.0,True,62.7,1
+CUST-0221,Civic Systems 1220,HealthTech,7891.0,657.58,23,52.9,8,3,18.0,67.0,multi-year,13.0,True,66.4,0
+CUST-0222,Harbour Digital 1221,Manufacturing,28737.0,2394.75,48,61.8,6,1,26.0,85.0,annual,13.0,True,77.4,0
+CUST-0223,Northstar Analytics 1222,SaaS,64481.0,5373.42,48,70.6,4,0,9.0,3.0,monthly,9.0,True,78.1,0
+CUST-0224,Pioneer Cloud 1223,HealthTech,12574.0,1047.83,44,53.2,3,3,7.0,19.0,annual,20.0,False,43.9,0
+CUST-0225,Pioneer Cloud 1224,SaaS,34046.0,2837.17,7,52.5,6,2,6.0,40.0,monthly,10.0,True,67.4,0
+CUST-0226,Harbour Systems 1225,Retail,14171.0,1180.92,35,42.5,4,1,35.0,45.0,annual,8.0,True,66.2,0
+CUST-0227,Civic Group 1226,Education,16809.0,1400.75,45,74.0,12,2,13.0,10.0,multi-year,19.0,True,71.9,0
+CUST-0228,Vertex Analytics 1227,Professional Services,75673.0,6306.08,69,76.8,6,2,3.0,92.0,multi-year,5.0,True,85.4,0
+CUST-0229,Northstar Works 1228,Professional Services,18402.0,1533.5,39,71.2,5,0,21.0,42.0,annual,26.0,False,60.1,0
+CUST-0230,Pioneer Digital 1229,HealthTech,37181.0,3098.42,26,84.4,2,0,7.0,46.0,annual,20.0,True,84.9,0
+CUST-0231,Civic Labs 1230,Manufacturing,7260.0,605.0,41,68.6,6,2,0.0,88.0,annual,38.0,True,69.9,0
+CUST-0232,Summit Digital 1231,Education,99074.0,8256.17,14,74.1,3,2,4.0,13.0,annual,16.0,True,73.3,1
+CUST-0233,Bright Systems 1232,FinTech,41022.0,3418.5,8,72.5,6,1,18.0,25.0,annual,22.0,True,74.0,1
+CUST-0234,Civic Labs 1233,Education,23677.0,1973.08,50,65.4,3,3,12.0,-15.0,annual,24.0,True,61.3,1
+CUST-0235,Atlas Digital 1234,Manufacturing,40251.0,3354.25,72,57.4,7,4,14.0,22.0,monthly,31.0,True,55.9,1
+CUST-0236,Summit Digital 1235,SaaS,10028.0,835.67,62,100.0,7,2,21.0,-23.0,monthly,15.0,False,66.8,0
+CUST-0237,Bright Group 1236,SaaS,61560.0,5130.0,43,58.9,5,5,1.0,53.0,annual,9.0,True,64.4,0
+CUST-0238,Northstar Cloud 1237,Manufacturing,21444.0,1787.0,4,55.0,10,2,4.0,42.0,monthly,16.0,False,50.7,0
+CUST-0239,Vertex Digital 1238,Retail,23322.0,1943.5,72,74.8,4,1,9.0,19.0,monthly,26.0,False,57.3,0
+CUST-0240,Bright Partners 1239,SaaS,19069.0,1589.08,33,71.5,5,0,19.0,25.0,multi-year,28.0,True,74.0,0
+CUST-0241,Bright Cloud 1240,HealthTech,17918.0,1493.17,22,41.7,3,3,3.0,54.0,multi-year,2.0,True,63.6,1
+CUST-0242,Harbour Systems 1241,Professional Services,43751.0,3645.92,65,87.2,6,4,6.0,-11.0,annual,71.0,False,41.8,0
+CUST-0243,Northstar Analytics 1242,FinTech,32181.0,2681.75,54,65.3,2,1,8.0,35.0,multi-year,8.0,True,76.3,0
+CUST-0244,Harbour Works 1243,SaaS,42456.0,3538.0,55,47.0,2,0,4.0,52.0,multi-year,22.0,True,66.8,0
+CUST-0245,Northstar Works 1244,SaaS,26738.0,2228.17,21,88.4,3,1,8.0,-33.0,monthly,33.0,True,72.7,0
+CUST-0246,Vertex Systems 1245,FinTech,38532.0,3211.0,72,78.3,8,0,7.0,51.0,annual,12.0,True,85.1,0
+CUST-0247,Civic Group 1246,Education,20066.0,1672.17,34,44.2,6,1,5.0,-29.0,annual,29.0,False,37.2,1
+CUST-0248,Summit Labs 1247,Manufacturing,128131.0,10677.58,39,99.0,3,1,15.0,24.0,monthly,2.0,True,93.5,0
+CUST-0249,Summit Labs 1248,Education,8977.0,748.08,55,78.9,10,2,13.0,-12.0,annual,30.0,True,68.6,0
+CUST-0250,Bright Labs 1249,FinTech,65033.0,5419.42,48,66.8,7,0,16.0,77.0,annual,27.0,False,60.8,0
+CUST-0251,Civic Labs 1250,HealthTech,70090.0,5840.83,14,95.6,6,2,17.0,-11.0,annual,18.0,True,80.7,0
+CUST-0252,Harbour Analytics 1251,Manufacturing,14816.0,1234.67,23,69.9,6,0,2.0,-28.0,monthly,26.0,True,69.2,1
+CUST-0253,Bright Partners 1252,HealthTech,128090.0,10674.17,27,66.5,5,1,2.0,33.0,monthly,40.0,True,65.8,0
+CUST-0254,Atlas Works 1253,Retail,54006.0,4500.5,69,55.1,2,2,14.0,14.0,multi-year,34.0,True,58.1,0
+CUST-0255,Harbour Systems 1254,SaaS,53093.0,4424.42,52,77.5,4,2,6.0,-23.0,monthly,13.0,True,72.7,0
+CUST-0256,Pioneer Labs 1255,HealthTech,27436.0,2286.33,28,75.6,6,0,5.0,46.0,monthly,16.0,True,82.0,0
+CUST-0257,Pioneer Labs 1256,SaaS,23108.0,1925.67,54,67.3,6,1,4.0,-40.0,annual,11.0,True,69.4,0
+CUST-0258,Atlas Works 1257,FinTech,23235.0,1936.25,54,52.8,3,3,16.0,-7.0,annual,10.0,True,60.8,0
+CUST-0259,Bright Works 1258,HealthTech,35361.0,2946.75,29,69.3,3,2,33.0,8.0,annual,24.0,True,67.8,1
+CUST-0260,Pioneer Cloud 1259,Professional Services,71742.0,5978.5,30,65.7,4,3,16.0,55.0,annual,11.0,True,72.2,0
+CUST-0261,Northstar Cloud 1260,Education,30544.0,2545.33,65,43.0,2,0,6.0,72.0,monthly,24.0,True,66.0,0
+CUST-0262,Northstar Analytics 1261,HealthTech,14214.0,1184.5,41,40.5,5,3,15.0,65.0,monthly,12.0,True,60.6,0
+CUST-0263,Summit Group 1262,Retail,47911.0,3992.58,12,77.2,2,1,2.0,23.0,multi-year,14.0,True,78.8,0
+CUST-0264,Northstar Analytics 1263,Logistics,51267.0,4272.25,53,20.2,6,2,7.0,-55.0,annual,7.0,False,28.3,1
+CUST-0265,Vertex Labs 1264,Logistics,42543.0,3545.25,43,70.7,1,0,1.0,41.0,annual,24.0,True,76.5,0
+CUST-0266,Bright Labs 1265,Professional Services,45336.0,3778.0,38,58.4,3,0,6.0,78.0,annual,2.0,True,81.4,1
+CUST-0267,Harbour Cloud 1266,Manufacturing,22256.0,1854.67,53,90.5,5,4,10.0,70.0,annual,31.0,True,76.1,0
+CUST-0268,Summit Systems 1267,Retail,14041.0,1170.08,66,58.1,4,2,38.0,44.0,monthly,55.0,True,55.1,0
+CUST-0269,Pioneer Cloud 1268,Professional Services,14651.0,1220.92,25,78.9,3,3,20.0,-12.0,annual,14.0,False,55.5,1
+CUST-0270,Pioneer Group 1269,Professional Services,8563.0,713.58,31,59.9,3,1,1.0,10.0,annual,14.0,False,53.4,0
+CUST-0271,Northstar Labs 1270,Retail,31757.0,2646.42,15,69.0,6,2,2.0,94.0,annual,3.0,True,82.5,1
+CUST-0272,Summit Cloud 1271,FinTech,25377.0,2114.75,47,80.3,8,2,4.0,-20.0,multi-year,9.0,True,75.6,0
+CUST-0273,Harbour Analytics 1272,HealthTech,19772.0,1647.67,30,58.7,7,2,28.0,-11.0,annual,26.0,True,60.3,1
+CUST-0274,Civic Group 1273,Logistics,3398.0,283.17,26,84.9,5,2,1.0,60.0,annual,29.0,True,78.3,0
+CUST-0275,Civic Labs 1274,Manufacturing,11236.0,936.33,51,49.1,11,0,4.0,13.0,multi-year,16.0,True,66.3,0
+CUST-0276,Civic Cloud 1275,Manufacturing,58958.0,4913.17,30,72.3,4,2,4.0,-12.0,annual,25.0,True,67.1,0
+CUST-0277,Summit Systems 1276,Manufacturing,16895.0,1407.92,34,83.6,6,3,12.0,80.0,multi-year,7.0,True,84.4,0
+CUST-0278,Harbour Digital 1277,Education,34628.0,2885.67,33,78.9,1,1,16.0,44.0,annual,18.0,True,80.2,0
+CUST-0279,Atlas Digital 1278,FinTech,10163.0,846.92,20,100.0,5,4,13.0,15.0,multi-year,36.0,True,74.0,1
+CUST-0280,Bright Partners 1279,FinTech,73651.0,6137.58,10,53.3,7,0,10.0,-11.0,annual,21.0,True,64.5,1
+CUST-0281,Pioneer Group 1280,Retail,24323.0,2026.92,60,42.2,4,3,2.0,98.0,annual,40.0,True,54.9,0
+CUST-0282,Bright Cloud 1281,Manufacturing,32959.0,2746.58,8,49.1,6,1,9.0,27.0,annual,41.0,False,40.5,0
+CUST-0283,Vertex Analytics 1282,SaaS,137042.0,11420.17,25,78.9,6,2,22.0,76.0,monthly,19.0,False,64.2,1
+CUST-0284,Harbour Partners 1283,Manufacturing,77770.0,6480.83,49,76.0,8,2,27.0,58.0,annual,0.0,True,83.7,0
+CUST-0285,Northstar Works 1284,Manufacturing,21707.0,1808.92,11,68.8,8,2,11.0,10.0,multi-year,28.0,True,66.4,0
+CUST-0286,Northstar Systems 1285,Logistics,17761.0,1480.08,48,46.8,9,2,1.0,11.0,annual,4.0,True,64.1,0
+CUST-0287,Atlas Group 1286,HealthTech,21421.0,1785.08,54,80.8,6,0,11.0,77.0,monthly,1.0,True,92.4,0
+CUST-0288,Northstar Partners 1287,Professional Services,38443.0,3203.58,49,45.0,3,2,7.0,78.0,annual,2.0,True,69.9,0
+CUST-0289,Bright Partners 1288,Professional Services,24993.0,2082.75,23,87.9,6,5,2.0,-36.0,monthly,30.0,True,63.2,1
+CUST-0290,Bright Works 1289,Manufacturing,20401.0,1700.08,3,100.0,1,1,3.0,47.0,monthly,19.0,True,90.2,0
+CUST-0291,Harbour Labs 1290,Education,75134.0,6261.17,65,73.6,3,1,4.0,24.0,multi-year,16.0,True,76.5,0
+CUST-0292,Atlas Partners 1291,Retail,24836.0,2069.67,25,77.5,6,1,14.0,-7.0,annual,21.0,True,73.9,0
+CUST-0293,Northstar Partners 1292,Logistics,134553.0,11212.75,59,58.1,9,0,26.0,37.0,annual,2.0,True,77.5,0
+CUST-0294,Harbour Partners 1293,Retail,28668.0,2389.0,16,34.4,9,2,13.0,-18.0,annual,11.0,False,37.1,0
+CUST-0295,Atlas Labs 1294,Professional Services,93875.0,7822.92,13,56.2,2,2,15.0,12.0,monthly,8.0,True,67.3,1
+CUST-0296,Civic Cloud 1295,Professional Services,34549.0,2879.08,57,47.3,5,1,8.0,1.0,monthly,15.0,False,46.2,0
+CUST-0297,Pioneer Partners 1296,Education,52790.0,4399.17,68,41.0,3,2,5.0,11.0,annual,15.0,True,57.5,0
+CUST-0298,Northstar Systems 1297,Manufacturing,16200.0,1350.0,63,98.0,5,2,13.0,26.0,annual,20.0,True,84.5,0
+CUST-0299,Pioneer Labs 1298,Retail,14800.0,1233.33,55,71.9,2,0,10.0,-7.0,multi-year,22.0,False,57.4,0
+CUST-0300,Civic Analytics 1299,FinTech,37116.0,3093.0,19,73.8,4,0,4.0,81.0,annual,2.0,False,73.0,0
+CUST-0301,Northstar Labs 1300,Retail,53744.0,4478.67,66,61.4,3,0,10.0,45.0,annual,11.0,False,60.8,0
+CUST-0302,Harbour Partners 1301,Education,27672.0,2306.0,49,63.9,3,2,8.0,89.0,annual,14.0,True,75.9,0
+CUST-0303,Pioneer Systems 1302,FinTech,10933.0,911.08,14,84.4,4,1,6.0,23.0,multi-year,4.0,True,85.7,0
+CUST-0304,Bright Works 1303,Logistics,10382.0,865.17,11,66.4,4,3,5.0,9.0,annual,4.0,True,70.8,0
+CUST-0305,Civic Analytics 1304,Professional Services,9907.0,825.58,63,76.6,3,0,11.0,88.0,multi-year,3.0,True,90.7,0
+CUST-0306,Atlas Digital 1305,HealthTech,7806.0,650.5,21,63.5,9,3,5.0,8.0,annual,25.0,False,46.1,0
+CUST-0307,Bright Partners 1306,Retail,29046.0,2420.5,56,60.8,2,0,34.0,22.0,multi-year,3.0,True,77.1,0
+CUST-0308,Atlas Works 1307,Professional Services,59132.0,4927.67,11,41.7,4,3,12.0,52.0,monthly,3.0,True,63.1,0
+CUST-0309,Harbour Cloud 1308,Retail,26652.0,2221.0,21,31.4,2,2,11.0,-14.0,annual,15.0,False,34.7,1
+CUST-0310,Harbour Analytics 1309,FinTech,5529.0,460.75,22,62.3,9,2,7.0,52.0,annual,18.0,False,54.4,0
+CUST-0311,Summit Partners 1310,SaaS,23540.0,1961.67,21,68.0,8,3,6.0,48.0,annual,13.0,False,56.0,0
+CUST-0312,Northstar Cloud 1311,SaaS,24006.0,2000.5,49,43.8,4,2,1.0,71.0,annual,5.0,True,67.7,1
+CUST-0313,Civic Analytics 1312,FinTech,116681.0,9723.42,66,66.4,4,1,4.0,58.0,multi-year,4.0,True,80.2,0
+CUST-0314,Northstar Digital 1313,Retail,9701.0,808.42,66,68.0,5,1,1.0,72.0,multi-year,14.0,False,62.8,0
+CUST-0315,Northstar Analytics 1314,HealthTech,20466.0,1705.5,54,28.2,4,2,1.0,24.0,annual,12.0,True,53.6,1
+CUST-0316,Northstar Cloud 1315,SaaS,88796.0,7399.67,16,50.5,7,3,3.0,-1.0,annual,10.0,True,60.2,0
+CUST-0317,Pioneer Systems 1316,SaaS,36864.0,3072.0,70,74.3,6,2,20.0,100.0,annual,24.0,False,62.5,0
+CUST-0318,Vertex Cloud 1317,SaaS,39907.0,3325.58,40,74.0,2,2,20.0,-24.0,annual,11.0,True,71.6,0
+CUST-0319,Bright Analytics 1318,Logistics,29150.0,2429.17,40,46.2,8,1,4.0,-21.0,monthly,3.0,True,63.7,0
+CUST-0320,Atlas Analytics 1319,Education,33893.0,2824.42,51,69.9,2,2,2.0,47.0,monthly,10.0,True,76.3,0
+CUST-0321,Northstar Labs 1320,Retail,46366.0,3863.83,56,85.4,5,3,6.0,83.0,annual,20.0,True,81.1,0
+CUST-0322,Vertex Digital 1321,FinTech,15266.0,1272.17,69,81.0,3,3,14.0,34.0,annual,11.0,False,61.6,0
+CUST-0323,Harbour Group 1322,Professional Services,49744.0,4145.33,43,65.3,3,1,17.0,62.0,multi-year,20.0,True,74.6,0
+CUST-0324,Summit Works 1323,Logistics,10290.0,857.5,45,58.6,7,0,10.0,-40.0,annual,23.0,True,63.7,0
+CUST-0325,Bright Works 1324,Logistics,33856.0,2821.33,54,55.7,4,1,11.0,11.0,multi-year,11.0,True,68.5,0
+CUST-0326,Vertex Partners 1325,HealthTech,30489.0,2540.75,20,75.4,8,1,10.0,-36.0,annual,13.0,False,57.0,1
+CUST-0327,Northstar Group 1326,HealthTech,17476.0,1456.33,23,70.5,5,0,1.0,55.0,annual,10.0,False,66.4,0
+CUST-0328,Summit Works 1327,FinTech,26479.0,2206.58,46,78.3,4,4,2.0,-25.0,monthly,20.0,True,65.5,1
+CUST-0329,Bright Digital 1328,HealthTech,17400.0,1450.0,6,69.4,5,2,27.0,-15.0,annual,10.0,True,70.5,1
+CUST-0330,Pioneer Group 1329,Professional Services,12706.0,1058.83,24,81.7,6,4,10.0,45.0,multi-year,19.0,True,73.7,0
+CUST-0331,Atlas Labs 1330,Professional Services,21004.0,1750.33,52,68.7,5,2,1.0,64.0,multi-year,16.0,True,75.3,0
+CUST-0332,Northstar Digital 1331,Retail,12422.0,1035.17,71,81.1,5,0,12.0,23.0,multi-year,2.0,True,87.3,0
+CUST-0333,Vertex Group 1332,Retail,33724.0,2810.33,38,82.7,4,0,3.0,47.0,monthly,19.0,True,84.5,0
+CUST-0334,Civic Labs 1333,Education,12027.0,1002.25,30,52.5,6,6,18.0,46.0,annual,15.0,True,57.2,1
+CUST-0335,Bright Group 1334,Manufacturing,44284.0,3690.33,33,34.5,2,1,17.0,21.0,monthly,31.0,True,52.4,1
+CUST-0336,Northstar Partners 1335,Education,11766.0,980.5,50,94.8,3,1,13.0,-9.0,monthly,4.0,True,87.8,0
+CUST-0337,Harbour Digital 1336,Logistics,18099.0,1508.25,40,71.6,0,0,10.0,47.0,annual,16.0,True,80.2,0
+CUST-0338,Northstar Cloud 1337,Retail,17375.0,1447.92,3,36.1,4,2,22.0,49.0,annual,9.0,True,60.6,1
+CUST-0339,Civic Works 1338,HealthTech,68023.0,5668.58,40,54.2,3,1,23.0,58.0,annual,2.0,True,75.0,1
+CUST-0340,Pioneer Labs 1339,Logistics,33901.0,2825.08,30,80.9,2,1,4.0,39.0,multi-year,1.0,True,86.5,1
+CUST-0341,Bright Analytics 1340,SaaS,23197.0,1933.08,51,62.0,7,0,13.0,-12.0,annual,36.0,True,63.4,0
+CUST-0342,Atlas Systems 1341,Retail,38143.0,3178.58,64,57.8,2,2,5.0,51.0,multi-year,16.0,False,52.9,0
+CUST-0343,Bright Systems 1342,Professional Services,6155.0,512.92,70,92.2,6,1,3.0,28.0,monthly,11.0,True,87.5,0
+CUST-0344,Summit Analytics 1343,Professional Services,26103.0,2175.25,45,48.1,5,2,23.0,12.0,monthly,3.0,False,49.1,1
+CUST-0345,Atlas Cloud 1344,Logistics,108908.0,9075.67,27,52.6,3,3,15.0,18.0,annual,34.0,True,54.7,1
+CUST-0346,Summit Systems 1345,Retail,29515.0,2459.58,33,70.8,6,1,10.0,5.0,multi-year,7.0,True,76.5,0
+CUST-0347,Civic Analytics 1346,Logistics,28213.0,2351.08,14,74.0,5,1,4.0,58.0,monthly,16.0,True,79.8,1
+CUST-0348,Harbour Labs 1347,Logistics,39486.0,3290.5,68,75.9,4,0,24.0,-20.0,annual,14.0,True,76.9,0
+CUST-0349,Atlas Systems 1348,HealthTech,50359.0,4196.58,62,83.4,8,2,3.0,-6.0,annual,46.0,False,49.8,0
+CUST-0350,Summit Systems 1349,HealthTech,6646.0,553.83,62,70.6,5,0,3.0,17.0,monthly,13.0,False,62.0,0
+CUST-0351,Civic Systems 1350,Professional Services,8286.0,690.5,25,75.8,4,4,8.0,83.0,annual,8.0,True,78.1,0
+CUST-0352,Harbour Group 1351,FinTech,31170.0,2597.5,24,62.3,3,1,14.0,64.0,multi-year,16.0,True,74.7,0
+CUST-0353,Civic Works 1352,Retail,16311.0,1359.25,62,68.1,4,2,6.0,-28.0,annual,17.0,True,66.3,0
+CUST-0354,Harbour Partners 1353,Manufacturing,67401.0,5616.75,40,68.9,5,0,10.0,74.0,monthly,67.0,False,50.7,0
+CUST-0355,Civic Partners 1354,Logistics,21577.0,1798.08,52,70.9,3,1,5.0,74.0,multi-year,13.0,True,80.8,0
+CUST-0356,Summit Partners 1355,Logistics,6945.0,578.75,36,80.9,4,0,5.0,-12.0,annual,4.0,True,83.4,0
+CUST-0357,Summit Cloud 1356,HealthTech,11074.0,922.83,33,77.0,9,1,29.0,-58.0,multi-year,10.0,False,56.8,1
+CUST-0358,Atlas Digital 1357,Logistics,3925.0,327.08,46,67.8,4,3,8.0,26.0,annual,16.0,False,52.9,1
+CUST-0359,Summit Works 1358,FinTech,22836.0,1903.0,59,52.4,4,2,23.0,66.0,annual,18.0,True,66.9,0
+CUST-0360,Bright Cloud 1359,SaaS,23579.0,1964.92,25,68.2,3,3,1.0,82.0,annual,3.0,True,78.5,0
+CUST-0361,Northstar Labs 1360,Education,19988.0,1665.67,59,66.5,5,4,19.0,-2.0,monthly,9.0,True,65.6,1
+CUST-0362,Northstar Group 1361,Logistics,57252.0,4771.0,19,70.5,1,1,4.0,88.0,multi-year,44.0,True,71.3,0
+CUST-0363,Atlas Group 1362,HealthTech,62253.0,5187.75,30,100.0,5,3,15.0,-48.0,monthly,6.0,True,81.1,0
+CUST-0364,Atlas Systems 1363,Logistics,23878.0,1989.83,66,57.6,5,1,4.0,15.0,monthly,25.0,False,49.0,0
+CUST-0365,Harbour Partners 1364,FinTech,6037.0,503.08,69,74.6,4,0,6.0,14.0,annual,10.0,True,80.7,0
+CUST-0366,Atlas Analytics 1365,Professional Services,41444.0,3453.67,67,86.2,5,2,3.0,67.0,annual,13.0,False,68.9,0
+CUST-0367,Northstar Cloud 1366,Manufacturing,39686.0,3307.17,24,68.8,3,2,16.0,72.0,multi-year,3.0,True,80.4,0
+CUST-0368,Pioneer Partners 1367,Retail,33409.0,2784.08,61,100.0,12,3,17.0,60.0,multi-year,11.0,True,89.1,0
+CUST-0369,Atlas Labs 1368,FinTech,53479.0,4456.58,68,60.2,4,2,4.0,-18.0,annual,16.0,False,47.8,1
+CUST-0370,Bright Analytics 1369,Education,11904.0,992.0,71,72.8,9,2,2.0,57.0,annual,13.0,True,77.6,0
+CUST-0371,Vertex Labs 1370,Retail,109768.0,9147.33,3,52.6,6,2,22.0,45.0,monthly,11.0,True,67.5,0
+CUST-0372,Atlas Group 1371,SaaS,13745.0,1145.42,54,60.7,4,4,5.0,-29.0,annual,20.0,True,56.6,0
+CUST-0373,Summit Digital 1372,Manufacturing,45454.0,3787.83,72,71.5,6,1,7.0,-42.0,multi-year,4.0,True,73.7,0
+CUST-0374,Vertex Cloud 1373,Retail,8257.0,688.08,56,82.2,3,3,3.0,63.0,annual,16.0,True,79.1,0
+CUST-0375,Atlas Cloud 1374,Logistics,14028.0,1169.0,18,72.7,4,2,14.0,22.0,annual,1.0,True,78.5,0
+CUST-0376,Summit Works 1375,FinTech,77766.0,6480.5,56,89.7,4,1,15.0,-16.0,annual,29.0,False,60.2,0
+CUST-0377,Bright Cloud 1376,SaaS,22412.0,1867.67,9,65.3,0,0,25.0,21.0,multi-year,12.0,False,60.2,0
+CUST-0378,Northstar Cloud 1377,SaaS,48433.0,4036.08,36,61.0,2,2,19.0,40.0,annual,23.0,True,67.0,0
+CUST-0379,Civic Analytics 1378,Manufacturing,31757.0,2646.42,46,100.0,7,3,18.0,25.0,monthly,0.0,True,89.7,0
+CUST-0380,Civic Systems 1379,Retail,24997.0,2083.08,34,74.1,4,2,8.0,-25.0,annual,21.0,True,68.1,0
+CUST-0381,Atlas Analytics 1380,FinTech,69891.0,5824.25,51,54.0,5,0,7.0,92.0,monthly,7.0,True,78.8,0
+CUST-0382,Harbour Works 1381,Logistics,22796.0,1899.67,19,54.5,6,1,14.0,62.0,monthly,13.0,False,55.8,1
+CUST-0383,Summit Digital 1382,Logistics,7735.0,644.58,45,50.0,2,2,8.0,17.0,monthly,21.0,True,60.4,0
+CUST-0384,Harbour Works 1383,HealthTech,15333.0,1277.75,47,83.9,3,2,19.0,18.0,annual,12.0,False,63.8,0
+CUST-0385,Bright Works 1384,FinTech,39570.0,3297.5,46,60.4,3,1,3.0,40.0,annual,19.0,True,70.6,0
+CUST-0386,Harbour Digital 1385,FinTech,35485.0,2957.08,22,69.3,9,0,1.0,-10.0,annual,10.0,True,76.0,0
+CUST-0387,Civic Systems 1386,FinTech,8983.0,748.58,23,65.9,9,0,13.0,39.0,annual,31.0,False,55.6,0
+CUST-0388,Harbour Analytics 1387,Education,16203.0,1350.25,20,80.2,3,0,5.0,-17.0,multi-year,12.0,True,79.9,0
+CUST-0389,Summit Digital 1388,Logistics,17904.0,1492.0,34,51.8,2,2,3.0,26.0,annual,12.0,False,49.1,0
+CUST-0390,Vertex Digital 1389,HealthTech,20830.0,1735.83,43,47.6,6,4,36.0,-12.0,annual,12.0,False,38.6,1
+CUST-0391,Summit Cloud 1390,SaaS,10269.0,855.75,27,71.0,5,4,9.0,-10.0,annual,13.0,True,65.7,1
+CUST-0392,Harbour Systems 1391,HealthTech,17329.0,1444.08,31,77.8,3,3,2.0,84.0,multi-year,4.0,True,83.0,0
+CUST-0393,Pioneer Digital 1392,Retail,16155.0,1346.25,22,73.0,6,0,5.0,30.0,monthly,6.0,True,82.7,1
+CUST-0394,Northstar Partners 1393,Professional Services,46169.0,3847.42,17,52.4,4,1,7.0,35.0,annual,26.0,False,47.9,1
+CUST-0395,Atlas Cloud 1394,SaaS,47400.0,3950.0,48,79.2,3,1,13.0,-40.0,multi-year,23.0,False,55.1,1
+CUST-0396,Civic Systems 1395,Education,24293.0,2024.42,59,53.6,3,1,5.0,8.0,annual,22.0,True,63.4,0
+CUST-0397,Northstar Works 1396,FinTech,20447.0,1703.92,22,57.6,4,2,7.0,44.0,annual,18.0,True,67.4,0
+CUST-0398,Vertex Partners 1397,HealthTech,29672.0,2472.67,63,50.0,7,0,11.0,35.0,annual,9.0,True,71.1,0
+CUST-0399,Summit Partners 1398,Retail,15190.0,1265.83,42,90.4,8,3,12.0,-45.0,annual,8.0,True,76.1,0
+CUST-0400,Summit Works 1399,Retail,12055.0,1004.58,13,78.4,4,1,8.0,35.0,annual,13.0,True,80.8,0
+CUST-0401,Summit Works 1400,Logistics,13931.0,1160.92,27,77.9,1,1,29.0,40.0,monthly,29.0,False,59.6,1
+CUST-0402,Civic Cloud 1401,Education,17251.0,1437.58,2,89.4,2,2,15.0,72.0,annual,15.0,True,86.3,0
+CUST-0403,Atlas Works 1402,Retail,11915.0,992.92,4,100.0,9,1,14.0,6.0,monthly,5.0,True,91.3,0
+CUST-0404,Harbour Labs 1403,Logistics,30135.0,2511.25,25,36.2,3,0,14.0,-48.0,multi-year,3.0,True,59.0,1
+CUST-0405,Civic Analytics 1404,Manufacturing,44838.0,3736.5,34,53.7,4,0,20.0,-6.0,annual,24.0,True,64.1,0
+CUST-0406,Vertex Systems 1405,Professional Services,8858.0,738.17,58,55.9,5,1,10.0,-9.0,annual,35.0,True,58.6,0
+CUST-0407,Vertex Partners 1406,Manufacturing,27381.0,2281.75,11,51.7,8,4,3.0,53.0,annual,2.0,False,49.8,0
+CUST-0408,Pioneer Analytics 1407,HealthTech,23064.0,1922.0,61,47.6,3,0,12.0,-64.0,annual,24.0,True,55.9,0
+CUST-0409,Bright Analytics 1408,Logistics,34168.0,2847.33,18,61.6,6,3,13.0,13.0,annual,18.0,True,64.1,0
+CUST-0410,Atlas Digital 1409,FinTech,26661.0,2221.75,11,45.1,6,1,22.0,76.0,annual,7.0,True,70.6,0
+CUST-0411,Vertex Cloud 1410,HealthTech,9725.0,810.42,51,73.0,6,2,3.0,28.0,multi-year,15.0,True,74.4,0
+CUST-0412,Vertex Analytics 1411,HealthTech,11118.0,926.5,56,67.9,1,1,4.0,58.0,annual,5.0,True,80.6,0
+CUST-0413,Vertex Group 1412,Retail,27463.0,2288.58,44,75.7,5,0,9.0,-28.0,multi-year,11.0,False,61.1,0
+CUST-0414,Harbour Partners 1413,HealthTech,55279.0,4606.58,10,76.1,3,2,14.0,-26.0,multi-year,13.0,True,71.7,1
+CUST-0415,Harbour Labs 1414,FinTech,5711.0,475.92,10,77.9,5,2,2.0,77.0,annual,31.0,True,75.7,0
+CUST-0416,Civic Labs 1415,SaaS,34269.0,2855.75,29,60.3,3,0,3.0,31.0,monthly,11.0,True,75.0,0
+CUST-0417,Harbour Labs 1416,Logistics,61867.0,5155.58,33,100.0,6,1,16.0,32.0,annual,7.0,True,93.0,0
+CUST-0418,Atlas Systems 1417,FinTech,24170.0,2014.17,72,71.2,5,4,2.0,-10.0,monthly,17.0,True,64.4,0
+CUST-0419,Atlas Cloud 1418,Retail,39543.0,3295.25,22,33.5,7,2,4.0,31.0,annual,20.0,True,54.0,1
+CUST-0420,Vertex Analytics 1419,Professional Services,16446.0,1370.5,15,49.0,6,1,17.0,-11.0,multi-year,7.0,True,64.6,1
+CUST-0421,Bright Works 1420,Logistics,24747.0,2062.25,69,35.7,6,2,14.0,68.0,annual,5.0,False,47.5,0
+CUST-0422,Harbour Systems 1421,SaaS,8650.0,720.83,12,67.3,7,1,5.0,100.0,annual,6.0,True,83.7,0
+CUST-0423,Summit Analytics 1422,Education,5213.0,434.42,3,64.8,6,4,13.0,44.0,monthly,31.0,True,61.4,1
+CUST-0424,Northstar Systems 1423,Professional Services,52049.0,4337.42,32,58.6,3,3,11.0,6.0,multi-year,19.0,True,61.6,1
+CUST-0425,Harbour Partners 1424,Manufacturing,13501.0,1125.08,30,100.0,8,0,8.0,-58.0,monthly,10.0,False,70.4,0
+CUST-0426,Atlas Systems 1425,HealthTech,19558.0,1629.83,45,76.9,5,1,6.0,-29.0,monthly,27.0,True,69.6,0
+CUST-0427,Pioneer Group 1426,Education,10193.0,849.42,64,80.1,7,4,12.0,81.0,monthly,7.0,False,64.3,0
+CUST-0428,Bright Systems 1427,Education,10027.0,835.58,68,50.2,5,1,3.0,-7.0,monthly,12.0,True,63.9,0
+CUST-0429,Summit Cloud 1428,FinTech,23821.0,1985.08,22,49.0,10,1,12.0,15.0,annual,4.0,False,52.0,0
+CUST-0430,Atlas Labs 1429,SaaS,16144.0,1345.33,71,67.7,5,1,10.0,50.0,annual,27.0,True,72.3,0
+CUST-0431,Summit Digital 1430,FinTech,35052.0,2921.0,46,70.1,4,1,11.0,78.0,annual,6.0,True,83.1,0
+CUST-0432,Harbour Cloud 1431,SaaS,36930.0,3077.5,6,33.6,1,1,4.0,21.0,monthly,7.0,True,60.1,1
+CUST-0433,Atlas Works 1432,Education,33678.0,2806.5,68,63.8,2,2,22.0,14.0,monthly,17.0,True,68.1,0
+CUST-0434,Pioneer Cloud 1433,HealthTech,31794.0,2649.5,11,67.3,5,0,5.0,30.0,annual,1.0,True,81.7,0
+CUST-0435,Vertex Analytics 1434,Manufacturing,81181.0,6765.08,43,63.1,6,4,5.0,7.0,monthly,4.0,True,66.5,0
+CUST-0436,Vertex Digital 1435,FinTech,12742.0,1061.83,58,52.4,3,3,7.0,8.0,annual,22.0,True,57.8,0
+CUST-0437,Harbour Digital 1436,Professional Services,25888.0,2157.33,19,57.3,4,2,14.0,42.0,monthly,6.0,True,71.2,1
+CUST-0438,Civic Group 1437,Logistics,59450.0,4954.17,21,63.8,5,4,10.0,34.0,annual,56.0,True,51.6,0
+CUST-0439,Civic Cloud 1438,FinTech,65198.0,5433.17,35,68.6,6,2,2.0,100.0,annual,15.0,True,78.8,0
+CUST-0440,Bright Systems 1439,Manufacturing,9944.0,828.67,64,77.9,5,2,8.0,43.0,annual,2.0,False,66.5,0
+CUST-0441,Summit Works 1440,Logistics,21620.0,1801.67,17,86.5,4,1,9.0,67.0,monthly,36.0,True,79.8,0
+CUST-0442,Bright Partners 1441,Retail,69611.0,5800.92,49,61.7,9,1,23.0,-8.0,monthly,15.0,True,68.3,0
+CUST-0443,Northstar Digital 1442,HealthTech,38394.0,3199.5,34,58.8,4,1,7.0,46.0,multi-year,11.0,False,57.1,0
+CUST-0444,Harbour Group 1443,Manufacturing,30844.0,2570.33,9,74.9,1,0,13.0,3.0,monthly,15.0,True,78.1,0
+CUST-0445,Summit Cloud 1444,Professional Services,23101.0,1925.08,52,78.0,3,3,48.0,41.0,annual,2.0,True,79.9,0
+CUST-0446,Northstar Cloud 1445,SaaS,20565.0,1713.75,61,59.2,5,3,20.0,51.0,annual,13.0,True,68.0,0
+CUST-0447,Civic Systems 1446,Retail,32917.0,2743.08,42,81.2,5,3,3.0,30.0,annual,6.0,True,79.1,0
+CUST-0448,Pioneer Cloud 1447,Logistics,22547.0,1878.92,14,84.6,5,5,15.0,100.0,annual,12.0,True,79.9,0
+CUST-0449,Bright Cloud 1448,Professional Services,26113.0,2176.08,13,90.3,5,0,12.0,77.0,annual,9.0,True,94.2,0
+CUST-0450,Atlas Partners 1449,Retail,28425.0,2368.75,32,99.0,3,2,6.0,68.0,multi-year,14.0,True,90.8,0
+CUST-0451,Atlas Digital 1450,Logistics,16737.0,1394.75,37,51.4,6,4,15.0,54.0,monthly,10.0,True,63.1,1
+CUST-0452,Pioneer Analytics 1451,Logistics,39046.0,3253.83,41,67.3,6,1,3.0,88.0,annual,8.0,True,82.0,0
+CUST-0453,Atlas Systems 1452,Manufacturing,206896.0,17241.33,19,67.2,5,3,5.0,-21.0,monthly,5.0,True,68.1,1
+CUST-0454,Atlas Systems 1453,FinTech,7755.0,646.25,37,65.2,8,1,7.0,75.0,annual,2.0,True,81.8,0
+CUST-0455,Civic Systems 1454,Professional Services,33752.0,2812.67,22,55.3,9,0,6.0,-6.0,annual,2.0,False,56.3,0
+CUST-0456,Civic Labs 1455,Professional Services,15802.0,1316.83,50,40.3,5,3,14.0,9.0,monthly,4.0,True,58.2,1
+CUST-0457,Pioneer Digital 1456,HealthTech,40303.0,3358.58,58,68.7,6,2,8.0,47.0,annual,21.0,True,72.0,0
+CUST-0458,Civic Labs 1457,SaaS,27794.0,2316.17,48,53.2,5,0,6.0,70.0,multi-year,5.0,True,77.1,0
+CUST-0459,Harbour Cloud 1458,Education,45858.0,3821.5,2,68.5,3,1,20.0,-11.0,monthly,7.0,False,58.0,1
+CUST-0460,Bright Labs 1459,FinTech,61258.0,5104.83,72,52.7,5,1,14.0,11.0,annual,7.0,True,68.4,0
+CUST-0461,Pioneer Group 1460,SaaS,30782.0,2565.17,3,47.2,4,2,2.0,31.0,annual,9.0,True,64.3,0
+CUST-0462,Northstar Partners 1461,HealthTech,59423.0,4951.92,72,71.2,3,3,2.0,22.0,monthly,18.0,True,69.5,0
+CUST-0463,Pioneer Cloud 1462,SaaS,5213.0,434.42,4,69.7,8,3,6.0,57.0,monthly,10.0,True,74.6,0
+CUST-0464,Harbour Group 1463,Manufacturing,81905.0,6825.42,38,77.4,3,1,2.0,100.0,monthly,23.0,True,82.8,0
+CUST-0465,Summit Digital 1464,FinTech,34980.0,2915.0,9,100.0,1,1,17.0,42.0,multi-year,4.0,True,94.9,0
+CUST-0466,Vertex Labs 1465,Logistics,57210.0,4767.5,8,72.0,6,0,5.0,3.0,monthly,22.0,True,74.4,0
+CUST-0467,Summit Systems 1466,HealthTech,11454.0,954.5,50,75.7,5,0,13.0,-16.0,monthly,33.0,True,70.7,0
+CUST-0468,Northstar Labs 1467,Professional Services,15040.0,1253.33,53,47.6,4,3,15.0,17.0,monthly,12.0,True,59.7,0
+CUST-0469,Civic Cloud 1468,HealthTech,29797.0,2483.08,10,43.8,2,2,1.0,-4.0,monthly,5.0,True,60.9,0
+CUST-0470,Vertex Group 1469,Logistics,26584.0,2215.33,71,95.5,0,0,5.0,44.0,annual,18.0,True,90.7,0
+CUST-0471,Bright Partners 1470,SaaS,32799.0,2733.25,24,50.4,4,1,7.0,43.0,monthly,13.0,True,68.1,0
+CUST-0472,Vertex Works 1471,Education,57478.0,4789.83,24,48.2,3,1,11.0,12.0,annual,16.0,True,63.3,1
+CUST-0473,Northstar Labs 1472,Manufacturing,7819.0,651.58,23,66.3,9,0,17.0,95.0,annual,24.0,True,79.2,0
+CUST-0474,Civic Partners 1473,Manufacturing,53193.0,4432.75,34,65.4,4,1,37.0,3.0,multi-year,9.0,True,73.1,1
+CUST-0475,Civic Labs 1474,SaaS,27060.0,2255.0,14,50.8,3,0,27.0,24.0,monthly,8.0,False,54.8,1
+CUST-0476,Atlas Labs 1475,Education,23327.0,1943.92,32,61.5,2,1,8.0,50.0,multi-year,63.0,True,58.5,0
+CUST-0477,Northstar Analytics 1476,Education,9607.0,800.58,16,89.1,5,2,8.0,58.0,annual,19.0,True,83.5,0
+CUST-0478,Vertex Group 1477,FinTech,38259.0,3188.25,5,52.5,2,1,25.0,71.0,monthly,27.0,True,66.9,0
+CUST-0479,Vertex Labs 1478,SaaS,4965.0,413.75,28,41.9,2,2,9.0,43.0,annual,23.0,False,42.1,1
+CUST-0480,Pioneer Systems 1479,FinTech,42356.0,3529.67,49,84.0,2,2,5.0,64.0,multi-year,27.0,True,78.9,0
+CUST-0481,Bright Works 1480,Retail,9467.0,788.92,56,75.9,3,2,18.0,5.0,monthly,16.0,True,73.4,0
+CUST-0482,Vertex Systems 1481,Education,27929.0,2327.42,27,55.8,5,3,11.0,59.0,multi-year,25.0,True,63.0,0
+CUST-0483,Civic Systems 1482,Retail,24750.0,2062.5,24,38.5,4,3,2.0,59.0,annual,7.0,True,60.8,1
+CUST-0484,Harbour Works 1483,Education,61003.0,5083.58,57,53.6,4,3,7.0,79.0,annual,2.0,True,71.6,0
+CUST-0485,Harbour Group 1484,Manufacturing,23741.0,1978.42,50,66.0,4,3,2.0,-29.0,multi-year,6.0,True,66.5,1
+CUST-0486,Summit Cloud 1485,HealthTech,16549.0,1379.08,61,88.0,3,3,0.0,-3.0,annual,11.0,True,77.7,0
+CUST-0487,Summit Cloud 1486,Retail,18871.0,1572.58,66,48.3,8,1,29.0,56.0,multi-year,10.0,True,69.3,1
+CUST-0488,Bright Group 1487,Professional Services,65579.0,5464.92,60,65.5,3,3,9.0,-62.0,annual,13.0,False,44.9,1
+CUST-0489,Northstar Analytics 1488,Education,39160.0,3263.33,68,79.2,12,2,7.0,45.0,annual,7.0,True,81.6,0
+CUST-0490,Summit Labs 1489,Professional Services,20539.0,1711.58,31,24.1,6,1,6.0,64.0,annual,1.0,False,45.5,1
+CUST-0491,Bright Analytics 1490,Logistics,22799.0,1899.92,30,85.6,8,3,9.0,8.0,monthly,9.0,False,62.2,1
+CUST-0492,Pioneer Works 1491,Education,8982.0,748.5,24,45.7,4,2,6.0,13.0,annual,3.0,False,48.0,1
+CUST-0493,Harbour Cloud 1492,Education,35310.0,2942.5,18,73.0,4,0,3.0,-9.0,annual,12.0,True,77.2,0
+CUST-0494,Northstar Works 1493,Professional Services,7849.0,654.08,55,71.4,5,0,6.0,10.0,monthly,17.0,True,76.4,0
+CUST-0495,Vertex Labs 1494,Retail,45536.0,3794.67,52,86.5,5,3,23.0,11.0,monthly,9.0,True,78.9,0
+CUST-0496,Vertex Digital 1495,Manufacturing,29438.0,2453.17,58,76.9,4,1,17.0,5.0,annual,4.0,True,80.5,0
+CUST-0497,Civic Analytics 1496,FinTech,143038.0,11919.83,13,24.2,2,1,6.0,3.0,monthly,13.0,True,51.9,0
+CUST-0498,Civic Digital 1497,Retail,12455.0,1037.92,36,52.9,7,1,31.0,19.0,monthly,65.0,True,51.6,1
+CUST-0499,Civic Partners 1498,Logistics,25038.0,2086.5,17,69.5,6,3,8.0,18.0,annual,19.0,True,68.0,0
+CUST-0500,Civic Labs 1499,Manufacturing,94731.0,7894.25,65,63.5,4,3,4.0,92.0,annual,20.0,True,71.4,0
+CUST-0501,Pioneer Systems 1500,FinTech,61943.0,5161.92,20,75.6,4,3,11.0,15.0,annual,8.0,True,74.4,0
+CUST-0502,Atlas Systems 1501,SaaS,16525.0,1377.08,12,81.2,11,0,26.0,40.0,annual,6.0,True,87.5,0
+CUST-0503,Harbour Digital 1502,Logistics,31470.0,2622.5,42,78.0,8,1,22.0,8.0,multi-year,27.0,True,73.5,0
+CUST-0504,Pioneer Systems 1503,Education,26941.0,2245.08,64,63.1,5,1,4.0,8.0,annual,1.0,True,75.1,0
+CUST-0505,Harbour Partners 1504,Retail,32773.0,2731.08,67,33.8,6,1,3.0,-30.0,monthly,7.0,True,55.6,1
+CUST-0506,Vertex Works 1505,Manufacturing,16497.0,1374.75,8,58.8,3,2,6.0,-25.0,monthly,38.0,True,55.0,1
+CUST-0507,Bright Labs 1506,Professional Services,25273.0,2106.08,25,74.5,8,3,13.0,-13.0,annual,12.0,True,70.0,0
+CUST-0508,Vertex Works 1507,HealthTech,8790.0,732.5,12,47.4,3,0,16.0,34.0,monthly,3.0,True,71.8,0
+CUST-0509,Atlas Systems 1508,Retail,29572.0,2464.33,23,78.4,3,0,20.0,65.0,annual,17.0,True,84.7,0
+CUST-0510,Harbour Labs 1509,HealthTech,36865.0,3072.08,39,83.4,5,3,10.0,-33.0,multi-year,9.0,True,73.4,0
+CUST-0511,Atlas Digital 1510,Logistics,22944.0,1912.0,21,69.3,5,2,10.0,9.0,monthly,2.0,False,59.4,1
+CUST-0512,Northstar Systems 1511,SaaS,8686.0,723.83,6,11.9,6,1,10.0,-18.0,monthly,15.0,False,27.5,1
+CUST-0513,Pioneer Digital 1512,Education,53743.0,4478.58,38,44.0,11,3,18.0,19.0,multi-year,13.0,True,57.8,0
+CUST-0514,Summit Digital 1513,Education,34723.0,2893.58,5,100.0,4,3,16.0,65.0,annual,13.0,True,88.9,0
+CUST-0515,Bright Analytics 1514,Logistics,16184.0,1348.67,18,57.2,9,2,4.0,13.0,monthly,18.0,True,64.5,0
+CUST-0516,Summit Works 1515,FinTech,22105.0,1842.08,2,31.3,5,1,14.0,26.0,multi-year,4.0,True,60.5,0
+CUST-0517,Northstar Systems 1516,Logistics,9410.0,784.17,8,89.2,3,1,18.0,77.0,multi-year,16.0,True,88.8,0
+CUST-0518,Vertex Works 1517,FinTech,13124.0,1093.67,32,67.2,3,1,19.0,44.0,annual,14.0,False,59.9,0
+CUST-0519,Civic Digital 1518,Manufacturing,18463.0,1538.58,62,86.9,4,1,11.0,2.0,annual,27.0,False,61.2,1
+CUST-0520,Bright Digital 1519,Professional Services,63570.0,5297.5,56,72.0,4,0,11.0,33.0,monthly,7.0,True,82.2,0
+CUST-0521,Summit Digital 1520,Retail,17195.0,1432.92,9,75.3,5,0,8.0,-0.0,monthly,30.0,True,72.9,0
+CUST-0522,Vertex Systems 1521,HealthTech,42115.0,3509.58,4,73.5,0,0,9.0,42.0,annual,23.0,False,62.2,0
+CUST-0523,Bright Works 1522,HealthTech,18457.0,1538.08,26,79.6,6,1,28.0,46.0,annual,11.0,True,83.1,0
+CUST-0524,Civic Systems 1523,Education,32002.0,2666.83,48,100.0,6,1,9.0,-18.0,annual,13.0,True,86.4,0
+CUST-0525,Summit Digital 1524,Retail,24368.0,2030.67,55,84.5,3,3,5.0,34.0,multi-year,1.0,True,82.7,0
+CUST-0526,Vertex Systems 1525,Retail,49570.0,4130.83,60,38.6,3,0,11.0,24.0,monthly,13.0,True,63.3,0
+CUST-0527,Harbour Systems 1526,Logistics,18502.0,1541.83,26,75.0,6,0,15.0,47.0,annual,22.0,True,79.8,0
+CUST-0528,Atlas Analytics 1527,HealthTech,8948.0,745.67,13,87.5,5,4,18.0,56.0,monthly,10.0,False,64.6,1
+CUST-0529,Harbour Systems 1528,Logistics,10225.0,852.08,3,88.6,4,3,3.0,44.0,multi-year,27.0,True,76.7,0
+CUST-0530,Bright Systems 1529,Logistics,18540.0,1545.0,12,59.3,5,0,24.0,18.0,monthly,18.0,True,71.0,0
+CUST-0531,Bright Analytics 1530,Professional Services,11222.0,935.17,6,88.0,9,2,15.0,60.0,annual,46.0,True,74.0,0
+CUST-0532,Civic Partners 1531,HealthTech,35852.0,2987.67,63,83.7,1,1,23.0,-2.0,annual,7.0,True,82.1,0
+CUST-0533,Summit Partners 1532,HealthTech,19418.0,1618.17,21,100.0,9,1,2.0,-17.0,annual,20.0,False,68.2,0
+CUST-0534,Civic Group 1533,Retail,141807.0,11817.25,60,53.5,2,0,19.0,-81.0,annual,3.0,True,64.4,1
+CUST-0535,Northstar Partners 1534,Professional Services,7971.0,664.25,41,57.9,6,2,3.0,26.0,annual,11.0,True,68.4,0
+CUST-0536,Northstar Labs 1535,HealthTech,31025.0,2585.42,40,61.5,3,0,7.0,0.0,annual,18.0,True,70.4,0
+CUST-0537,Northstar Partners 1536,Manufacturing,12215.0,1017.92,34,58.2,4,1,15.0,42.0,annual,21.0,True,69.1,0
+CUST-0538,Pioneer Group 1537,FinTech,19046.0,1587.17,60,51.0,2,0,3.0,-39.0,multi-year,9.0,False,48.9,0
+CUST-0539,Summit Works 1538,Professional Services,29703.0,2475.25,5,17.3,8,1,5.0,6.0,annual,29.0,True,43.5,1
+CUST-0540,Civic Labs 1539,FinTech,5283.0,440.25,8,59.2,7,3,2.0,44.0,annual,33.0,True,60.6,0
+CUST-0541,Summit Systems 1540,SaaS,31754.0,2646.17,32,73.6,4,3,15.0,-7.0,monthly,7.0,False,55.8,0
+CUST-0542,Summit Works 1541,FinTech,101929.0,8494.08,30,58.1,7,1,4.0,42.0,annual,11.0,True,72.4,0
+CUST-0543,Harbour Partners 1542,HealthTech,19586.0,1632.17,40,100.0,6,1,9.0,9.0,annual,10.0,True,89.9,0
+CUST-0544,Civic Partners 1543,HealthTech,32269.0,2689.08,54,67.2,4,3,12.0,27.0,annual,8.0,True,71.4,0
+CUST-0545,Civic Group 1544,Education,55130.0,4594.17,43,90.2,5,2,11.0,48.0,monthly,32.0,True,78.7,0
+CUST-0546,Summit Works 1545,FinTech,23986.0,1998.83,20,71.7,4,3,10.0,60.0,multi-year,31.0,True,68.7,0
+CUST-0547,Summit Partners 1546,Manufacturing,17914.0,1492.83,25,81.9,4,2,10.0,31.0,annual,10.0,True,80.7,0
+CUST-0548,Bright Analytics 1547,Professional Services,5470.0,455.83,55,72.0,3,0,2.0,0.0,annual,20.0,True,74.8,0
+CUST-0549,Atlas Analytics 1548,Professional Services,42138.0,3511.5,16,91.6,4,1,7.0,12.0,monthly,27.0,True,80.3,0
+CUST-0550,Bright Labs 1549,SaaS,24854.0,2071.17,37,68.0,7,2,10.0,50.0,multi-year,15.0,True,74.0,0
+CUST-0551,Northstar Systems 1550,Education,13242.0,1103.5,40,75.9,2,1,9.0,-7.0,monthly,10.0,True,76.9,0
+CUST-0552,Civic Group 1551,Manufacturing,29396.0,2449.67,55,73.6,5,5,8.0,22.0,monthly,7.0,True,69.3,0
+CUST-0553,Pioneer Analytics 1552,Education,17880.0,1490.0,52,61.8,5,0,5.0,15.0,multi-year,21.0,True,70.9,0
+CUST-0554,Harbour Works 1553,Retail,18585.0,1548.75,34,74.3,4,1,11.0,24.0,multi-year,4.0,True,80.9,0
+CUST-0555,Harbour Cloud 1554,Logistics,41126.0,3427.17,23,100.0,9,1,13.0,-6.0,monthly,10.0,True,88.5,0
+CUST-0556,Northstar Partners 1555,Professional Services,10542.0,878.5,28,62.1,6,4,6.0,-35.0,annual,9.0,True,60.5,1
+CUST-0557,Summit Cloud 1556,SaaS,56001.0,4666.75,31,74.6,1,0,18.0,46.0,annual,3.0,True,85.9,0
+CUST-0558,Summit Labs 1557,Logistics,10113.0,842.75,17,89.6,4,2,25.0,61.0,multi-year,12.0,True,86.4,0
+CUST-0559,Harbour Digital 1558,Education,16918.0,1409.83,46,87.5,5,2,9.0,-33.0,annual,11.0,True,77.2,0
+CUST-0560,Pioneer Cloud 1559,Education,103369.0,8614.08,16,67.2,4,1,4.0,41.0,annual,5.0,True,78.7,0
+CUST-0561,Civic Works 1560,Professional Services,59228.0,4935.67,48,24.1,6,5,3.0,65.0,annual,31.0,True,41.3,0
+CUST-0562,Pioneer Systems 1561,FinTech,28806.0,2400.5,55,76.3,6,2,7.0,48.0,annual,22.0,True,75.4,0
+CUST-0563,Pioneer Cloud 1562,Manufacturing,13928.0,1160.67,70,27.0,4,0,9.0,14.0,annual,13.0,True,56.8,0
+CUST-0564,Civic Works 1563,HealthTech,18574.0,1547.83,10,93.5,1,1,3.0,-4.0,annual,24.0,True,80.8,0
+CUST-0565,Vertex Cloud 1564,Logistics,28319.0,2359.92,55,70.1,9,1,7.0,31.0,monthly,28.0,True,71.4,1
+CUST-0566,Northstar Partners 1565,HealthTech,27619.0,2301.58,8,85.0,10,2,17.0,36.0,multi-year,32.0,True,75.1,0
+CUST-0567,Harbour Digital 1566,HealthTech,25245.0,2103.75,25,50.8,6,2,1.0,31.0,multi-year,7.0,True,66.8,1
+CUST-0568,Pioneer Digital 1567,HealthTech,26329.0,2194.08,14,39.1,5,2,10.0,22.0,annual,24.0,True,54.5,0
+CUST-0569,Northstar Cloud 1568,SaaS,23154.0,1929.5,13,71.7,2,1,5.0,-9.0,monthly,11.0,True,74.3,0
+CUST-0570,Pioneer Digital 1569,Professional Services,9805.0,817.08,14,66.4,6,4,9.0,42.0,monthly,15.0,True,67.5,1
+CUST-0571,Civic Digital 1570,Logistics,18741.0,1561.75,5,58.2,7,2,26.0,44.0,annual,7.0,False,55.5,0
+CUST-0572,Pioneer Analytics 1571,Manufacturing,51033.0,4252.75,60,68.5,4,0,8.0,35.0,monthly,12.0,True,79.0,0
+CUST-0573,Pioneer Cloud 1572,Retail,10323.0,860.25,6,100.0,12,0,7.0,32.0,multi-year,24.0,True,89.7,0
+CUST-0574,Civic Systems 1573,FinTech,23560.0,1963.33,30,82.0,7,0,14.0,85.0,annual,37.0,True,81.4,0
+CUST-0575,Pioneer Group 1574,FinTech,15156.0,1263.0,51,85.9,7,3,11.0,7.0,annual,12.0,True,77.2,0
+CUST-0576,Atlas Group 1575,Retail,29084.0,2423.67,72,82.2,6,3,10.0,72.0,multi-year,6.0,True,83.3,0
+CUST-0577,Pioneer Labs 1576,Logistics,20495.0,1707.92,62,93.6,4,1,11.0,3.0,annual,41.0,True,75.7,0
+CUST-0578,Northstar Analytics 1577,Professional Services,75673.0,6306.08,11,63.6,4,2,21.0,66.0,annual,7.0,True,76.0,0
+CUST-0579,Pioneer Systems 1578,Logistics,38354.0,3196.17,72,30.0,6,2,17.0,70.0,annual,2.0,True,62.0,0
+CUST-0580,Vertex Analytics 1579,FinTech,10740.0,895.0,48,63.6,6,4,7.0,18.0,annual,8.0,True,66.3,0
+CUST-0581,Pioneer Cloud 1580,FinTech,43039.0,3586.58,14,81.6,7,1,25.0,84.0,annual,27.0,True,82.0,0
+CUST-0582,Bright Digital 1581,Education,15642.0,1303.5,33,49.5,4,4,6.0,44.0,annual,6.0,True,62.6,0
+CUST-0583,Summit Digital 1582,FinTech,17964.0,1497.0,67,63.8,3,1,10.0,-2.0,multi-year,4.0,True,73.6,0
+CUST-0584,Civic Labs 1583,FinTech,33512.0,2792.67,29,54.5,4,0,10.0,15.0,annual,14.0,True,69.8,0
+CUST-0585,Northstar Group 1584,Manufacturing,19068.0,1589.0,15,94.0,7,1,7.0,67.0,monthly,37.0,True,83.0,0
+CUST-0586,Northstar Partners 1585,Logistics,50262.0,4188.5,64,80.5,3,0,23.0,59.0,annual,18.0,False,68.8,0
+CUST-0587,Northstar Analytics 1586,SaaS,15644.0,1303.67,69,78.7,4,1,6.0,-8.0,annual,4.0,True,80.2,0
+CUST-0588,Northstar Digital 1587,FinTech,17444.0,1453.67,71,78.2,6,3,8.0,23.0,monthly,51.0,False,45.7,0
+CUST-0589,Pioneer Cloud 1588,Education,16993.0,1416.08,69,66.3,3,0,18.0,35.0,monthly,16.0,True,76.5,0
+CUST-0590,Northstar Works 1589,Education,18107.0,1508.92,63,70.6,5,0,6.0,11.0,annual,25.0,True,73.4,0
+CUST-0591,Pioneer Analytics 1590,Education,58072.0,4839.33,34,45.7,3,1,3.0,100.0,annual,3.0,True,74.4,0
+CUST-0592,Vertex Analytics 1591,Logistics,41779.0,3481.58,15,27.6,2,2,10.0,36.0,multi-year,45.0,True,43.1,0
+CUST-0593,Vertex Works 1592,HealthTech,89051.0,7420.92,45,69.7,6,1,3.0,26.0,monthly,9.0,True,77.2,0
+CUST-0594,Pioneer Labs 1593,Logistics,131577.0,10964.75,17,72.8,4,2,3.0,68.0,monthly,3.0,True,82.0,0
+CUST-0595,Vertex Partners 1594,Retail,13076.0,1089.67,35,88.8,6,3,1.0,16.0,annual,15.0,True,78.4,1
+CUST-0596,Summit Cloud 1595,Education,28263.0,2355.25,48,95.3,7,1,1.0,62.0,multi-year,25.0,True,87.3,0
+CUST-0597,Atlas Labs 1596,Professional Services,11810.0,984.17,69,95.3,4,0,1.0,-29.0,monthly,20.0,True,83.3,0
+CUST-0598,Vertex Systems 1597,Education,15610.0,1300.83,22,49.0,7,0,27.0,13.0,monthly,20.0,True,64.9,0
+CUST-0599,Northstar Labs 1598,SaaS,17308.0,1442.33,19,60.7,3,2,1.0,64.0,monthly,19.0,False,54.4,0
+CUST-0600,Vertex Systems 1599,SaaS,12836.0,1069.67,54,75.6,6,1,3.0,81.0,annual,14.0,True,83.3,0
