@@ -3,6 +3,7 @@ name: CI
 on:
   push:
   pull_request:
+  workflow_dispatch:
 
 jobs:
   test:
@@ -24,4 +25,3 @@ jobs:
 
       - name: Run tests
         run: pytest -q
-
