@@ -123,6 +123,12 @@ The dashboard includes:
 - Email draft
 - Evaluation and observability view
 
+## Screenshots
+
+Executive overview:
+
+![Executive overview dashboard](docs/assets/overview-dashboard.png)
+
 ## Docker
 
 ```bash
