@@ -57,12 +57,21 @@ Synthetic test-set metrics:
 
 This model is intended for portfolio demonstration and decision-support prototyping. It should help a user inspect churn risk, not make autonomous retention decisions.
 
+## Decision-System Context
+
+The model is one component in a broader decision-support workflow. Its probability output is combined with revenue-at-risk logic, retrieved evidence, recommendation rules, agent caveats, and human review.
+
+## Deployment Notes
+
+The saved model artifact is committed for demo reproducibility. The project pins scikit-learn to keep the artifact compatible in local, Docker, CI, and Streamlit deployment environments.
+
 ## Limitations
 
 - Data is synthetic and generated from known assumptions.
 - Real-world churn behaviour is more complex and may involve hidden confounders.
 - Metrics do not represent production customer data.
 - Feature importance should be interpreted as directional, not causal.
+- Production use would require validation on real customer-success data, fairness review, drift monitoring, and periodic retraining.
 
 ## Ethical and Business Caveats
 
