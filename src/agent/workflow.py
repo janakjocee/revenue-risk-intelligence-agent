@@ -3,6 +3,7 @@ from __future__ import annotations
 from time import perf_counter
 from typing import Any
 
+from src.agent.llm import BaseLLMProvider, get_llm_provider
 from src.agent.recommendations import recommend_actions
 from src.model.scoring import score_customer
 from src.observability.logger import log_agent_run
@@ -28,6 +29,7 @@ def run_agent(
     model_path: str = "data/processed/churn_model.joblib",
     include_email: bool = False,
     log_path: str = "data/processed/agent_runs.jsonl",
+    llm_provider: BaseLLMProvider | None = None,
 ) -> dict[str, Any]:
     started = perf_counter()
     score = score_customer(customer, model_path=model_path)
@@ -52,6 +54,11 @@ def run_agent(
         f"{explanation} Recommended next step: {actions[0]['action']}. "
         f"Supporting evidence: {evidence_summary}"
     )
+    provider = llm_provider or get_llm_provider()
+    provider_note = provider.complete(
+        "Summarise the account risk using only the structured score and supplied evidence. "
+        f"Question: {question}\nRisk explanation: {explanation}\nEvidence: {evidence_summary}"
+    )
 
     result = {
         "customer_id": customer["customer_id"],
@@ -63,6 +70,7 @@ def run_agent(
         "cited_evidence": evidence,
         "caveats": caveat,
         "email_draft": _email_draft(customer, actions) if include_email else None,
+        "llm_provider_note": provider_note,
     }
 
     latency_ms = round((perf_counter() - started) * 1000, 2)
@@ -76,9 +84,9 @@ def run_agent(
             "latency_ms": latency_ms,
             "response_length": len(answer),
             "feedback": None,
+            "llm_provider": provider.__class__.__name__,
         },
         log_path=log_path,
     )
     result["latency_ms"] = latency_ms
     return result
-

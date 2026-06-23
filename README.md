@@ -22,6 +22,7 @@ Customer-success teams often have account data in one place, support notes in an
 - Risk scoring engine with revenue-at-risk estimates and top drivers
 - Local TF-IDF retriever that works without an API key
 - Agent workflow for explanations, cited evidence, recommendations, and email drafts
+- Optional OpenAI-compatible LLM provider with deterministic mock fallback
 - FastAPI backend for scoring, Q&A, observability, and evaluation
 - Streamlit dashboard for customer-success workflows
 - JSONL observability logging
@@ -49,6 +50,8 @@ Synthetic customer data         Synthetic notes and playbooks
 ## Tech Stack
 
 Python, pandas, NumPy, scikit-learn, FastAPI, Streamlit, Pydantic, pytest, Docker, Docker Compose, and GitHub Actions.
+
+Optional LLM mode is configured through `.env` values such as `OPENAI_API_KEY`, `OPENAI_BASE_URL`, `OPENAI_MODEL`, and `LLM_PROVIDER`. Without a key, the project automatically uses the deterministic mock provider.
 
 ## Setup
 
@@ -177,4 +180,3 @@ Current suite covers customer generation, document generation, risk-band logic, 
 ## Portfolio Summary
 
 This project demonstrates applied data science across the full decision-system lifecycle: synthetic data design, supervised ML, explainability, retrieval, agent workflow design, API development, dashboarding, evaluation, observability, testing, CI, and Docker packaging.
-
