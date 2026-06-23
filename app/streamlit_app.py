@@ -121,7 +121,7 @@ if page == "Executive Overview":
                 "recommended_action_category",
             ]
         ].sort_values("revenue_at_risk", ascending=False),
-        use_container_width=True,
+        width="stretch",
         hide_index=True,
     )
 
@@ -143,7 +143,7 @@ if page == "Customer Workspace":
         "payment_delay_days",
         "nps_score",
     ]
-    st.dataframe(pd.DataFrame([customer])[profile_cols], use_container_width=True, hide_index=True)
+    st.dataframe(pd.DataFrame([customer])[profile_cols], width="stretch", hide_index=True)
 
     question = st.text_area(
         "Account question",
@@ -180,7 +180,7 @@ if page == "Customer Workspace":
             evidence = pd.DataFrame(result["cited_evidence"])
             st.dataframe(
                 evidence[["document_id", "document_type", "risk_theme", "score", "explanation", "text"]],
-                use_container_width=True,
+                width="stretch",
                 hide_index=True,
             )
 
@@ -254,7 +254,7 @@ if page == "Evaluation":
         col1.metric("Avg Precision@K", f"{rag_eval['precision_at_k'].mean():.2f}")
         col2.metric("Theme Match Rate", f"{rag_eval['expected_theme_match'].mean():.0%}")
         col3.metric("Avg Evidence Coverage", f"{rag_eval['evidence_coverage_score'].mean():.2f}")
-        st.dataframe(rag_eval, use_container_width=True, hide_index=True)
+        st.dataframe(rag_eval, width="stretch", hide_index=True)
 
 if page == "Observability":
     st.subheader("Observability")
@@ -269,4 +269,4 @@ if page == "Observability":
         st.subheader("Risk Bands in Agent Runs")
         st.bar_chart(logs["risk_band"].value_counts())
         st.subheader("Recent Questions")
-        st.dataframe(logs.tail(30), use_container_width=True, hide_index=True)
+        st.dataframe(logs.tail(30), width="stretch", hide_index=True)
