@@ -1,0 +1,601 @@
+customer_id,churn_probability,risk_band,revenue_at_risk,top_risk_drivers,recommended_action_category
+CUST-0001,0.4759,medium,6423.93,"['Unresolved support tickets', 'Low product usage', 'Payment delay']",send customer-success email
+CUST-0002,0.293,low,4314.97,['No major structured risk driver detected'],send customer-success email
+CUST-0003,0.3874,medium,58216.58,"['Unresolved support tickets', 'Low product usage']",send customer-success email
+CUST-0004,0.2324,low,22072.14,['Weak customer sentiment'],send customer-success email
+CUST-0005,0.3769,medium,7600.91,"['Unresolved support tickets', 'Low product usage']",send customer-success email
+CUST-0006,0.3435,medium,7165.75,"['Weak customer sentiment', 'Unresolved support tickets']",send customer-success email
+CUST-0007,0.3748,medium,4510.86,"['Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0008,0.2326,low,1645.93,"['Unresolved support tickets', 'Weak customer sentiment', 'Payment delay']",send customer-success email
+CUST-0009,0.6522,high,16168.81,"['Unresolved support tickets', 'Low product usage', 'Payment delay']",escalate unresolved tickets
+CUST-0010,0.2223,low,2974.92,['Unresolved support tickets'],send customer-success email
+CUST-0011,0.2834,low,7184.99,['Unresolved support tickets'],send customer-success email
+CUST-0012,0.1452,low,1274.22,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0013,0.3662,medium,5779.31,['Low product usage'],investigate product usage decline
+CUST-0014,0.1665,low,4970.87,"['Unresolved support tickets', 'Recent login inactivity']",send customer-success email
+CUST-0015,0.2806,low,9754.55,"['Low product usage', 'Payment delay']",send customer-success email
+CUST-0016,0.505,medium,18195.44,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0017,0.6016,high,6422.21,"['Unresolved support tickets', 'Onboarding incomplete', 'Payment delay']",escalate unresolved tickets
+CUST-0018,0.2352,low,11507.63,['No major structured risk driver detected'],send customer-success email
+CUST-0019,0.7256,high,11149.47,"['Low product usage', 'Unresolved support tickets', 'Weak customer sentiment']",investigate product usage decline
+CUST-0020,0.2618,low,10970.62,['Low product usage'],send customer-success email
+CUST-0021,0.2976,low,7946.57,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0022,0.1683,low,1727.77,"['Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0023,0.1672,low,3605.12,['Unresolved support tickets'],send customer-success email
+CUST-0024,0.4609,medium,16014.63,"['Recent login inactivity', 'Low product usage', 'Weak customer sentiment']",investigate product usage decline
+CUST-0025,0.1207,low,4987.5,['No major structured risk driver detected'],send customer-success email
+CUST-0026,0.126,low,3070.89,"['Unresolved support tickets', 'Weak customer sentiment', 'Recent login inactivity']",escalate unresolved tickets
+CUST-0027,0.5069,medium,39850.11,"['Unresolved support tickets', 'Low product usage']",escalate unresolved tickets
+CUST-0028,0.1801,low,9807.84,['No major structured risk driver detected'],send customer-success email
+CUST-0029,0.3998,medium,8986.65,"['Onboarding incomplete', 'Unresolved support tickets']",offer onboarding support
+CUST-0030,0.189,low,8596.26,"['Unresolved support tickets', 'Payment delay']",send customer-success email
+CUST-0031,0.5327,medium,55488.51,"['Low product usage', 'Recent login inactivity', 'Payment delay']",investigate product usage decline
+CUST-0032,0.2448,low,25978.37,"['Recent login inactivity', 'Payment delay']",send customer-success email
+CUST-0033,0.425,medium,4840.08,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0034,0.7113,high,10003.88,"['Weak customer sentiment', 'Unresolved support tickets']",schedule executive check-in
+CUST-0035,0.4142,medium,31512.07,"['Unresolved support tickets', 'Payment delay']",send customer-success email
+CUST-0036,0.4728,medium,6063.67,"['Onboarding incomplete', 'Unresolved support tickets']",offer onboarding support
+CUST-0037,0.274,low,2921.33,"['Recent login inactivity', 'Unresolved support tickets']",send customer-success email
+CUST-0038,0.6424,high,12297.65,"['Unresolved support tickets', 'Recent login inactivity', 'Onboarding incomplete', 'Payment delay']",escalate unresolved tickets
+CUST-0039,0.6138,high,22162.4,['Payment delay'],schedule executive check-in
+CUST-0040,0.1538,low,3851.5,['No major structured risk driver detected'],send customer-success email
+CUST-0041,0.6083,high,10378.86,"['Onboarding incomplete', 'Weak customer sentiment']",offer onboarding support
+CUST-0042,0.6417,high,10768.92,"['Unresolved support tickets', 'Onboarding incomplete', 'Low product usage']",escalate unresolved tickets
+CUST-0043,0.1107,low,1808.03,['Weak customer sentiment'],send customer-success email
+CUST-0044,0.3655,medium,5312.65,"['Onboarding incomplete', 'Unresolved support tickets', 'Weak customer sentiment']",offer onboarding support
+CUST-0045,0.5553,medium,73790.41,"['Unresolved support tickets', 'Onboarding incomplete']",offer onboarding support
+CUST-0046,0.1118,low,3703.55,['Unresolved support tickets'],send customer-success email
+CUST-0047,0.4861,medium,24329.64,"['Low product usage', 'Unresolved support tickets']",investigate product usage decline
+CUST-0048,0.4065,medium,7766.32,"['Low product usage', 'Recent login inactivity']",investigate product usage decline
+CUST-0049,0.1126,low,2659.98,"['Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0050,0.3938,medium,6428.85,"['Unresolved support tickets', 'Recent login inactivity']",send customer-success email
+CUST-0051,0.2698,low,1134.34,['Weak customer sentiment'],send customer-success email
+CUST-0052,0.5914,medium,6063.84,['Unresolved support tickets'],send customer-success email
+CUST-0053,0.2838,low,2150.05,"['Onboarding incomplete', 'Payment delay']",offer onboarding support
+CUST-0054,0.2428,low,1352.14,"['Onboarding incomplete', 'Unresolved support tickets']",offer onboarding support
+CUST-0055,0.2637,low,3072.98,['Payment delay'],send customer-success email
+CUST-0056,0.4089,medium,27808.67,"['Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0057,0.7261,high,18936.75,"['Low product usage', 'Unresolved support tickets']",investigate product usage decline
+CUST-0058,0.1157,low,7680.45,['No major structured risk driver detected'],send customer-success email
+CUST-0059,0.1052,low,3773.58,"['Unresolved support tickets', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0060,0.1415,low,6583.67,['Weak customer sentiment'],send customer-success email
+CUST-0061,0.3639,medium,5211.08,"['Unresolved support tickets', 'Onboarding incomplete', 'Low product usage']",offer onboarding support
+CUST-0062,0.5876,medium,22811.02,['Unresolved support tickets'],send customer-success email
+CUST-0063,0.2179,low,9764.78,"['Unresolved support tickets', 'Recent login inactivity']",escalate unresolved tickets
+CUST-0064,0.3155,low,5668.72,"['Unresolved support tickets', 'Payment delay']",send customer-success email
+CUST-0065,0.466,medium,18547.66,"['Onboarding incomplete', 'Unresolved support tickets', 'Low product usage']",offer onboarding support
+CUST-0066,0.4679,medium,18711.71,"['Unresolved support tickets', 'Recent login inactivity']",escalate unresolved tickets
+CUST-0067,0.3403,medium,6231.9,['No major structured risk driver detected'],send customer-success email
+CUST-0068,0.1077,low,1320.24,"['Unresolved support tickets', 'Recent login inactivity']",send customer-success email
+CUST-0069,0.3637,medium,4271.79,['Low product usage'],send customer-success email
+CUST-0070,0.1294,low,3698.22,"['Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0071,0.2845,low,9622.07,['Weak customer sentiment'],send customer-success email
+CUST-0072,0.4045,medium,6248.37,"['Unresolved support tickets', 'Recent login inactivity']",send customer-success email
+CUST-0073,0.0825,low,2262.48,['Weak customer sentiment'],send customer-success email
+CUST-0074,0.2372,low,9513.79,"['Weak customer sentiment', 'Unresolved support tickets']",send customer-success email
+CUST-0075,0.3564,medium,14779.23,['Unresolved support tickets'],send customer-success email
+CUST-0076,0.3362,medium,26802.45,"['Unresolved support tickets', 'Low product usage']",send customer-success email
+CUST-0077,0.5332,medium,35067.71,"['Unresolved support tickets', 'Payment delay']",offer commercial renewal support
+CUST-0078,0.1078,low,1439.39,['Unresolved support tickets'],send customer-success email
+CUST-0079,0.2974,low,25999.27,"['Onboarding incomplete', 'Payment delay', 'Unresolved support tickets']",offer onboarding support
+CUST-0080,0.5323,medium,9874.76,"['Onboarding incomplete', 'Recent login inactivity', 'Low product usage']",investigate product usage decline
+CUST-0081,0.5717,medium,31961.83,"['Unresolved support tickets', 'Payment delay', 'Low product usage']",escalate unresolved tickets
+CUST-0082,0.7529,high,21242.58,"['Unresolved support tickets', 'Weak customer sentiment', 'Low product usage']",escalate unresolved tickets
+CUST-0083,0.3493,medium,7041.87,['Unresolved support tickets'],send customer-success email
+CUST-0084,0.4978,medium,3778.18,"['Onboarding incomplete', 'Low product usage']",offer onboarding support
+CUST-0085,0.144,low,3436.32,['Unresolved support tickets'],send customer-success email
+CUST-0086,0.458,medium,4136.55,['Recent login inactivity'],send customer-success email
+CUST-0087,0.3186,low,16867.74,"['Unresolved support tickets', 'Payment delay']",escalate unresolved tickets
+CUST-0088,0.473,medium,36795.06,"['Unresolved support tickets', 'Onboarding incomplete', 'Recent login inactivity']",escalate unresolved tickets
+CUST-0089,0.3941,medium,6069.37,['Unresolved support tickets'],send customer-success email
+CUST-0090,0.1801,low,5984.57,"['Unresolved support tickets', 'Recent login inactivity', 'Payment delay']",send customer-success email
+CUST-0091,0.3215,medium,5206.2,"['Unresolved support tickets', 'Payment delay']",escalate unresolved tickets
+CUST-0092,0.5461,medium,9462.03,"['Unresolved support tickets', 'Recent login inactivity', 'Low product usage']",send customer-success email
+CUST-0093,0.2421,low,11200.06,"['Weak customer sentiment', 'Payment delay']",offer commercial renewal support
+CUST-0094,0.2577,low,6747.56,"['Unresolved support tickets', 'Recent login inactivity']",escalate unresolved tickets
+CUST-0095,0.6104,high,55501.86,"['Unresolved support tickets', 'Onboarding incomplete', 'Weak customer sentiment']",offer onboarding support
+CUST-0096,0.3984,medium,7648.13,"['Unresolved support tickets', 'Low product usage']",escalate unresolved tickets
+CUST-0097,0.1471,low,7963.54,['Unresolved support tickets'],send customer-success email
+CUST-0098,0.1743,low,5021.58,"['Low product usage', 'Recent login inactivity']",send customer-success email
+CUST-0099,0.0881,low,4135.31,['Unresolved support tickets'],send customer-success email
+CUST-0100,0.1992,low,3919.04,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0101,0.1819,low,4727.64,"['Recent login inactivity', 'Unresolved support tickets']",send customer-success email
+CUST-0102,0.2661,low,6603.35,"['Onboarding incomplete', 'Recent login inactivity']",offer onboarding support
+CUST-0103,0.4003,medium,5998.22,"['Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0104,0.3806,medium,16275.62,['Weak customer sentiment'],send customer-success email
+CUST-0105,0.3681,medium,15611.56,"['Unresolved support tickets', 'Payment delay']",send customer-success email
+CUST-0106,0.2964,low,12081.18,"['Unresolved support tickets', 'Recent login inactivity']",send customer-success email
+CUST-0107,0.3022,low,23840.12,"['Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0108,0.429,medium,31833.22,['Unresolved support tickets'],send customer-success email
+CUST-0109,0.6515,high,13481.13,"['Unresolved support tickets', 'Payment delay']",offer commercial renewal support
+CUST-0110,0.3699,medium,12919.8,"['Unresolved support tickets', 'Low product usage', 'Payment delay']",send customer-success email
+CUST-0111,0.5242,medium,9113.48,"['Onboarding incomplete', 'Unresolved support tickets', 'Low product usage']",offer onboarding support
+CUST-0112,0.567,medium,15505.31,"['Low product usage', 'Unresolved support tickets']",investigate product usage decline
+CUST-0113,0.4436,medium,7842.73,"['Unresolved support tickets', 'Onboarding incomplete']",offer onboarding support
+CUST-0114,0.2089,low,17466.93,"['Unresolved support tickets', 'Onboarding incomplete', 'Payment delay']",offer onboarding support
+CUST-0115,0.3049,low,10581.33,"['Unresolved support tickets', 'Recent login inactivity']",send customer-success email
+CUST-0116,0.7865,high,18164.86,"['Unresolved support tickets', 'Low product usage', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0117,0.3204,medium,19878.1,"['Weak customer sentiment', 'Unresolved support tickets', 'Payment delay']",send customer-success email
+CUST-0118,0.2155,low,1268.4,"['Onboarding incomplete', 'Weak customer sentiment', 'Recent login inactivity']",offer onboarding support
+CUST-0119,0.5033,medium,3306.28,"['Recent login inactivity', 'Unresolved support tickets']",send customer-success email
+CUST-0120,0.1172,low,5505.09,['No major structured risk driver detected'],send customer-success email
+CUST-0121,0.617,high,17316.96,"['Low product usage', 'Unresolved support tickets', 'Weak customer sentiment']",investigate product usage decline
+CUST-0122,0.2241,low,7185.43,['Unresolved support tickets'],send customer-success email
+CUST-0123,0.6759,high,7185.5,"['Unresolved support tickets', 'Low product usage', 'Payment delay']",escalate unresolved tickets
+CUST-0124,0.3664,medium,9697.59,"['Unresolved support tickets', 'Payment delay']",offer commercial renewal support
+CUST-0125,0.5418,medium,59256.66,['Low product usage'],investigate product usage decline
+CUST-0126,0.3351,medium,16050.28,['No major structured risk driver detected'],send customer-success email
+CUST-0127,0.4065,medium,12316.35,"['Unresolved support tickets', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0128,0.5418,medium,10720.29,"['Unresolved support tickets', 'Low product usage', 'Weak customer sentiment']",send customer-success email
+CUST-0129,0.3707,medium,7564.97,['Low product usage'],send customer-success email
+CUST-0130,0.444,medium,2691.36,"['Low product usage', 'Unresolved support tickets']",investigate product usage decline
+CUST-0131,0.6511,high,20978.77,"['Onboarding incomplete', 'Unresolved support tickets', 'Weak customer sentiment']",offer onboarding support
+CUST-0132,0.1891,low,9192.23,['No major structured risk driver detected'],send customer-success email
+CUST-0133,0.4527,medium,4042.51,"['Low product usage', 'Unresolved support tickets', 'Recent login inactivity', 'Weak customer sentiment']",investigate product usage decline
+CUST-0134,0.0812,low,1374.32,"['Unresolved support tickets', 'Recent login inactivity']",send customer-success email
+CUST-0135,0.4166,medium,4985.0,"['Unresolved support tickets', 'Payment delay']",send customer-success email
+CUST-0136,0.5213,medium,7135.56,"['Recent login inactivity', 'Low product usage']",send customer-success email
+CUST-0137,0.8307,high,23201.44,"['Unresolved support tickets', 'Weak customer sentiment', 'Payment delay']",escalate unresolved tickets
+CUST-0138,0.2145,low,1341.57,"['Unresolved support tickets', 'Recent login inactivity', 'Payment delay']",escalate unresolved tickets
+CUST-0139,0.3199,low,13229.31,"['Unresolved support tickets', 'Onboarding incomplete', 'Recent login inactivity']",offer onboarding support
+CUST-0140,0.531,medium,24214.52,"['Unresolved support tickets', 'Onboarding incomplete']",offer onboarding support
+CUST-0141,0.3362,medium,7586.38,['Unresolved support tickets'],send customer-success email
+CUST-0142,0.4536,medium,2149.6,"['Unresolved support tickets', 'Low product usage']",send customer-success email
+CUST-0143,0.164,low,2196.22,"['Unresolved support tickets', 'Recent login inactivity']",escalate unresolved tickets
+CUST-0144,0.2859,low,18231.63,['Weak customer sentiment'],send customer-success email
+CUST-0145,0.6015,high,2314.44,"['Unresolved support tickets', 'Onboarding incomplete', 'Payment delay']",offer onboarding support
+CUST-0146,0.4378,medium,9234.29,"['Unresolved support tickets', 'Weak customer sentiment', 'Recent login inactivity']",escalate unresolved tickets
+CUST-0147,0.4504,medium,5304.84,"['Unresolved support tickets', 'Payment delay', 'Low product usage']",send customer-success email
+CUST-0148,0.308,low,14552.83,"['Unresolved support tickets', 'Onboarding incomplete']",offer onboarding support
+CUST-0149,0.5432,medium,9109.2,"['Payment delay', 'Unresolved support tickets']",offer commercial renewal support
+CUST-0150,0.6487,high,23156.99,"['Low product usage', 'Unresolved support tickets', 'Payment delay']",investigate product usage decline
+CUST-0151,0.285,low,11392.15,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0152,0.5065,medium,49275.08,"['Low product usage', 'Unresolved support tickets', 'Weak customer sentiment']",investigate product usage decline
+CUST-0153,0.458,medium,10689.42,"['Onboarding incomplete', 'Unresolved support tickets']",offer onboarding support
+CUST-0154,0.6066,high,21233.2,"['Unresolved support tickets', 'Onboarding incomplete', 'Recent login inactivity']",escalate unresolved tickets
+CUST-0155,0.5473,medium,5206.08,"['Unresolved support tickets', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0156,0.6707,high,41518.97,"['Unresolved support tickets', 'Low product usage']",escalate unresolved tickets
+CUST-0157,0.2786,low,4401.48,"['Recent login inactivity', 'Unresolved support tickets', 'Low product usage']",send customer-success email
+CUST-0158,0.1069,low,1943.04,"['Unresolved support tickets', 'Recent login inactivity']",escalate unresolved tickets
+CUST-0159,0.5593,medium,14813.64,"['Low product usage', 'Weak customer sentiment', 'Unresolved support tickets']",investigate product usage decline
+CUST-0160,0.3691,medium,3325.16,"['Unresolved support tickets', 'Weak customer sentiment', 'Recent login inactivity']",send customer-success email
+CUST-0161,0.1995,low,6298.72,"['Unresolved support tickets', 'Weak customer sentiment', 'Payment delay']",send customer-success email
+CUST-0162,0.5413,medium,28663.24,"['Weak customer sentiment', 'Unresolved support tickets', 'Low product usage', 'Payment delay']",send customer-success email
+CUST-0163,0.305,low,10073.97,"['Unresolved support tickets', 'Payment delay']",escalate unresolved tickets
+CUST-0164,0.461,medium,4078.14,"['Unresolved support tickets', 'Onboarding incomplete', 'Low product usage']",offer onboarding support
+CUST-0165,0.1156,low,2852.89,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0166,0.1378,low,6232.12,['Weak customer sentiment'],send customer-success email
+CUST-0167,0.7007,high,5063.56,"['Unresolved support tickets', 'Weak customer sentiment', 'Low product usage', 'Recent login inactivity']",investigate product usage decline
+CUST-0168,0.2565,low,3251.69,['Unresolved support tickets'],send customer-success email
+CUST-0169,0.3079,low,15299.28,"['Unresolved support tickets', 'Low product usage']",send customer-success email
+CUST-0170,0.3484,medium,11324.96,"['Unresolved support tickets', 'Payment delay', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0171,0.3857,medium,13843.37,"['Unresolved support tickets', 'Low product usage']",investigate product usage decline
+CUST-0172,0.1969,low,19468.89,"['Recent login inactivity', 'Unresolved support tickets']",send customer-success email
+CUST-0173,0.2555,low,9540.31,"['Unresolved support tickets', 'Payment delay']",send customer-success email
+CUST-0174,0.6343,high,27045.23,"['Unresolved support tickets', 'Low product usage']",schedule executive check-in
+CUST-0175,0.5224,medium,93724.48,"['Onboarding incomplete', 'Payment delay', 'Unresolved support tickets', 'Low product usage']",offer onboarding support
+CUST-0176,0.3252,medium,7533.17,"['Payment delay', 'Weak customer sentiment', 'Low product usage']",offer commercial renewal support
+CUST-0177,0.3045,low,4686.7,"['Unresolved support tickets', 'Low product usage', 'Recent login inactivity']",escalate unresolved tickets
+CUST-0178,0.3687,medium,13380.85,['No major structured risk driver detected'],send customer-success email
+CUST-0179,0.2746,low,10045.79,"['Unresolved support tickets', 'Low product usage']",investigate product usage decline
+CUST-0180,0.5132,medium,9548.8,"['Unresolved support tickets', 'Low product usage', 'Recent login inactivity', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0181,0.1393,low,1819.0,['Unresolved support tickets'],send customer-success email
+CUST-0182,0.3982,medium,53970.19,['Low product usage'],investigate product usage decline
+CUST-0183,0.1785,low,6037.41,['Low product usage'],send customer-success email
+CUST-0184,0.4525,medium,7291.0,"['Unresolved support tickets', 'Low product usage']",send customer-success email
+CUST-0185,0.2718,low,13884.34,"['Unresolved support tickets', 'Low product usage']",send customer-success email
+CUST-0186,0.0579,low,1441.93,['No major structured risk driver detected'],send customer-success email
+CUST-0187,0.1804,low,4065.62,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0188,0.5471,medium,21816.29,['Unresolved support tickets'],send customer-success email
+CUST-0189,0.7666,high,8348.95,"['Unresolved support tickets', 'Low product usage']",escalate unresolved tickets
+CUST-0190,0.3152,low,10853.1,['Weak customer sentiment'],send customer-success email
+CUST-0191,0.3333,medium,34208.53,"['Unresolved support tickets', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0192,0.5408,medium,20163.3,"['Weak customer sentiment', 'Unresolved support tickets', 'Low product usage', 'Recent login inactivity']",send customer-success email
+CUST-0193,0.1532,low,3166.27,"['Recent login inactivity', 'Unresolved support tickets']",send customer-success email
+CUST-0194,0.4792,medium,9039.95,"['Unresolved support tickets', 'Recent login inactivity', 'Weak customer sentiment', 'Low product usage']",escalate unresolved tickets
+CUST-0195,0.2414,low,4873.26,['Unresolved support tickets'],send customer-success email
+CUST-0196,0.2961,low,6669.84,['Unresolved support tickets'],send customer-success email
+CUST-0197,0.1633,low,3371.7,['Unresolved support tickets'],send customer-success email
+CUST-0198,0.3786,medium,19341.8,"['Unresolved support tickets', 'Payment delay']",escalate unresolved tickets
+CUST-0199,0.3458,medium,2765.24,['Unresolved support tickets'],send customer-success email
+CUST-0200,0.5666,medium,27870.44,"['Weak customer sentiment', 'Onboarding incomplete']",offer onboarding support
+CUST-0201,0.3898,medium,8038.42,"['Unresolved support tickets', 'Low product usage']",send customer-success email
+CUST-0202,0.258,low,9036.49,['Unresolved support tickets'],send customer-success email
+CUST-0203,0.2433,low,2973.76,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0204,0.2983,low,20338.36,"['Payment delay', 'Unresolved support tickets']",offer commercial renewal support
+CUST-0205,0.5572,medium,35853.23,"['Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0206,0.5071,medium,26707.66,['Unresolved support tickets'],send customer-success email
+CUST-0207,0.5034,medium,4690.65,"['Weak customer sentiment', 'Unresolved support tickets', 'Recent login inactivity']",send customer-success email
+CUST-0208,0.3169,low,15233.76,"['Unresolved support tickets', 'Recent login inactivity']",send customer-success email
+CUST-0209,0.2772,low,9901.68,"['Unresolved support tickets', 'Onboarding incomplete']",offer onboarding support
+CUST-0210,0.2131,low,1863.73,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0211,0.4277,medium,11312.96,"['Recent login inactivity', 'Low product usage', 'Unresolved support tickets']",investigate product usage decline
+CUST-0212,0.2576,low,8944.58,"['Unresolved support tickets', 'Recent login inactivity', 'Payment delay']",escalate unresolved tickets
+CUST-0213,0.6255,high,24834.36,['Low product usage'],investigate product usage decline
+CUST-0214,0.0735,low,2239.52,"['Unresolved support tickets', 'Payment delay']",send customer-success email
+CUST-0215,0.0771,low,2543.74,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0216,0.3988,medium,30097.47,['Unresolved support tickets'],send customer-success email
+CUST-0217,0.1848,low,11730.47,['Recent login inactivity'],send customer-success email
+CUST-0218,0.1571,low,567.9,"['Unresolved support tickets', 'Payment delay']",send customer-success email
+CUST-0219,0.5904,medium,12718.96,"['Unresolved support tickets', 'Recent login inactivity']",send customer-success email
+CUST-0220,0.5719,medium,13711.53,"['Recent login inactivity', 'Unresolved support tickets', 'Payment delay']",offer commercial renewal support
+CUST-0221,0.3605,medium,2844.36,"['Unresolved support tickets', 'Payment delay', 'Low product usage']",escalate unresolved tickets
+CUST-0222,0.1044,low,3001.46,"['Unresolved support tickets', 'Payment delay']",offer commercial renewal support
+CUST-0223,0.102,low,6574.63,['Weak customer sentiment'],send customer-success email
+CUST-0224,0.4908,medium,6171.85,"['Unresolved support tickets', 'Onboarding incomplete', 'Low product usage']",escalate unresolved tickets
+CUST-0225,0.3829,medium,13035.79,"['Unresolved support tickets', 'Low product usage']",send customer-success email
+CUST-0226,0.3415,medium,4839.89,"['Payment delay', 'Low product usage', 'Unresolved support tickets']",investigate product usage decline
+CUST-0227,0.1904,low,3200.99,['Unresolved support tickets'],send customer-success email
+CUST-0228,0.1819,low,13761.94,['Unresolved support tickets'],send customer-success email
+CUST-0229,0.3219,medium,5923.07,"['Onboarding incomplete', 'Payment delay', 'Recent login inactivity']",offer onboarding support
+CUST-0230,0.2132,low,7928.63,['No major structured risk driver detected'],send customer-success email
+CUST-0231,0.1773,low,1287.35,"['Unresolved support tickets', 'Recent login inactivity']",send customer-success email
+CUST-0232,0.5383,medium,53331.25,['Unresolved support tickets'],send customer-success email
+CUST-0233,0.4838,medium,19844.48,"['Unresolved support tickets', 'Payment delay', 'Recent login inactivity']",send customer-success email
+CUST-0234,0.6071,high,14373.28,"['Unresolved support tickets', 'Weak customer sentiment', 'Recent login inactivity']",escalate unresolved tickets
+CUST-0235,0.6307,high,25387.24,"['Unresolved support tickets', 'Recent login inactivity']",escalate unresolved tickets
+CUST-0236,0.4312,medium,4324.59,"['Unresolved support tickets', 'Onboarding incomplete', 'Weak customer sentiment', 'Payment delay']",offer onboarding support
+CUST-0237,0.3696,medium,22752.19,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0238,0.5966,medium,12793.99,"['Unresolved support tickets', 'Onboarding incomplete']",offer onboarding support
+CUST-0239,0.4128,medium,9627.45,"['Onboarding incomplete', 'Unresolved support tickets', 'Recent login inactivity']",offer onboarding support
+CUST-0240,0.2182,low,4161.79,"['Recent login inactivity', 'Payment delay']",send customer-success email
+CUST-0241,0.5564,medium,9968.82,"['Unresolved support tickets', 'Low product usage']",escalate unresolved tickets
+CUST-0242,0.5274,medium,23072.97,"['Recent login inactivity', 'Unresolved support tickets', 'Onboarding incomplete', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0243,0.0931,low,2995.4,['Unresolved support tickets'],send customer-success email
+CUST-0244,0.1909,low,8105.34,"['Low product usage', 'Recent login inactivity']",send customer-success email
+CUST-0245,0.363,medium,9705.54,"['Weak customer sentiment', 'Unresolved support tickets', 'Recent login inactivity']",send customer-success email
+CUST-0246,0.0755,low,2909.29,['No major structured risk driver detected'],send customer-success email
+CUST-0247,0.6977,high,14000.61,"['Onboarding incomplete', 'Weak customer sentiment', 'Unresolved support tickets', 'Low product usage']",investigate product usage decline
+CUST-0248,0.2764,low,35417.52,"['Unresolved support tickets', 'Payment delay']",send customer-success email
+CUST-0249,0.2273,low,2040.59,"['Unresolved support tickets', 'Weak customer sentiment', 'Recent login inactivity']",send customer-success email
+CUST-0250,0.3398,medium,22099.16,"['Onboarding incomplete', 'Recent login inactivity', 'Payment delay']",offer onboarding support
+CUST-0251,0.3617,medium,25351.34,"['Unresolved support tickets', 'Weak customer sentiment', 'Payment delay']",send customer-success email
+CUST-0252,0.535,medium,7926.3,"['Weak customer sentiment', 'Recent login inactivity']",send customer-success email
+CUST-0253,0.3581,medium,45867.97,"['Recent login inactivity', 'Unresolved support tickets']",send customer-success email
+CUST-0254,0.3715,medium,20063.1,"['Unresolved support tickets', 'Recent login inactivity']",send customer-success email
+CUST-0255,0.1849,low,9818.39,"['Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0256,0.3442,medium,9444.72,['No major structured risk driver detected'],send customer-success email
+CUST-0257,0.1909,low,4410.95,"['Weak customer sentiment', 'Unresolved support tickets']",send customer-success email
+CUST-0258,0.5166,medium,12002.06,"['Unresolved support tickets', 'Weak customer sentiment', 'Low product usage', 'Payment delay']",escalate unresolved tickets
+CUST-0259,0.5606,medium,19823.72,"['Unresolved support tickets', 'Payment delay', 'Recent login inactivity', 'Weak customer sentiment']",offer commercial renewal support
+CUST-0260,0.2455,low,17615.92,"['Unresolved support tickets', 'Payment delay']",escalate unresolved tickets
+CUST-0261,0.2368,low,7232.86,"['Low product usage', 'Recent login inactivity']",investigate product usage decline
+CUST-0262,0.5024,medium,7141.39,"['Unresolved support tickets', 'Low product usage', 'Payment delay']",escalate unresolved tickets
+CUST-0263,0.4313,medium,20665.38,['Unresolved support tickets'],send customer-success email
+CUST-0264,0.6398,high,32802.68,"['Low product usage', 'Weak customer sentiment', 'Unresolved support tickets', 'Onboarding incomplete']",investigate product usage decline
+CUST-0265,0.121,low,5148.26,['Recent login inactivity'],send customer-success email
+CUST-0266,0.4339,medium,19671.31,['No major structured risk driver detected'],send customer-success email
+CUST-0267,0.142,low,3160.32,"['Unresolved support tickets', 'Recent login inactivity']",escalate unresolved tickets
+CUST-0268,0.4669,medium,6555.36,"['Recent login inactivity', 'Unresolved support tickets', 'Payment delay']",offer commercial renewal support
+CUST-0269,0.763,high,11178.73,"['Unresolved support tickets', 'Onboarding incomplete', 'Weak customer sentiment', 'Payment delay']",escalate unresolved tickets
+CUST-0270,0.5122,medium,4386.03,"['Onboarding incomplete', 'Unresolved support tickets']",offer onboarding support
+CUST-0271,0.4626,medium,14691.44,['Unresolved support tickets'],send customer-success email
+CUST-0272,0.1629,low,4133.38,"['Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0273,0.7156,high,14147.91,"['Unresolved support tickets', 'Payment delay', 'Weak customer sentiment', 'Recent login inactivity']",offer commercial renewal support
+CUST-0274,0.243,low,825.7,"['Unresolved support tickets', 'Recent login inactivity']",send customer-success email
+CUST-0275,0.261,low,2932.94,['Low product usage'],send customer-success email
+CUST-0276,0.3725,medium,21959.83,"['Unresolved support tickets', 'Weak customer sentiment', 'Recent login inactivity']",send customer-success email
+CUST-0277,0.1472,low,2487.05,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0278,0.1894,low,6559.34,"['Unresolved support tickets', 'Payment delay']",send customer-success email
+CUST-0279,0.5091,medium,5174.11,"['Unresolved support tickets', 'Recent login inactivity']",escalate unresolved tickets
+CUST-0280,0.417,medium,30715.21,"['Weak customer sentiment', 'Low product usage']",send customer-success email
+CUST-0281,0.3919,medium,9531.98,"['Unresolved support tickets', 'Recent login inactivity', 'Low product usage']",escalate unresolved tickets
+CUST-0282,0.5397,medium,17788.57,"['Onboarding incomplete', 'Recent login inactivity', 'Unresolved support tickets', 'Low product usage']",offer onboarding support
+CUST-0283,0.6202,high,84997.77,"['Unresolved support tickets', 'Onboarding incomplete', 'Payment delay']",offer onboarding support
+CUST-0284,0.2686,low,20890.29,"['Unresolved support tickets', 'Payment delay']",offer commercial renewal support
+CUST-0285,0.392,medium,8508.75,"['Unresolved support tickets', 'Recent login inactivity']",send customer-success email
+CUST-0286,0.4568,medium,8112.94,"['Unresolved support tickets', 'Low product usage']",send customer-success email
+CUST-0287,0.2857,low,6120.92,['No major structured risk driver detected'],send customer-success email
+CUST-0288,0.3837,medium,14751.42,"['Unresolved support tickets', 'Low product usage']",send customer-success email
+CUST-0289,0.757,high,18920.04,"['Unresolved support tickets', 'Weak customer sentiment', 'Recent login inactivity']",escalate unresolved tickets
+CUST-0290,0.2856,low,5827.53,['Unresolved support tickets'],send customer-success email
+CUST-0291,0.1574,low,11824.61,['Unresolved support tickets'],send customer-success email
+CUST-0292,0.2894,low,7186.45,"['Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0293,0.3173,low,42697.96,['Payment delay'],offer commercial renewal support
+CUST-0294,0.6911,high,19812.08,"['Unresolved support tickets', 'Onboarding incomplete', 'Low product usage', 'Weak customer sentiment']",investigate product usage decline
+CUST-0295,0.5993,medium,56261.47,"['Unresolved support tickets', 'Payment delay']",send customer-success email
+CUST-0296,0.5255,medium,18154.2,"['Onboarding incomplete', 'Unresolved support tickets', 'Low product usage', 'Weak customer sentiment']",offer onboarding support
+CUST-0297,0.4985,medium,26316.51,"['Unresolved support tickets', 'Low product usage']",investigate product usage decline
+CUST-0298,0.1044,low,1691.89,['Unresolved support tickets'],send customer-success email
+CUST-0299,0.2884,low,4269.02,"['Onboarding incomplete', 'Weak customer sentiment', 'Recent login inactivity']",offer onboarding support
+CUST-0300,0.3241,medium,12031.07,['Onboarding incomplete'],offer onboarding support
+CUST-0301,0.2994,low,16090.74,['Onboarding incomplete'],offer onboarding support
+CUST-0302,0.1086,low,3003.87,['Unresolved support tickets'],send customer-success email
+CUST-0303,0.3693,medium,4037.53,['Unresolved support tickets'],send customer-success email
+CUST-0304,0.3928,medium,4077.62,"['Unresolved support tickets', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0305,0.2024,low,2004.81,['No major structured risk driver detected'],send customer-success email
+CUST-0306,0.6045,high,4719.05,"['Unresolved support tickets', 'Onboarding incomplete', 'Recent login inactivity', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0307,0.2871,low,8338.7,['Payment delay'],offer commercial renewal support
+CUST-0308,0.5901,medium,34896.21,"['Unresolved support tickets', 'Low product usage']",escalate unresolved tickets
+CUST-0309,0.7109,high,18946.61,"['Unresolved support tickets', 'Onboarding incomplete', 'Low product usage', 'Weak customer sentiment']",investigate product usage decline
+CUST-0310,0.5014,medium,2772.4,"['Unresolved support tickets', 'Onboarding incomplete']",offer onboarding support
+CUST-0311,0.508,medium,11957.29,"['Unresolved support tickets', 'Onboarding incomplete']",escalate unresolved tickets
+CUST-0312,0.4608,medium,11062.48,"['Unresolved support tickets', 'Low product usage']",investigate product usage decline
+CUST-0313,0.1748,low,20400.82,['Unresolved support tickets'],send customer-success email
+CUST-0314,0.253,low,2454.11,"['Onboarding incomplete', 'Unresolved support tickets']",offer onboarding support
+CUST-0315,0.6243,high,12777.89,"['Low product usage', 'Unresolved support tickets']",investigate product usage decline
+CUST-0316,0.5341,medium,47426.76,"['Unresolved support tickets', 'Weak customer sentiment', 'Low product usage']",escalate unresolved tickets
+CUST-0317,0.374,medium,13786.63,"['Unresolved support tickets', 'Onboarding incomplete', 'Payment delay', 'Recent login inactivity']",offer onboarding support
+CUST-0318,0.2751,low,10978.06,"['Unresolved support tickets', 'Weak customer sentiment', 'Payment delay']",send customer-success email
+CUST-0319,0.5126,medium,14942.91,"['Weak customer sentiment', 'Unresolved support tickets', 'Low product usage']",send customer-success email
+CUST-0320,0.1661,low,5628.38,['Unresolved support tickets'],send customer-success email
+CUST-0321,0.0999,low,4633.95,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0322,0.3155,low,4815.81,"['Unresolved support tickets', 'Onboarding incomplete']",escalate unresolved tickets
+CUST-0323,0.1367,low,6799.89,"['Unresolved support tickets', 'Payment delay']",send customer-success email
+CUST-0324,0.3693,medium,3800.34,"['Weak customer sentiment', 'Recent login inactivity']",send customer-success email
+CUST-0325,0.1696,low,5743.31,['Unresolved support tickets'],send customer-success email
+CUST-0326,0.68,high,20732.91,"['Onboarding incomplete', 'Weak customer sentiment', 'Unresolved support tickets']",offer onboarding support
+CUST-0327,0.2812,low,4913.53,['Onboarding incomplete'],offer onboarding support
+CUST-0328,0.5711,medium,15120.98,"['Unresolved support tickets', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0329,0.5665,medium,9856.43,"['Unresolved support tickets', 'Payment delay', 'Weak customer sentiment']",offer commercial renewal support
+CUST-0330,0.2891,low,3673.56,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0331,0.1404,low,2949.15,['Unresolved support tickets'],send customer-success email
+CUST-0332,0.2418,low,3003.25,['No major structured risk driver detected'],send customer-success email
+CUST-0333,0.1579,low,5325.88,['No major structured risk driver detected'],send customer-success email
+CUST-0334,0.6718,high,8079.45,"['Unresolved support tickets', 'Payment delay', 'Low product usage']",escalate unresolved tickets
+CUST-0335,0.5833,medium,25831.5,"['Low product usage', 'Unresolved support tickets', 'Recent login inactivity', 'Payment delay']",investigate product usage decline
+CUST-0336,0.2802,low,3296.93,"['Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0337,0.0753,low,1362.26,['No major structured risk driver detected'],send customer-success email
+CUST-0338,0.6809,high,11830.42,"['Unresolved support tickets', 'Low product usage', 'Payment delay']",investigate product usage decline
+CUST-0339,0.4511,medium,30688.22,"['Unresolved support tickets', 'Payment delay', 'Low product usage']",offer commercial renewal support
+CUST-0340,0.4453,medium,15095.65,['Unresolved support tickets'],send customer-success email
+CUST-0341,0.3476,medium,8063.02,"['Recent login inactivity', 'Weak customer sentiment']",send customer-success email
+CUST-0342,0.3491,medium,13314.89,"['Unresolved support tickets', 'Onboarding incomplete']",offer onboarding support
+CUST-0343,0.1938,low,1192.82,['Unresolved support tickets'],send customer-success email
+CUST-0344,0.7291,high,19030.95,"['Unresolved support tickets', 'Onboarding incomplete', 'Payment delay', 'Low product usage']",offer onboarding support
+CUST-0345,0.6869,high,74806.15,"['Unresolved support tickets', 'Recent login inactivity', 'Low product usage', 'Payment delay']",escalate unresolved tickets
+CUST-0346,0.2208,low,6516.53,"['Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0347,0.4964,medium,14005.12,['Unresolved support tickets'],send customer-success email
+CUST-0348,0.148,low,5844.04,"['Weak customer sentiment', 'Payment delay']",offer commercial renewal support
+CUST-0349,0.4504,medium,22680.92,"['Recent login inactivity', 'Unresolved support tickets', 'Onboarding incomplete', 'Weak customer sentiment']",offer onboarding support
+CUST-0350,0.3184,low,2116.2,['Onboarding incomplete'],offer onboarding support
+CUST-0351,0.2566,low,2125.79,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0352,0.2183,low,6805.82,['Unresolved support tickets'],send customer-success email
+CUST-0353,0.2583,low,4213.15,"['Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0354,0.34,medium,22918.95,"['Recent login inactivity', 'Onboarding incomplete']",offer onboarding support
+CUST-0355,0.1011,low,2181.47,['Unresolved support tickets'],send customer-success email
+CUST-0356,0.1533,low,1064.71,['Weak customer sentiment'],send customer-success email
+CUST-0357,0.6108,high,6763.68,"['Weak customer sentiment', 'Onboarding incomplete', 'Payment delay', 'Unresolved support tickets']",offer onboarding support
+CUST-0358,0.535,medium,2100.04,"['Unresolved support tickets', 'Onboarding incomplete']",escalate unresolved tickets
+CUST-0359,0.2514,low,5741.36,"['Unresolved support tickets', 'Payment delay', 'Low product usage']",offer commercial renewal support
+CUST-0360,0.3461,medium,8160.54,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0361,0.6752,high,13495.15,"['Unresolved support tickets', 'Weak customer sentiment', 'Payment delay']",escalate unresolved tickets
+CUST-0362,0.2742,low,15696.04,"['Recent login inactivity', 'Unresolved support tickets']",send customer-success email
+CUST-0363,0.3197,low,19900.98,"['Unresolved support tickets', 'Weak customer sentiment', 'Payment delay']",escalate unresolved tickets
+CUST-0364,0.4651,medium,11104.88,"['Onboarding incomplete', 'Unresolved support tickets', 'Recent login inactivity']",offer onboarding support
+CUST-0365,0.0774,low,467.46,['No major structured risk driver detected'],send customer-success email
+CUST-0366,0.1795,low,7438.72,"['Unresolved support tickets', 'Onboarding incomplete']",offer onboarding support
+CUST-0367,0.3876,medium,15383.88,"['Unresolved support tickets', 'Payment delay']",send customer-success email
+CUST-0368,0.1184,low,3955.4,"['Unresolved support tickets', 'Payment delay']",escalate unresolved tickets
+CUST-0369,0.5822,medium,31136.4,"['Unresolved support tickets', 'Onboarding incomplete', 'Weak customer sentiment']",offer onboarding support
+CUST-0370,0.1318,low,1568.47,['Unresolved support tickets'],send customer-success email
+CUST-0371,0.4298,medium,47177.39,"['Unresolved support tickets', 'Payment delay', 'Low product usage']",offer commercial renewal support
+CUST-0372,0.4544,medium,6245.16,"['Unresolved support tickets', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0373,0.1957,low,8893.8,"['Weak customer sentiment', 'Unresolved support tickets']",send customer-success email
+CUST-0374,0.1028,low,848.49,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0375,0.4262,medium,5978.61,['Unresolved support tickets'],send customer-success email
+CUST-0376,0.4177,medium,32482.78,"['Onboarding incomplete', 'Weak customer sentiment', 'Unresolved support tickets', 'Recent login inactivity']",offer onboarding support
+CUST-0377,0.4729,medium,10599.46,"['Onboarding incomplete', 'Payment delay']",offer onboarding support
+CUST-0378,0.2793,low,13526.36,"['Unresolved support tickets', 'Payment delay', 'Recent login inactivity']",send customer-success email
+CUST-0379,0.3,low,9527.62,"['Unresolved support tickets', 'Payment delay']",escalate unresolved tickets
+CUST-0380,0.3867,medium,9665.36,"['Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0381,0.1777,low,12422.57,['Low product usage'],send customer-success email
+CUST-0382,0.6571,high,14978.89,"['Onboarding incomplete', 'Unresolved support tickets', 'Low product usage']",offer onboarding support
+CUST-0383,0.4317,medium,3339.38,"['Unresolved support tickets', 'Low product usage']",send customer-success email
+CUST-0384,0.3711,medium,5689.66,"['Unresolved support tickets', 'Onboarding incomplete', 'Payment delay']",offer onboarding support
+CUST-0385,0.1594,low,6305.73,['Unresolved support tickets'],send customer-success email
+CUST-0386,0.2136,low,7578.85,['Weak customer sentiment'],send customer-success email
+CUST-0387,0.4862,medium,4367.23,"['Onboarding incomplete', 'Recent login inactivity']",offer onboarding support
+CUST-0388,0.3221,medium,5219.4,['Weak customer sentiment'],send customer-success email
+CUST-0389,0.4886,medium,8747.14,"['Unresolved support tickets', 'Onboarding incomplete', 'Low product usage']",offer onboarding support
+CUST-0390,0.7213,high,15024.71,"['Unresolved support tickets', 'Onboarding incomplete', 'Payment delay', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0391,0.6526,high,6701.74,"['Unresolved support tickets', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0392,0.3096,low,5365.66,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0393,0.5643,medium,9115.74,['No major structured risk driver detected'],send customer-success email
+CUST-0394,0.6348,high,29307.98,"['Onboarding incomplete', 'Unresolved support tickets', 'Recent login inactivity', 'Low product usage']",offer onboarding support
+CUST-0395,0.459,medium,21754.33,"['Weak customer sentiment', 'Onboarding incomplete', 'Unresolved support tickets', 'Recent login inactivity']",offer onboarding support
+CUST-0396,0.3464,medium,8415.22,"['Unresolved support tickets', 'Low product usage', 'Weak customer sentiment', 'Recent login inactivity']",send customer-success email
+CUST-0397,0.2869,low,5866.79,['Unresolved support tickets'],send customer-success email
+CUST-0398,0.1308,low,3879.8,['Low product usage'],send customer-success email
+CUST-0399,0.1996,low,3032.38,"['Unresolved support tickets', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0400,0.2872,low,3462.52,['Unresolved support tickets'],send customer-success email
+CUST-0401,0.6737,high,9385.29,"['Onboarding incomplete', 'Payment delay', 'Unresolved support tickets', 'Recent login inactivity']",offer onboarding support
+CUST-0402,0.2207,low,3807.96,"['Unresolved support tickets', 'Payment delay']",send customer-success email
+CUST-0403,0.3906,medium,4653.44,"['Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0404,0.7038,high,21208.18,"['Weak customer sentiment', 'Low product usage']",investigate product usage decline
+CUST-0405,0.3852,medium,17270.15,"['Weak customer sentiment', 'Payment delay', 'Recent login inactivity', 'Low product usage']",send customer-success email
+CUST-0406,0.3795,medium,3361.23,"['Recent login inactivity', 'Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0407,0.5355,medium,14662.62,"['Unresolved support tickets', 'Onboarding incomplete', 'Low product usage']",escalate unresolved tickets
+CUST-0408,0.4222,medium,9737.61,"['Weak customer sentiment', 'Low product usage', 'Recent login inactivity']",send customer-success email
+CUST-0409,0.4816,medium,16455.01,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0410,0.2923,low,7794.18,"['Unresolved support tickets', 'Low product usage', 'Payment delay']",offer commercial renewal support
+CUST-0411,0.1529,low,1486.92,['Unresolved support tickets'],send customer-success email
+CUST-0412,0.1851,low,2058.03,['Unresolved support tickets'],send customer-success email
+CUST-0413,0.3369,medium,9252.07,"['Onboarding incomplete', 'Weak customer sentiment']",offer onboarding support
+CUST-0414,0.5292,medium,29251.16,"['Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0415,0.2508,low,1432.38,"['Unresolved support tickets', 'Recent login inactivity']",send customer-success email
+CUST-0416,0.2841,low,9736.73,['No major structured risk driver detected'],send customer-success email
+CUST-0417,0.2152,low,13313.79,"['Unresolved support tickets', 'Payment delay']",send customer-success email
+CUST-0418,0.5228,medium,12635.67,"['Unresolved support tickets', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0419,0.6703,high,26506.81,"['Unresolved support tickets', 'Low product usage']",investigate product usage decline
+CUST-0420,0.5586,medium,9186.8,"['Unresolved support tickets', 'Weak customer sentiment', 'Low product usage', 'Payment delay']",send customer-success email
+CUST-0421,0.5554,medium,13744.65,"['Unresolved support tickets', 'Onboarding incomplete', 'Low product usage']",investigate product usage decline
+CUST-0422,0.2206,low,1908.4,['Unresolved support tickets'],send customer-success email
+CUST-0423,0.6907,high,3600.48,"['Unresolved support tickets', 'Recent login inactivity']",escalate unresolved tickets
+CUST-0424,0.6538,high,34029.65,"['Unresolved support tickets', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0425,0.3659,medium,4939.59,"['Weak customer sentiment', 'Onboarding incomplete']",offer onboarding support
+CUST-0426,0.2488,low,4865.87,"['Weak customer sentiment', 'Unresolved support tickets', 'Recent login inactivity']",send customer-success email
+CUST-0427,0.4735,medium,4826.12,"['Unresolved support tickets', 'Onboarding incomplete']",escalate unresolved tickets
+CUST-0428,0.3941,medium,3951.43,"['Unresolved support tickets', 'Weak customer sentiment', 'Low product usage']",send customer-success email
+CUST-0429,0.5259,medium,12527.02,"['Onboarding incomplete', 'Unresolved support tickets', 'Low product usage']",offer onboarding support
+CUST-0430,0.1161,low,1874.97,"['Unresolved support tickets', 'Recent login inactivity']",send customer-success email
+CUST-0431,0.0894,low,3134.16,['Unresolved support tickets'],send customer-success email
+CUST-0432,0.7249,high,26770.71,"['Low product usage', 'Unresolved support tickets']",investigate product usage decline
+CUST-0433,0.3779,medium,12726.66,"['Unresolved support tickets', 'Payment delay']",offer commercial renewal support
+CUST-0434,0.3702,medium,11769.09,['No major structured risk driver detected'],send customer-success email
+CUST-0435,0.4393,medium,35661.14,"['Unresolved support tickets', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0436,0.3585,medium,4568.08,"['Unresolved support tickets', 'Low product usage', 'Weak customer sentiment', 'Recent login inactivity']",escalate unresolved tickets
+CUST-0437,0.4683,medium,12123.35,['Unresolved support tickets'],send customer-success email
+CUST-0438,0.5923,medium,35215.16,"['Unresolved support tickets', 'Recent login inactivity']",escalate unresolved tickets
+CUST-0439,0.2291,low,14938.53,['Unresolved support tickets'],send customer-success email
+CUST-0440,0.354,medium,3520.64,"['Unresolved support tickets', 'Onboarding incomplete']",offer onboarding support
+CUST-0441,0.2726,low,5893.4,"['Recent login inactivity', 'Unresolved support tickets']",send customer-success email
+CUST-0442,0.31,low,21578.08,"['Unresolved support tickets', 'Weak customer sentiment', 'Payment delay']",offer commercial renewal support
+CUST-0443,0.4089,medium,15698.03,"['Onboarding incomplete', 'Unresolved support tickets']",offer onboarding support
+CUST-0444,0.347,medium,10702.76,['Weak customer sentiment'],send customer-success email
+CUST-0445,0.2672,low,6171.88,"['Unresolved support tickets', 'Payment delay']",escalate unresolved tickets
+CUST-0446,0.2201,low,4525.75,"['Unresolved support tickets', 'Payment delay']",escalate unresolved tickets
+CUST-0447,0.1218,low,4007.78,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0448,0.2274,low,5127.31,"['Unresolved support tickets', 'Payment delay']",escalate unresolved tickets
+CUST-0449,0.154,low,4021.98,['No major structured risk driver detected'],send customer-success email
+CUST-0450,0.2019,low,5739.96,['Unresolved support tickets'],send customer-success email
+CUST-0451,0.5297,medium,8865.92,"['Unresolved support tickets', 'Low product usage', 'Payment delay']",escalate unresolved tickets
+CUST-0452,0.1091,low,4260.61,['Unresolved support tickets'],send customer-success email
+CUST-0453,0.4889,medium,101151.51,"['Unresolved support tickets', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0454,0.2346,low,1819.64,['Unresolved support tickets'],send customer-success email
+CUST-0455,0.5456,medium,18414.42,"['Onboarding incomplete', 'Weak customer sentiment']",offer onboarding support
+CUST-0456,0.6772,high,10700.9,"['Unresolved support tickets', 'Low product usage', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0457,0.1388,low,5594.63,['Unresolved support tickets'],send customer-success email
+CUST-0458,0.1752,low,4870.03,['Low product usage'],send customer-success email
+CUST-0459,0.7461,high,34213.58,"['Onboarding incomplete', 'Unresolved support tickets', 'Weak customer sentiment', 'Payment delay']",offer onboarding support
+CUST-0460,0.2902,low,17774.11,"['Unresolved support tickets', 'Low product usage']",send customer-success email
+CUST-0461,0.4197,medium,12920.0,"['Unresolved support tickets', 'Low product usage']",send customer-success email
+CUST-0462,0.2721,low,16171.06,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0463,0.3334,medium,1738.15,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0464,0.1737,low,14224.48,"['Unresolved support tickets', 'Recent login inactivity']",send customer-success email
+CUST-0465,0.3104,low,10857.17,"['Unresolved support tickets', 'Payment delay']",send customer-success email
+CUST-0466,0.317,low,18137.02,"['Weak customer sentiment', 'Recent login inactivity']",send customer-success email
+CUST-0467,0.2322,low,2660.07,"['Weak customer sentiment', 'Recent login inactivity']",send customer-success email
+CUST-0468,0.5374,medium,8082.67,"['Unresolved support tickets', 'Low product usage', 'Payment delay']",escalate unresolved tickets
+CUST-0469,0.6472,high,19283.97,"['Unresolved support tickets', 'Low product usage', 'Weak customer sentiment']",investigate product usage decline
+CUST-0470,0.0747,low,1987.02,['No major structured risk driver detected'],send customer-success email
+CUST-0471,0.3706,medium,12156.84,"['Unresolved support tickets', 'Low product usage']",send customer-success email
+CUST-0472,0.6863,high,39444.53,"['Unresolved support tickets', 'Low product usage']",schedule executive check-in
+CUST-0473,0.1562,low,1220.98,"['Recent login inactivity', 'Payment delay']",send customer-success email
+CUST-0474,0.2857,low,15197.1,"['Payment delay', 'Unresolved support tickets', 'Weak customer sentiment']",offer commercial renewal support
+CUST-0475,0.6139,high,16612.33,"['Onboarding incomplete', 'Payment delay', 'Low product usage']",offer onboarding support
+CUST-0476,0.4111,medium,9590.68,"['Recent login inactivity', 'Unresolved support tickets']",send customer-success email
+CUST-0477,0.202,low,1940.53,['Unresolved support tickets'],send customer-success email
+CUST-0478,0.43,medium,16450.14,"['Unresolved support tickets', 'Payment delay', 'Recent login inactivity', 'Low product usage']",offer commercial renewal support
+CUST-0479,0.6512,high,3233.42,"['Unresolved support tickets', 'Onboarding incomplete', 'Low product usage', 'Recent login inactivity']",investigate product usage decline
+CUST-0480,0.0984,low,4168.32,"['Unresolved support tickets', 'Recent login inactivity']",send customer-success email
+CUST-0481,0.2816,low,2665.53,"['Unresolved support tickets', 'Payment delay', 'Weak customer sentiment']",send customer-success email
+CUST-0482,0.4593,medium,12827.15,"['Unresolved support tickets', 'Recent login inactivity']",escalate unresolved tickets
+CUST-0483,0.6948,high,17196.93,"['Unresolved support tickets', 'Low product usage']",escalate unresolved tickets
+CUST-0484,0.3192,low,19474.58,"['Unresolved support tickets', 'Low product usage']",escalate unresolved tickets
+CUST-0485,0.3541,medium,8405.75,"['Unresolved support tickets', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0486,0.1425,low,2358.83,"['Unresolved support tickets', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0487,0.2501,low,4720.46,"['Payment delay', 'Unresolved support tickets', 'Low product usage']",offer commercial renewal support
+CUST-0488,0.6634,high,43502.5,"['Weak customer sentiment', 'Unresolved support tickets', 'Onboarding incomplete']",escalate unresolved tickets
+CUST-0489,0.0967,low,3787.02,['Unresolved support tickets'],send customer-success email
+CUST-0490,0.7011,high,14400.2,"['Low product usage', 'Onboarding incomplete', 'Unresolved support tickets']",investigate product usage decline
+CUST-0491,0.7215,high,16450.4,"['Unresolved support tickets', 'Onboarding incomplete', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0492,0.6979,high,6268.65,"['Unresolved support tickets', 'Onboarding incomplete', 'Low product usage']",offer onboarding support
+CUST-0493,0.2359,low,8328.94,['Weak customer sentiment'],send customer-success email
+CUST-0494,0.1836,low,1440.98,['No major structured risk driver detected'],send customer-success email
+CUST-0495,0.2435,low,11087.9,"['Unresolved support tickets', 'Payment delay']",escalate unresolved tickets
+CUST-0496,0.15,low,4415.93,"['Unresolved support tickets', 'Payment delay', 'Weak customer sentiment']",send customer-success email
+CUST-0497,0.6193,high,88587.22,"['Low product usage', 'Unresolved support tickets', 'Weak customer sentiment']",investigate product usage decline
+CUST-0498,0.5586,medium,6957.94,"['Recent login inactivity', 'Payment delay', 'Unresolved support tickets', 'Low product usage']",offer commercial renewal support
+CUST-0499,0.3795,medium,9502.62,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0500,0.1705,low,16149.91,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0501,0.3564,medium,22078.42,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0502,0.2317,low,3828.33,['Payment delay'],offer commercial renewal support
+CUST-0503,0.1895,low,5963.98,"['Unresolved support tickets', 'Payment delay', 'Recent login inactivity', 'Weak customer sentiment']",offer commercial renewal support
+CUST-0504,0.2629,low,7083.72,"['Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0505,0.6232,high,20424.11,"['Low product usage', 'Weak customer sentiment', 'Unresolved support tickets']",investigate product usage decline
+CUST-0506,0.6837,high,11279.34,"['Unresolved support tickets', 'Weak customer sentiment', 'Recent login inactivity']",schedule executive check-in
+CUST-0507,0.3214,medium,8122.35,"['Unresolved support tickets', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0508,0.4756,medium,4180.71,"['Low product usage', 'Payment delay']",send customer-success email
+CUST-0509,0.19,low,5619.5,['Payment delay'],send customer-success email
+CUST-0510,0.1519,low,5601.38,"['Unresolved support tickets', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0511,0.7243,high,16617.28,"['Unresolved support tickets', 'Onboarding incomplete', 'Weak customer sentiment']",offer onboarding support
+CUST-0512,0.7613,high,6612.7,"['Low product usage', 'Onboarding incomplete', 'Weak customer sentiment', 'Unresolved support tickets']",investigate product usage decline
+CUST-0513,0.4843,medium,26025.77,"['Unresolved support tickets', 'Low product usage', 'Payment delay']",escalate unresolved tickets
+CUST-0514,0.2096,low,7276.77,"['Unresolved support tickets', 'Payment delay']",escalate unresolved tickets
+CUST-0515,0.5182,medium,8387.02,['Unresolved support tickets'],send customer-success email
+CUST-0516,0.5665,medium,12522.22,"['Low product usage', 'Unresolved support tickets']",investigate product usage decline
+CUST-0517,0.22,low,2070.12,"['Unresolved support tickets', 'Payment delay']",send customer-success email
+CUST-0518,0.426,medium,5591.49,"['Onboarding incomplete', 'Unresolved support tickets', 'Payment delay']",offer onboarding support
+CUST-0519,0.3279,medium,6054.03,"['Onboarding incomplete', 'Unresolved support tickets', 'Recent login inactivity', 'Weak customer sentiment']",offer onboarding support
+CUST-0520,0.135,low,8583.89,['No major structured risk driver detected'],send customer-success email
+CUST-0521,0.3672,medium,6314.59,"['Recent login inactivity', 'Weak customer sentiment']",send customer-success email
+CUST-0522,0.457,medium,19248.57,"['Onboarding incomplete', 'Recent login inactivity']",offer onboarding support
+CUST-0523,0.1963,low,3622.35,"['Payment delay', 'Unresolved support tickets']",offer commercial renewal support
+CUST-0524,0.1041,low,3331.16,"['Weak customer sentiment', 'Unresolved support tickets']",send customer-success email
+CUST-0525,0.2312,low,5634.67,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0526,0.4232,medium,20978.98,['Low product usage'],investigate product usage decline
+CUST-0527,0.135,low,2497.25,"['Recent login inactivity', 'Payment delay']",send customer-success email
+CUST-0528,0.5497,medium,4918.46,"['Unresolved support tickets', 'Onboarding incomplete', 'Payment delay']",escalate unresolved tickets
+CUST-0529,0.2779,low,2841.06,"['Unresolved support tickets', 'Recent login inactivity']",escalate unresolved tickets
+CUST-0530,0.4773,medium,8849.35,['Payment delay'],offer commercial renewal support
+CUST-0531,0.2309,low,2590.9,"['Recent login inactivity', 'Unresolved support tickets', 'Payment delay']",send customer-success email
+CUST-0532,0.1651,low,5918.61,"['Unresolved support tickets', 'Payment delay', 'Weak customer sentiment']",offer commercial renewal support
+CUST-0533,0.3878,medium,7530.04,"['Onboarding incomplete', 'Weak customer sentiment', 'Unresolved support tickets']",offer onboarding support
+CUST-0534,0.5436,medium,77092.94,"['Weak customer sentiment', 'Payment delay', 'Low product usage']",send customer-success email
+CUST-0535,0.2182,low,1739.02,['Unresolved support tickets'],send customer-success email
+CUST-0536,0.1555,low,4822.97,['Weak customer sentiment'],send customer-success email
+CUST-0537,0.2155,low,2632.1,"['Unresolved support tickets', 'Payment delay']",send customer-success email
+CUST-0538,0.3871,medium,7372.54,"['Weak customer sentiment', 'Onboarding incomplete', 'Low product usage']",offer onboarding support
+CUST-0539,0.6378,high,18943.95,"['Low product usage', 'Unresolved support tickets', 'Recent login inactivity', 'Weak customer sentiment']",investigate product usage decline
+CUST-0540,0.4631,medium,2446.72,"['Unresolved support tickets', 'Recent login inactivity']",escalate unresolved tickets
+CUST-0541,0.6648,high,21108.93,"['Unresolved support tickets', 'Onboarding incomplete', 'Weak customer sentiment', 'Payment delay']",escalate unresolved tickets
+CUST-0542,0.2176,low,22176.96,['Unresolved support tickets'],send customer-success email
+CUST-0543,0.0792,low,1550.6,"['Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0544,0.1512,low,4877.61,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0545,0.1472,low,8116.06,"['Unresolved support tickets', 'Recent login inactivity']",send customer-success email
+CUST-0546,0.2334,low,5599.47,"['Unresolved support tickets', 'Recent login inactivity']",escalate unresolved tickets
+CUST-0547,0.1699,low,3043.35,['Unresolved support tickets'],send customer-success email
+CUST-0548,0.1248,low,682.39,['Weak customer sentiment'],send customer-success email
+CUST-0549,0.3428,medium,14443.58,"['Unresolved support tickets', 'Recent login inactivity']",send customer-success email
+CUST-0550,0.126,low,3130.41,['Unresolved support tickets'],send customer-success email
+CUST-0551,0.19,low,2516.42,"['Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0552,0.3282,medium,9648.47,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0553,0.128,low,2288.24,['No major structured risk driver detected'],send customer-success email
+CUST-0554,0.2806,low,5215.26,['Unresolved support tickets'],send customer-success email
+CUST-0555,0.3328,medium,13687.54,"['Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0556,0.7475,high,7879.91,"['Unresolved support tickets', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0557,0.3419,medium,19145.6,['Payment delay'],send customer-success email
+CUST-0558,0.2217,low,2242.05,"['Unresolved support tickets', 'Payment delay']",offer commercial renewal support
+CUST-0559,0.1372,low,2320.85,"['Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0560,0.3561,medium,36810.78,['Unresolved support tickets'],send customer-success email
+CUST-0561,0.5258,medium,31143.18,"['Unresolved support tickets', 'Low product usage', 'Recent login inactivity']",escalate unresolved tickets
+CUST-0562,0.0892,low,2569.44,"['Unresolved support tickets', 'Recent login inactivity']",send customer-success email
+CUST-0563,0.4278,medium,5957.79,['Low product usage'],investigate product usage decline
+CUST-0564,0.2644,low,4910.18,"['Unresolved support tickets', 'Weak customer sentiment', 'Recent login inactivity']",send customer-success email
+CUST-0565,0.3841,medium,10876.41,"['Unresolved support tickets', 'Recent login inactivity']",send customer-success email
+CUST-0566,0.25,low,6903.92,"['Unresolved support tickets', 'Recent login inactivity', 'Payment delay']",send customer-success email
+CUST-0567,0.3866,medium,9759.81,"['Unresolved support tickets', 'Low product usage']",send customer-success email
+CUST-0568,0.622,high,16376.08,"['Unresolved support tickets', 'Low product usage', 'Recent login inactivity']",investigate product usage decline
+CUST-0569,0.3951,medium,9149.2,"['Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0570,0.5264,medium,5161.25,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0571,0.5463,medium,10237.65,"['Unresolved support tickets', 'Onboarding incomplete', 'Payment delay']",offer onboarding support
+CUST-0572,0.0877,low,4474.2,['No major structured risk driver detected'],send customer-success email
+CUST-0573,0.3047,low,3145.83,['Recent login inactivity'],send customer-success email
+CUST-0574,0.0955,low,2249.17,['Recent login inactivity'],send customer-success email
+CUST-0575,0.127,low,1925.35,"['Unresolved support tickets', 'Weak customer sentiment']",escalate unresolved tickets
+CUST-0576,0.1162,low,3380.97,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0577,0.1015,low,2079.89,"['Recent login inactivity', 'Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0578,0.3486,medium,26382.95,"['Unresolved support tickets', 'Payment delay']",send customer-success email
+CUST-0579,0.4734,medium,18156.13,"['Low product usage', 'Unresolved support tickets', 'Payment delay']",investigate product usage decline
+CUST-0580,0.361,medium,3877.02,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0581,0.2686,low,11560.06,"['Unresolved support tickets', 'Payment delay', 'Recent login inactivity']",offer commercial renewal support
+CUST-0582,0.5065,medium,7922.2,"['Unresolved support tickets', 'Low product usage']",escalate unresolved tickets
+CUST-0583,0.206,low,3701.32,"['Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0584,0.2427,low,8134.89,['Low product usage'],send customer-success email
+CUST-0585,0.2648,low,5050.01,"['Recent login inactivity', 'Unresolved support tickets']",send customer-success email
+CUST-0586,0.1795,low,9022.63,"['Onboarding incomplete', 'Payment delay']",offer onboarding support
+CUST-0587,0.1406,low,2199.23,"['Unresolved support tickets', 'Weak customer sentiment']",send customer-success email
+CUST-0588,0.5369,medium,9365.25,"['Unresolved support tickets', 'Recent login inactivity', 'Onboarding incomplete']",escalate unresolved tickets
+CUST-0589,0.2445,low,4155.45,['Payment delay'],send customer-success email
+CUST-0590,0.0691,low,1250.99,['Recent login inactivity'],send customer-success email
+CUST-0591,0.392,medium,22762.76,"['Unresolved support tickets', 'Low product usage']",send customer-success email
+CUST-0592,0.5931,medium,24778.45,"['Low product usage', 'Unresolved support tickets', 'Recent login inactivity']",investigate product usage decline
+CUST-0593,0.1777,low,15826.08,['Unresolved support tickets'],send customer-success email
+CUST-0594,0.433,medium,56970.97,['Unresolved support tickets'],send customer-success email
+CUST-0595,0.4291,medium,5610.95,['Unresolved support tickets'],escalate unresolved tickets
+CUST-0596,0.1304,low,3685.47,"['Unresolved support tickets', 'Recent login inactivity']",send customer-success email
+CUST-0597,0.2094,low,2473.3,['Weak customer sentiment'],send customer-success email
+CUST-0598,0.5238,medium,8176.17,"['Payment delay', 'Low product usage']",offer commercial renewal support
+CUST-0599,0.589,medium,10194.71,"['Unresolved support tickets', 'Onboarding incomplete']",offer onboarding support
+CUST-0600,0.0848,low,1088.81,['Unresolved support tickets'],send customer-success email
