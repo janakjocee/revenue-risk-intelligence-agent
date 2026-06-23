@@ -12,10 +12,20 @@ The Revenue Risk Intelligence Agent is a synthetic, end-to-end customer-success 
 6. Serve the workflow through FastAPI and a Streamlit dashboard.
 7. Log each run for evaluation and observability.
 
+## Main Modules
+
+- `src/data`: synthetic customer and document generation
+- `src/model`: model training and risk scoring
+- `src/rag`: local retrieval
+- `src/agent`: recommendations and grounded response workflow
+- `src/api`: FastAPI service
+- `src/evaluation`: retrieval evaluation
+- `src/observability`: JSONL logging
+- `app`: Streamlit dashboard
+
 ## Design Principles
 
 - Synthetic/demo data only.
 - Local-first implementation that runs without an API key.
 - Clear separation between ML, retrieval, agent reasoning, API, and dashboard layers.
 - Explainable outputs for customer-success and analytics audiences.
-
