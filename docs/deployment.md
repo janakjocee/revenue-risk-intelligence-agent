@@ -6,6 +6,8 @@ This project is designed to run as a public demo without paid API keys. By defau
 
 Recommended public demo target: Streamlit Community Cloud.
 
+Current status: the repository is deployment-ready, but a public Streamlit app was not created from the Codex environment because Streamlit Community Cloud requires manual browser login and app creation.
+
 1. Push the repository to GitHub.
 2. Go to Streamlit Community Cloud and create a new app.
 3. Select repository `janakjocee/revenue-risk-intelligence-agent`.
@@ -13,6 +15,8 @@ Recommended public demo target: Streamlit Community Cloud.
 5. Use Python 3.11. The repo includes `runtime.txt`.
 6. No secrets are required for the default demo.
 7. Deploy the app.
+
+After deployment, add the live app URL to the `README.md` live demo line.
 
 Optional secrets for LLM mode:
 
@@ -87,6 +91,32 @@ make retriever
 make evaluate
 make test
 ```
+
+## Screenshot Capture
+
+The repository includes a full-dashboard screenshot at `docs/assets/overview-dashboard.png`.
+
+After the Streamlit deployment is live, capture additional screenshots from:
+
+- Overview
+- Account Deep Dive
+- Ask The Agent
+- What-If Simulator
+- Evaluation
+- Observability
+
+Recommended naming:
+
+```text
+docs/assets/overview-dashboard.png
+docs/assets/account-deep-dive.png
+docs/assets/ask-agent.png
+docs/assets/what-if-simulator.png
+docs/assets/evaluation.png
+docs/assets/observability.png
+```
+
+Use browser full-page screenshots where possible so the portfolio page shows the dashboard as a complete product rather than cropped components.
 
 ## Missing Artifact Troubleshooting
 

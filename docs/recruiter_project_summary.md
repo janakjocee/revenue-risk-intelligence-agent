@@ -1,5 +1,11 @@
 # Recruiter Project Summary
 
+Janak Raj Joshi, Applied Data Scientist
+
+- Portfolio: https://janakjocee.vercel.app/
+- GitHub: https://github.com/janakjocee
+- LinkedIn: https://www.linkedin.com/in/janakjocee
+
 ## 5-Bullet Summary
 
 - Built an end-to-end AI/data science product for customer-success revenue risk.
@@ -25,4 +31,3 @@ AI/data science decision-support system for customer-success teams: churn predic
 ## Interview Pitch
 
 I built this to show how I think beyond model accuracy. The project turns ML predictions into a usable business workflow with evidence, recommendations, feedback, evaluation, and deployment readiness.
-

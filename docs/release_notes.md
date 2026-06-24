@@ -4,6 +4,12 @@
 
 Revenue Risk Intelligence Agent is ready as a public portfolio project and recruiter-facing case study.
 
+Author: Janak Raj Joshi, Applied Data Scientist
+
+- Portfolio: https://janakjocee.vercel.app/
+- GitHub: https://github.com/janakjocee
+- LinkedIn: https://www.linkedin.com/in/janakjocee
+
 ## Features
 
 - Synthetic customer-success data and document generation
@@ -28,6 +34,8 @@ The local pytest suite passes. GitHub Actions is configured to run tests on push
 ## Deployment Status
 
 The repository is prepared for Streamlit Community Cloud deployment. Deployment was not completed from this environment because Streamlit Community Cloud requires manual browser login and app creation.
+
+README status: the live demo is marked as pending manual Streamlit Community Cloud deployment until the public app URL is created.
 
 Docker Compose deployment files are included. Docker was not executed in the final release environment because the Docker CLI was unavailable.
 

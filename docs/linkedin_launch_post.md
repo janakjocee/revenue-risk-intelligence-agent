@@ -8,6 +8,8 @@ It predicts churn risk, estimates revenue at risk, retrieves account evidence, r
 
 Tech: Python, scikit-learn, FastAPI, Streamlit, RAG, evaluation, observability, Docker, CI.
 
+GitHub: https://github.com/janakjocee/revenue-risk-intelligence-agent
+
 ## Technical Post
 
 I just finished Revenue Risk Intelligence Agent, a portfolio-grade AI/data science product that combines:
@@ -26,6 +28,8 @@ I just finished Revenue Risk Intelligence Agent, a portfolio-grade AI/data scien
 
 The default demo runs without paid API keys using synthetic data, local TF-IDF retrieval, and a mock LLM provider.
 
+GitHub: https://github.com/janakjocee/revenue-risk-intelligence-agent
+
 ## Recruiter-Friendly Post
 
 I built a practical customer-success decision-support system that shows how machine learning and AI can support real business workflows.
@@ -33,6 +37,8 @@ I built a practical customer-success decision-support system that shows how mach
 The app helps a team answer: which customers are at risk, why, what evidence supports that risk, how much revenue is exposed, and what action should happen next.
 
 This project demonstrates applied data science, Python engineering, ML, RAG, evaluation, observability, dashboarding, and deployment readiness.
+
+GitHub: https://github.com/janakjocee/revenue-risk-intelligence-agent
 
 ## Project Launch Post
 
@@ -52,3 +58,4 @@ What it does:
 
 I built it as a portfolio project to demonstrate end-to-end applied data science: from data generation and ML modelling to RAG, agent workflow design, dashboarding, testing, Docker, and CI.
 
+GitHub: https://github.com/janakjocee/revenue-risk-intelligence-agent

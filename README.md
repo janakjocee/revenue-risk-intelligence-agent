@@ -2,11 +2,11 @@
 
 **One-line summary:** An AI/data science decision-support product that predicts customer churn risk, estimates revenue at risk, retrieves account evidence, recommends retention actions, and presents everything in a business dashboard.
 
-**Live demo:** Coming soon. The repository is ready for Streamlit Community Cloud deployment using `app/streamlit_app.py`.
+**Live demo:** Pending manual Streamlit Community Cloud deployment. The repository is ready to deploy using `app/streamlit_app.py`.
 
 All data in this repository is synthetic demo data.
 
-This project demonstrates how machine learning, RAG, agentic workflows, evaluation, observability, and business dashboards can be combined into a practical customer-success decision-support system.
+This project demonstrates how machine learning, RAG, agentic workflows, evaluation, observability, feedback loops, and business dashboards can be combined into a practical customer-success decision-support system.
 
 ## Business Problem
 
@@ -51,6 +51,8 @@ flowchart LR
 ## Screenshots
 
 ![Executive overview dashboard](docs/assets/overview-dashboard.png)
+
+The committed screenshot shows the full executive dashboard view. Additional screenshots can be captured after deployment from the Overview, Account Deep Dive, Ask The Agent, What-If Simulator, Evaluation, and Observability tabs.
 
 ## Tech Stack
 
@@ -119,6 +121,7 @@ Recommended dashboard deployment: Streamlit Community Cloud.
 - Python runtime: `runtime.txt`
 - Secrets required: none for mock/local demo mode
 - Optional secrets: `OPENAI_API_KEY`, `OPENAI_BASE_URL`, `OPENAI_MODEL`, `LLM_PROVIDER=openai`
+- Current public deployment status: ready, but not deployed from Codex because Streamlit Community Cloud requires manual browser login and app creation.
 
 Detailed instructions are in [docs/deployment.md](docs/deployment.md).
 
@@ -182,3 +185,8 @@ Revenue Risk Intelligence Agent demonstrates applied data science across the ful
 
 Janak Raj Joshi
 
+Applied Data Scientist
+
+- Portfolio: https://janakjocee.vercel.app/
+- GitHub: https://github.com/janakjocee
+- LinkedIn: https://www.linkedin.com/in/janakjocee
