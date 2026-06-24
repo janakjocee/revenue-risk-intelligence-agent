@@ -6,17 +6,19 @@ This project is designed to run as a public demo without paid API keys. By defau
 
 Recommended public demo target: Streamlit Community Cloud.
 
-Current status: the repository is deployment-ready, but a public Streamlit app was not created from the Codex environment because Streamlit Community Cloud requires manual browser login and app creation.
+Current status: deployed at https://revenue-risk.streamlit.app/
 
 1. Push the repository to GitHub.
 2. Go to Streamlit Community Cloud and create a new app.
 3. Select repository `janakjocee/revenue-risk-intelligence-agent`.
 4. Set the main file path to `app/streamlit_app.py`.
-5. Use Python 3.11. The repo includes `runtime.txt`.
+5. Select Python 3.11 in the Streamlit Community Cloud app settings.
 6. No secrets are required for the default demo.
 7. Deploy the app.
 
-After deployment, add the live app URL to the `README.md` live demo line.
+Note: Streamlit Community Cloud chooses the Python version from the app settings UI. The repo keeps `runtime.txt` for platforms that support it, but the live Streamlit deployment uses the UI-selected Python 3.11 setting.
+
+The `packages.txt` file is intentionally empty because this demo does not require apt system packages. Do not add comments to `packages.txt`; Streamlit Cloud passes every line to `apt-get`.
 
 Optional secrets for LLM mode:
 

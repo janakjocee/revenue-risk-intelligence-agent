@@ -2,7 +2,7 @@
 
 **One-line summary:** An AI/data science decision-support product that predicts customer churn risk, estimates revenue at risk, retrieves account evidence, recommends retention actions, and presents everything in a business dashboard.
 
-**Live demo:** Pending manual Streamlit Community Cloud deployment. The repository is ready to deploy using `app/streamlit_app.py`.
+**Live demo:** https://revenue-risk.streamlit.app/
 
 All data in this repository is synthetic demo data.
 
@@ -118,10 +118,10 @@ docker compose up --build
 Recommended dashboard deployment: Streamlit Community Cloud.
 
 - Main file: `app/streamlit_app.py`
-- Python runtime: `runtime.txt`
+- Python runtime: Python 3.11 selected in Streamlit Community Cloud app settings
 - Secrets required: none for mock/local demo mode
 - Optional secrets: `OPENAI_API_KEY`, `OPENAI_BASE_URL`, `OPENAI_MODEL`, `LLM_PROVIDER=openai`
-- Current public deployment status: ready, but not deployed from Codex because Streamlit Community Cloud requires manual browser login and app creation.
+- Current public deployment status: live at https://revenue-risk.streamlit.app/
 
 Detailed instructions are in [docs/deployment.md](docs/deployment.md).
 

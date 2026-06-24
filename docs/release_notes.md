@@ -33,9 +33,9 @@ The local pytest suite passes. GitHub Actions is configured to run tests on push
 
 ## Deployment Status
 
-The repository is prepared for Streamlit Community Cloud deployment. Deployment was not completed from this environment because Streamlit Community Cloud requires manual browser login and app creation.
+The Streamlit dashboard is deployed at https://revenue-risk.streamlit.app/
 
-README status: the live demo is marked as pending manual Streamlit Community Cloud deployment until the public app URL is created.
+Deployment fix applied: `packages.txt` is empty so Streamlit Cloud does not pass comment text to `apt-get`, and the app setting is configured for Python 3.11.
 
 Docker Compose deployment files are included. Docker was not executed in the final release environment because the Docker CLI was unavailable.
 
