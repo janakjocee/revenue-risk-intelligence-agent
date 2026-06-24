@@ -1,3 +1,0 @@
-# Streamlit Community Cloud system packages.
-# Kept intentionally minimal; Python dependencies are in requirements.txt.
-
